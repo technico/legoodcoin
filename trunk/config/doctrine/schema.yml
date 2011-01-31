@@ -1,0 +1,162 @@
+Administrateur:
+  tableName: administrateur
+  columns:
+    id:
+      type: integer(4)
+      primary: true
+      autoincrement: true
+    nom:
+      type: string(50)
+      notnull: true
+    prenom:
+      type: string(20)
+      notnull: true
+    mail:
+      type: string(100)
+      notnull: true
+    mdp:
+      type: string(20)
+      notnull: true
+  relations:
+    Annonce:
+      local: id
+      foreign: validee_par
+      type: many
+Annonce:
+  tableName: annonce
+  columns:
+    id:
+      type: integer(4)
+      primary: true
+      autoincrement: true
+    etat_de_validation:
+      type: enum(10)
+      values: ['en attente', validé, refusé]
+      default: 'en attente'
+    ville:
+      type: string(30)
+      notnull: true
+    code_postal:
+      type: string(5)
+      notnull: true
+    contenu:
+      type: string()
+      notnull: true
+    titre:
+      type: string(20)
+      notnull: true
+    telephone:
+      type: string(10)
+      notnull: true
+    prix:
+      type: decimal(65)
+      notnull: true
+      scale: false
+    est_abusif:
+      type: integer(4)
+      default: '0'
+    type_annonce:
+      type: enum(7)
+      values: [demande, offre]
+      notnull: true
+    categorie: integer(4)
+    region: integer(4)
+    departement: integer(4)
+    annonceur: integer(4)
+    validee_par: integer(4)
+    date_control: timestamp(25)
+  relations:
+    Administrateur:
+      local: validee_par
+      foreign: id
+      type: one
+    Region:
+      local: region
+      foreign: id
+      type: one
+    Categorie:
+      local: categorie
+      foreign: id
+      type: one
+    Annonceur:
+      local: annonceur
+      foreign: id
+      type: one
+    Departement:
+      local: departement
+      foreign: code_dep
+      type: one
+Annonceur:
+  tableName: annonceur
+  columns:
+    id:
+      type: integer(4)
+      primary: true
+      autoincrement: true
+    mail:
+      type: string(100)
+      notnull: true
+    mdp:
+      type: string(20)
+      notnull: true
+  relations:
+    Annonce:
+      local: id
+      foreign: annonceur
+      type: many
+Categorie:
+  tableName: categorie
+  columns:
+    id:
+      type: integer(4)
+      primary: true
+      autoincrement: true
+    nom:
+      type: string(200)
+      notnull: true
+  relations:
+    Annonce:
+      local: id
+      foreign: categorie
+      type: many
+Departement:
+  tableName: departement
+  columns:
+    code_dep:
+      type: integer(4)
+      primary: true
+    nom:
+      type: string(255)
+      notnull: true
+    region:
+      type: integer(4)
+      default: '0'
+      notnull: true
+  relations:
+    Region:
+      local: region
+      foreign: id
+      type: one
+    Annonce:
+      local: code_dep
+      foreign: departement
+      type: many
+Region:
+  tableName: region
+  columns:
+    id:
+      type: integer(4)
+      primary: true
+      autoincrement: true
+    nom:
+      type: string(100)
+      notnull: true
+  relations:
+    Annonce:
+      local: id
+      foreign: region
+      type: many
+    Departement:
+      local: id
+      foreign: region
+      type: many
