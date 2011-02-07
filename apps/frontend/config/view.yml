@@ -9,7 +9,7 @@ default:
     #language:     fr
     #robots:       index, follow
 
-  stylesheets:    [main.css]
+  stylesheets:    [main.css, detail.css]
 
   javascripts:    []
 

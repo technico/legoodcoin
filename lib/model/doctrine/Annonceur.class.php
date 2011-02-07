@@ -5,5 +5,7 @@
  */
 class Annonceur extends BaseAnnonceur
 {
-
+	public function __toString(){
+		return $this->getMail();
+	}
 }
