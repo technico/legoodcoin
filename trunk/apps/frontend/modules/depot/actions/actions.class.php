@@ -18,5 +18,6 @@ class depotActions extends sfActions
   public function executeIndex(sfWebRequest $request)
   {
   	$this->annonce_list = Doctrine::getTable('Annonce')->createQuery()->execute();
+  	
   }
 }
