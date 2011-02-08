@@ -1,3 +1,7 @@
+depot_create:
+  url:   /
+  param: { module: default, action: index }
+
 # default rules
 homepage:
   url:   /
