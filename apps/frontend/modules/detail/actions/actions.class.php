@@ -18,6 +18,10 @@ class detailActions extends sfActions
   public function executeIndex(sfWebRequest $request)
   {
     //$this->forward('default', 'module');
-      $this->users = Doctrine::getTable('Annonce')->findAll();
+      $this->Annonce = Doctrine::getTable('Annonce')->find(3);
+  }
+  
+  public function executeAbusif(sfWebRequest $request){
+  	
   }
 }

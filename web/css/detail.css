@@ -22,3 +22,11 @@ h1{
 #droit-bas{
 	border:1px solid #000000;
 }
+
+#bas{
+	clear: both;
+}
+
+span{
+	margin-right:20px;
+}

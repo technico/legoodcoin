@@ -5,6 +5,11 @@
  */
 class Annonceur extends BaseAnnonceur
 {
+	public function getPseudo() {
+		$aAnnonceur=explode('@',$this->getMail());
+		return $aAnnonceur[0];
+	}
+		
 	public function __toString(){
 		return $this->getMail();
 	}
