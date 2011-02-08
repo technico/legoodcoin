@@ -5,5 +5,7 @@
  */
 class Departement extends BaseDepartement
 {
-
+	public function __toString() {
+		return $this->getNom();
+	}
 }

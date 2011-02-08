@@ -5,5 +5,7 @@
  */
 class Region extends BaseRegion
 {
-
+	public function __toString() {
+		return $this->getNom();
+	}
 }
