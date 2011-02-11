@@ -17,13 +17,21 @@ class listingActions extends sfActions
   */
   public function executeIndex(sfWebRequest $request)
   {
-  	$this->aAnnonces = Doctrine::getTable('Annonce')->createQuery()->execute();
-  	$this->aRegions  = Doctrine::getTable('Region')->createQuery()->execute();
-  	$this->form = new AnnonceForm();
+  	//date_default_timezone_set ( 'Europe/Paris' );
   	
-  	$oFF = new AnnonceFormFilter();
-  	//Filtre les annonces par annonceur
-    $oFF->buildQuery( array( 'annonceur' => '1' ) )->execute();
-  	date_default_timezone_set ( 'Europe/Paris' );
+  	$this->aRegions  = Doctrine::getTable('Region')->createQuery()->execute();
+
+  	//Filtre de recherche 
+  	$oFilters = new AnnonceFormFilter();	
+    $this->aAnnonces = $oFilters->buildQuery( $request->getParameter( 'annonce', array() ) )->execute();   
+    //$this->filters = $this->getUser()->getAttribute('annonce.filters', array());
+
+    
+  }
+  
+  public function executeFilter(sfWebRequest $request)
+  {
+  	//$this->getUser()->setAttribute('annonce.filters', $request->getParameter( 'annonce', array() ));
+  	$this->redirect( 'listing/index' );
   }
 }

@@ -1,6 +1,9 @@
-<?php include_partial( 'form', array( 'form' => $form ) ) ?>
+<?php include_partial( 'form' , array( 'filters' => $filters ) ) ?>
 <?php use_helper('Date') ?>
 
+<?php if( count( $aAnnonces ) === 0 ): ?>
+Aucun résultat
+<?php else: ?>
 <table border="1">
 	<tbody>
 	<?php foreach( $aAnnonces as $oAnnonce ): ?>
@@ -20,3 +23,4 @@
 		<?php endforeach; ?>
 	</tbody>
 </table>
+<?php endif; ?>
