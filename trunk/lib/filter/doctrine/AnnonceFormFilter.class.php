@@ -11,5 +11,21 @@ class AnnonceFormFilter extends BaseAnnonceFormFilter
 {
   public function configure()
   {
+  	unset( 
+  		$this['date_control'],
+  		$this['validee_par'],
+  		$this['annonceur'],
+  		$this['est_abusif'],
+  		$this['contenu'],
+  		$this['telephone'],
+  		$this['prix'],
+  		$this['etat_de_validation'],
+  		$this['ville'],
+  		$this['code_postal'],
+  		$this['type_annonce'],
+  		$this['categorie'],
+  		$this['region'],
+  		$this['departement']
+  	);  	
   }
 }

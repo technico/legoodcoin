@@ -20,7 +20,12 @@ class AnnonceForm extends BaseAnnonceForm
   		$this['telephone'],
   		$this['prix'],
   		$this['etat_de_validation'],
-  		$this['ville']
+  		$this['ville'],
+  		$this['code_postal'],
+  		$this['type_annonce'],
+  		$this['categorie'],
+  		$this['region'],
+  		$this['departement']
   	);
   }
 }
