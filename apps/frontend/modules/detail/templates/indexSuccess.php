@@ -1,11 +1,12 @@
 <?php use_helper('Date') ?>
+<div id="detail">
 <div id="titre-annonce">
 	<h1><?php echo $Annonce->getTitre();?></h1>
 </div> <!-- /titre-annonce -->
 <div id="gauche">	
 	<p>Mis en ligne par 
 		<?php echo ucfirst($Annonce->getAnnonceur()->getPseudo());?> le
-		<?php echo $Annonce->getDateMiseEnLigne();?>.
+		<?php echo $Annonce->getDateMiseEnLigne(); ?> à <?php echo $Annonce->getHeureMiseEnLigne(); ?>.
 	</p>	 
 	<p>photo</p>
 	<p>Prix : <?php echo $Annonce->getPrix();?> &euro;</p>
@@ -30,4 +31,5 @@
 	<span><a href="">Sauvegarder l'annonce</a></span> <!-- Entrer dans href la page de sauvegarde -->
 	<span><a href="">Signaler un contenu abusif</a></span> <!-- Entrer dans href la page abusif -->
 	<span><a href="">Conseiller l'annonce à un ami</a></span> <!-- Entrer dans href la page de conseil -->
+</div>
 </div>

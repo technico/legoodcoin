@@ -24,7 +24,7 @@ class listingActions extends sfActions
   	//Filtre de recherche 
   	$oFilters = new AnnonceFormFilter();	
     $this->aAnnonces = $oFilters->buildQuery( $request->getParameter( 'annonce', array() ) )->execute();   
-    //$this->filters = $this->getUser()->getAttribute('annonce.filters', array());
+    $this->filters = $this->getUser()->getAttribute('annonce.filters', array());
 
     
   }
