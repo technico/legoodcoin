@@ -1,32 +1,29 @@
-@CHARSET "ISO-8859-1";
-
-h1{
+#detail h1{
 	margin:0px;
 	padding:0px;
 }
 
-#gauche{
+#detail #gauche{
 	float:left;
 }
 
-#droit{
+#detail #droit{
 	float:right;
-	margin-right:300px;
 }
 
-#droit-haut{
+#detail #droit-haut{
 	border:1px solid #000000;
 	margin-bottom:5px;
 }
 
-#droit-bas{
+#detail #droit-bas{
 	border:1px solid #000000;
 }
 
-#bas{
+#detail #bas{
 	clear: both;
 }
 
-span{
+#detail span{
 	margin-right:20px;
 }
