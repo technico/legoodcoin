@@ -20,7 +20,7 @@ class BaseAnnonceurForm extends BaseFormDoctrine
     $this->setValidators(array(
       'id'   => new sfValidatorDoctrineChoice(array('model' => 'Annonceur', 'column' => 'id', 'required' => false)),
       'mail' => new sfValidatorString(array('max_length' => 100)),
-      'mdp'  => new sfValidatorString(array('max_length' => 20)),
+      'mdp'  => new sfValidatorString(array('max_length' => 20, 'required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('annonceur[%s]');

@@ -14,16 +14,16 @@ abstract class BaseAnnonce extends sfDoctrineRecord
              'autoincrement' => true,
              'length' => '4',
              ));
-        $this->hasColumn('etat_de_validation', 'enum', 10, array(
+        $this->hasColumn('etat_de_validation', 'enum', 8, array(
              'type' => 'enum',
              'values' => 
              array(
-              0 => 'en attente',
-              1 => 'validé',
-              2 => 'refusé',
+              0 => 'wait',
+              1 => 'accepted',
+              2 => 'rejected',
              ),
-             'default' => 'en attente',
-             'length' => '10',
+             'default' => 'wait',
+             'length' => '8',
              ));
         $this->hasColumn('ville', 'string', 30, array(
              'type' => 'string',
@@ -35,24 +35,18 @@ abstract class BaseAnnonce extends sfDoctrineRecord
              'notnull' => true,
              'length' => '5',
              ));
-        $this->hasColumn('contenu', 'string', null, array(
+        $this->hasColumn('contenu', 'string', 1024, array(
              'type' => 'string',
              'notnull' => true,
-             'length' => '',
+             'length' => '1024',
              ));
-        $this->hasColumn('titre', 'string', 20, array(
+        $this->hasColumn('titre', 'string', 50, array(
              'type' => 'string',
              'notnull' => true,
-             'length' => '20',
-             ));
-        $this->hasColumn('telephone', 'string', 10, array(
-             'type' => 'string',
-             'notnull' => true,
-             'length' => '10',
+             'length' => '50',
              ));
         $this->hasColumn('prix', 'decimal', 65, array(
              'type' => 'decimal',
-             'notnull' => true,
              'scale' => false,
              'length' => '65',
              ));
@@ -65,11 +59,16 @@ abstract class BaseAnnonce extends sfDoctrineRecord
              'type' => 'enum',
              'values' => 
              array(
-              0 => 'demande',
-              1 => 'offre',
+              0 => 'offre',
+              1 => 'demande',
              ),
+             'default' => 'offre',
              'notnull' => true,
              'length' => '7',
+             ));
+        $this->hasColumn('telephone', 'string', 10, array(
+             'type' => 'string',
+             'length' => '10',
              ));
         $this->hasColumn('categorie', 'integer', 4, array(
              'type' => 'integer',
@@ -104,20 +103,40 @@ abstract class BaseAnnonce extends sfDoctrineRecord
              'local' => 'validee_par',
              'foreign' => 'id'));
 
-        $this->hasOne('Region', array(
-             'local' => 'region',
-             'foreign' => 'id'));
-
-        $this->hasOne('Categorie', array(
-             'local' => 'categorie',
-             'foreign' => 'id'));
-
         $this->hasOne('Annonceur', array(
              'local' => 'annonceur',
+             'foreign' => 'id'));
+
+        $this->hasOne('Region', array(
+             'local' => 'region',
              'foreign' => 'id'));
 
         $this->hasOne('Departement', array(
              'local' => 'departement',
              'foreign' => 'code_dep'));
+
+        $this->hasOne('Categorie', array(
+             'local' => 'categorie',
+             'foreign' => 'id'));
+
+        $this->hasOne('Annonceur as Annonceur_6', array(
+             'local' => 'annonceur',
+             'foreign' => 'id'));
+
+        $this->hasOne('Administrateur as Administrateur_7', array(
+             'local' => 'validee_par',
+             'foreign' => 'id'));
+
+        $this->hasOne('Region as Region_8', array(
+             'local' => 'region',
+             'foreign' => 'id'));
+
+        $this->hasOne('Departement as Departement_9', array(
+             'local' => 'departement',
+             'foreign' => 'code_dep'));
+
+        $this->hasOne('Categorie as Categorie_10', array(
+             'local' => 'categorie',
+             'foreign' => 'id'));
     }
 }

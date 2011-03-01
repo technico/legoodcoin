@@ -22,10 +22,10 @@ class AnnonceFormFilter extends BaseAnnonceFormFilter
   		$this['etat_de_validation'],
   		$this['ville'],
   		$this['code_postal'],
-  		$this['type_annonce']//,
+  		$this['type_annonce'],
   		//$this['categorie'],
-  		//$this['region'],
-  		//$this['departement']
+  		$this['region'],
+  		$this['departement']
   	);  	
   }
 }

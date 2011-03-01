@@ -1,0 +1,12 @@
+CREATE TABLE administrateur (id INT AUTO_INCREMENT, nom VARCHAR(50) NOT NULL, prenom VARCHAR(20) NOT NULL, mail VARCHAR(100) NOT NULL, mdp VARCHAR(20) NOT NULL, PRIMARY KEY(id)) ENGINE = INNODB;
+CREATE TABLE annonce (id INT AUTO_INCREMENT, etat_de_validation VARCHAR(10) DEFAULT 'en attente', ville VARCHAR(30) NOT NULL, code_postal VARCHAR(5) NOT NULL, contenu TEXT NOT NULL, titre VARCHAR(20) NOT NULL, telephone VARCHAR(10) NOT NULL, prix DECIMAL(65,2) NOT NULL, est_abusif INT DEFAULT '0', type_annonce VARCHAR(7) NOT NULL, categorie INT, region INT, departement INT, annonceur INT, validee_par INT, date_control DATETIME, INDEX validee_par_idx (validee_par), INDEX region_idx (region), INDEX categorie_idx (categorie), INDEX annonceur_idx (annonceur), INDEX departement_idx (departement), PRIMARY KEY(id)) ENGINE = INNODB;
+CREATE TABLE annonceur (id INT AUTO_INCREMENT, mail VARCHAR(100) NOT NULL, mdp VARCHAR(20) NOT NULL, PRIMARY KEY(id)) ENGINE = INNODB;
+CREATE TABLE categorie (id INT AUTO_INCREMENT, nom VARCHAR(200) NOT NULL, PRIMARY KEY(id)) ENGINE = INNODB;
+CREATE TABLE departement (code_dep INT, nom VARCHAR(255) NOT NULL, region INT DEFAULT '0' NOT NULL, INDEX region_idx (region), PRIMARY KEY(code_dep)) ENGINE = INNODB;
+CREATE TABLE region (id INT AUTO_INCREMENT, nom VARCHAR(100) NOT NULL, PRIMARY KEY(id)) ENGINE = INNODB;
+ALTER TABLE annonce ADD FOREIGN KEY (validee_par) REFERENCES administrateur(id);
+ALTER TABLE annonce ADD FOREIGN KEY (region) REFERENCES region(id);
+ALTER TABLE annonce ADD FOREIGN KEY (departement) REFERENCES departement(code_dep);
+ALTER TABLE annonce ADD FOREIGN KEY (categorie) REFERENCES categorie(id);
+ALTER TABLE annonce ADD FOREIGN KEY (annonceur) REFERENCES annonceur(id);
+ALTER TABLE departement ADD FOREIGN KEY (region) REFERENCES region(id);

@@ -22,6 +22,11 @@ Administrateur:
       local: id
       foreign: validee_par
       type: many
+    Annonce_7:
+      class: Annonce
+      local: id
+      foreign: validee_par
+      type: many
 Annonce:
   tableName: annonce
   columns:
@@ -30,9 +35,9 @@ Annonce:
       primary: true
       autoincrement: true
     etat_de_validation:
-      type: enum(10)
-      values: ['en attente', validé, refusé]
-      default: 'en attente'
+      type: enum(8)
+      values: [wait, accepted, rejected]
+      default: wait
     ville:
       type: string(30)
       notnull: true
@@ -40,25 +45,23 @@ Annonce:
       type: string(5)
       notnull: true
     contenu:
-      type: string()
+      type: string(1024)
       notnull: true
     titre:
-      type: string(20)
-      notnull: true
-    telephone:
-      type: string(10)
+      type: string(50)
       notnull: true
     prix:
       type: decimal(65)
-      notnull: true
       scale: false
     est_abusif:
       type: integer(4)
       default: '0'
     type_annonce:
       type: enum(7)
-      values: [demande, offre]
+      values: [offre, demande]
+      default: offre
       notnull: true
+    telephone: string(10)
     categorie: integer(4)
     region: integer(4)
     departement: integer(4)
@@ -70,21 +73,46 @@ Annonce:
       local: validee_par
       foreign: id
       type: one
-    Region:
-      local: region
-      foreign: id
-      type: one
-    Categorie:
-      local: categorie
-      foreign: id
-      type: one
     Annonceur:
       local: annonceur
+      foreign: id
+      type: one
+    Region:
+      local: region
       foreign: id
       type: one
     Departement:
       local: departement
       foreign: code_dep
+      type: one
+    Categorie:
+      local: categorie
+      foreign: id
+      type: one
+    Annonceur_6:
+      class: Annonceur
+      local: annonceur
+      foreign: id
+      type: one
+    Administrateur_7:
+      class: Administrateur
+      local: validee_par
+      foreign: id
+      type: one
+    Region_8:
+      class: Region
+      local: region
+      foreign: id
+      type: one
+    Departement_9:
+      class: Departement
+      local: departement
+      foreign: code_dep
+      type: one
+    Categorie_10:
+      class: Categorie
+      local: categorie
+      foreign: id
       type: one
 Annonceur:
   tableName: annonceur
@@ -104,6 +132,11 @@ Annonceur:
       local: id
       foreign: annonceur
       type: many
+    Annonce_6:
+      class: Annonce
+      local: id
+      foreign: annonceur
+      type: many
 Categorie:
   tableName: categorie
   columns:
@@ -116,6 +149,11 @@ Categorie:
       notnull: true
   relations:
     Annonce:
+      local: id
+      foreign: categorie
+      type: many
+    Annonce_10:
+      class: Annonce
       local: id
       foreign: categorie
       type: many
@@ -137,7 +175,17 @@ Departement:
       local: region
       foreign: id
       type: one
+    Region_2:
+      class: Region
+      local: region
+      foreign: id
+      type: one
     Annonce:
+      local: code_dep
+      foreign: departement
+      type: many
+    Annonce_9:
+      class: Annonce
       local: code_dep
       foreign: departement
       type: many
@@ -156,7 +204,17 @@ Region:
       local: id
       foreign: region
       type: many
+    Annonce_8:
+      class: Annonce
+      local: id
+      foreign: region
+      type: many
     Departement:
+      local: id
+      foreign: region
+      type: many
+    Departement_2:
+      class: Departement
       local: id
       foreign: region
       type: many

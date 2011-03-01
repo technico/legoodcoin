@@ -1,4 +1,4 @@
-<?php use_helper('Date') ?>
+<?php use_helper('Date');?>
 <div id="detail">
 <div id="titre-annonce">
 	<h1><?php echo $Annonce->getTitre();?></h1>

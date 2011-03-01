@@ -32,5 +32,9 @@ abstract class BaseAnnonceur extends sfDoctrineRecord
     $this->hasMany('Annonce', array(
              'local' => 'id',
              'foreign' => 'annonceur'));
+
+        $this->hasMany('Annonce as Annonce_6', array(
+             'local' => 'id',
+             'foreign' => 'annonceur'));
     }
 }

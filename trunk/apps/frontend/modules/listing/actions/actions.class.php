@@ -17,16 +17,30 @@ class listingActions extends sfActions
   */
   public function executeIndex(sfWebRequest $request)
   {
-  	//date_default_timezone_set ( 'Europe/Paris' );
-  	
-  	$this->aRegions  = Doctrine::getTable('Region')->createQuery()->execute();
+  	$this->aRegions  = Doctrine::getTable( 'Region' )->createQuery()->execute();
 
   	//Filtre de recherche 
   	$oFilters = new AnnonceFormFilter();	
-    $this->aAnnonces = $oFilters->buildQuery( $request->getParameter( 'annonce', array() ) )->execute();   
-    $this->filters = $this->getUser()->getAttribute('annonce.filters', array());
 
+    //Pagination
+    $this->oPager = new sfDoctrinePager( 'Annonce', 5 );
     
+    $this->sTitre = $request->getParameter( 't', null );
+    $this->sCategorie = $request->getParameter( 'c', 0 );
+    $this->sCategorie = ( $this->sCategorie == 0 ) ? null : $this->sCategorie;
+    $this->sRegion = $request->getParameter( 'r', null );
+    
+    $oQuery = $oFilters->buildQuery( 
+    		array ( 'titre' => array ( 'text' => $this->sTitre, ), 
+    		        'categorie' => $this->sCategorie, 
+    		        'etat_de_validation' => 'accepted') ) ;
+    		
+    $oQuery->addOrderBy( 'date_control DESC' );
+    
+    $this->oPager->setQuery( $oQuery );
+    $this->oPager->setPage( $request->getParameter( 'p', 1 ) );
+    $this->oPager->init();
+    $this->aAnnonces = $this->oPager->getResults();
   }
   
   public function executeFilter(sfWebRequest $request)
