@@ -42,5 +42,9 @@ abstract class BaseAdministrateur extends sfDoctrineRecord
     $this->hasMany('Annonce', array(
              'local' => 'id',
              'foreign' => 'validee_par'));
+
+        $this->hasMany('Annonce as Annonce_7', array(
+             'local' => 'id',
+             'foreign' => 'validee_par'));
     }
 }

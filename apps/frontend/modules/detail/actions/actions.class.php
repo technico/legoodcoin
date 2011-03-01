@@ -16,9 +16,8 @@ class detailActions extends sfActions
   * @param sfRequest $request A request object
   */
   public function executeIndex(sfWebRequest $request)
-  {
-    //$this->forward('default', 'module');
-      $this->Annonce = Doctrine::getTable('Annonce')->find(1);
+  {   
+      $this->Annonce = Doctrine::getTable('Annonce')->find( $request->getParameter( 'id' ) );
   }
   
   public function executeAbusif(sfWebRequest $request){
