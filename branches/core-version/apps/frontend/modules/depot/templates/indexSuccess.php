@@ -1,3 +1,10 @@
+<?php slot( 'url_annonce', url_for( 'listing/index?r=0' ) ) ?>
+<style>
+#depot th {
+	width: 100px;
+}
+</style>
+<div id="depot">
 <form action="<?php echo url_for('depot/index') ?>" method="POST">
 <?php echo $oForm->renderHiddenFields() ?>
 <fieldset><legend>Informations</legend>
@@ -29,3 +36,4 @@
 	</tr>
 </table>
 </form>
+</div>
