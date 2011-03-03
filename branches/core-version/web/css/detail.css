@@ -1,0 +1,48 @@
+#detail h1{
+	margin:0px;
+	padding:0px;
+}
+
+#detail #gauche{
+	float:left;
+}
+
+#detail #gauche span{
+	margin-right: 100px;
+}
+
+#detail #droit{
+	float:right;
+}
+
+#detail #droit-haut{
+	border:1px solid #000000;
+	margin-bottom:5px;
+}
+
+#detail #droit-bas{
+	border:1px solid #000000;
+}
+
+#detail .droit-titre{
+	padding-top: 3px;
+	font-weight: bold;
+	background-color: #777777;
+}
+
+#detail #bas{
+	clear: both;
+}
+
+#detail .bas{
+	margin-right:20px;
+}
+
+#detail #conseil{
+	display:none;
+}
+
+#detail .champs{
+	font-weight: normal;
+	margin-bottom: 1px;
+}
