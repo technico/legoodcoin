@@ -7,6 +7,10 @@
 	float:left;
 }
 
+#detail #gauche span{
+	margin-right: 100px;
+}
+
 #detail #droit{
 	float:right;
 }
@@ -20,10 +24,25 @@
 	border:1px solid #000000;
 }
 
+#detail .droit-titre{
+	padding-top: 3px;
+	font-weight: bold;
+	background-color: #777777;
+}
+
 #detail #bas{
 	clear: both;
 }
 
-#detail span{
+#detail .bas{
 	margin-right:20px;
+}
+
+#detail #conseil{
+	display:none;
+}
+
+#detail .champs{
+	font-weight: normal;
+	margin-bottom: 1px;
 }
