@@ -19,13 +19,14 @@ class AnnonceFormFilter extends BaseAnnonceFormFilter
   		$this['contenu'],
   		$this['telephone'],
   		$this['prix'],
-  		$this['etat_de_validation'],
+  		//$this['etat_de_validation'],
   		$this['ville'],
   		$this['code_postal'],
   		$this['type_annonce'],
-  		//$this['categorie'],
+  		$this['categorie'],
   		$this['region'],
-  		$this['departement']
+  		$this['departement'],
+  		$this['titre']
   	);  	
   }
 }
