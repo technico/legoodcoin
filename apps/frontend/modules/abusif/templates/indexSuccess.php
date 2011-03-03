@@ -5,7 +5,7 @@
 		<p id="mail">Email:</p>
 		<p id="mess">Message:</p>
 	</div>
-	<form action="" method="get">
+	<form action="" method="get" id="formAbusif">
 		<p class="champs"><input name="nom" type="text" size="20" /></p>
 		<p class="champs"><input name="mail" type="text" size="20" /></p>
 		<p class="champs"><textarea name="message" rows="10" cols="40">Tapez votre texte ici</textarea></p>
