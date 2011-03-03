@@ -1,3 +1,11 @@
+.fine_print {
+    font-size: 9px;
+}
+
+#detail {
+	position: static;
+	height: 279px;
+}
 #detail h1{
 	margin:0px;
 	padding:0px;
@@ -5,6 +13,7 @@
 
 #detail #gauche{
 	float:left;
+	width:550px;
 }
 
 #detail #gauche span{
@@ -13,10 +22,12 @@
 
 #detail #droit{
 	float:right;
+	width:238px;
+	border:1px solid #B8B8B8;
 }
 
 #detail #droit-haut{
-	border:1px solid #000000;
+	
 	margin-bottom:5px;
 }
 
@@ -25,9 +36,9 @@
 }
 
 #detail .droit-titre{
-	padding-top: 3px;
+	padding: 3px;
 	font-weight: bold;
-	background-color: #777777;
+	background-color: #DCDCC3;
 }
 
 #detail #bas{

@@ -24,7 +24,7 @@ class depotActions extends sfActions
 		if($request->isMethod('post'))
 	    {
 	      $this->oForm->bind($request->getParameter('annonce'));
-	      echo var_export( $request->getParameter('annonce'), true );
+	      //echo var_export( $request->getParameter('annonce'), true );
 	      if($this->oForm->isValid())
 	      {
 	      	$aAnnonces = $request->getParameter('annonce');

@@ -1,3 +1,4 @@
+<?php slot( 'url_annonce', url_for( 'listing/index?r=0' ) ) ?>
 <h2>Prévisualisation de votre annonce</h2>
 <table>
     <tbody>

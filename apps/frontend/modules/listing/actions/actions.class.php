@@ -29,11 +29,21 @@ class listingActions extends sfActions
     $this->sCategorie = $request->getParameter( 'c', 0 );
     $this->sCategorie = ( $this->sCategorie == 0 ) ? null : $this->sCategorie;
     $this->sRegion = $request->getParameter( 'r', null );
+    if( isset( $this->sRegion ) )
+    {
+    	$this->sRegion = ($this->sRegion <= '0') ? null : $this->sRegion;
+    	
+    	if( $this->sRegion !== null )
+    	{
+    		$this->sNomRegion = Doctrine::getTable( 'Region' )->find( $this->sRegion )->getNom();
+    	}
+    }
     
     $oQuery = $oFilters->buildQuery( 
     		array ( 'titre' => array ( 'text' => $this->sTitre, ), 
     		        'categorie' => $this->sCategorie, 
-    		        'etat_de_validation' => 'accepted') ) ;
+    		        'etat_de_validation' => 'accepted',
+    		        'region'    => $this->sRegion) ) ;
     		
     $oQuery->addOrderBy( 'date_control DESC' );
     
