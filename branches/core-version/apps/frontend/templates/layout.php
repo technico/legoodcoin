@@ -43,8 +43,8 @@
 &nbsp;|&nbsp; <a href="<?php echo url_for( 'depot/index' ) ?>"
 	rel="nofollow">Déposer une annonce</a> &nbsp;|&nbsp; <a
 	href="<?php include_slot( 'url_annonce' ) ?>">Consulter les annonces</a>
-<!-- &nbsp;|&nbsp; <a
-	href="<?php echo url_for( 'listing/index&r=' ) ?>">Contrôler les annonces</a> -->
+&nbsp;|&nbsp; <a
+	href="<?php echo url_for( 'controle/index' ) ?>">Contrôler les annonces</a>
 
 </div>
 <div class="headerline"></div>

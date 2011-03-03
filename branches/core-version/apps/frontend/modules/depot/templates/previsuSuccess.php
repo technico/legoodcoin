@@ -32,5 +32,5 @@
 		</tr>
  	</tbody>
  </table>
- <a href="<?php echo url_for( 'depot/index' ); ?>">modifier</a>
+ <!-- <a href="<?php echo url_for( 'depot/index' ); ?>">modifier</a> -->
  <a href="<?php echo url_for( 'depot/merci' ); ?>">confirmer</a>

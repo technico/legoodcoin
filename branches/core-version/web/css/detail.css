@@ -20,10 +20,11 @@
 	margin-right: 100px;
 }
 
-#detail #droit{
+#detail .droit{
 	float:right;
 	width:238px;
 	border:1px solid #B8B8B8;
+	margin-bottom: 10px;
 }
 
 #detail #droit-haut{
