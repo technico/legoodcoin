@@ -1,35 +1,55 @@
 <?php use_helper('Date');?>
 <div id="detail">
-<div id="titre-annonce">
-	<h1><?php echo $Annonce->getTitre();?></h1>
-</div> <!-- /titre-annonce -->
-<div id="gauche">	
-	<p>Mis en ligne par 
-		<?php echo ucfirst($Annonce->getAnnonceur()->getPseudo());?> le
-		<?php echo $Annonce->getDateMiseEnLigne(); ?> à <?php echo $Annonce->getHeureMiseEnLigne(); ?>.
-	</p>	 
-	<p>photo</p>
-	<p>Prix : <?php echo $Annonce->getPrix();?> &euro;</p>
-	<p>Ville : <?php echo $Annonce->getCodePostal();?> <?php echo $Annonce->getVille();?></p>
-	<p><?php echo $Annonce->getContenu(); ?></p>
-</div> <!-- /gauche -->
-<div id="droit">
-	<div id="droit-haut">
-		<p>Contacter l'annonceur</p>
-		<p><a href="">Envoyer un email</a></p> <!-- Entrer dans href la page d'ecriture de mail -->
-		<p><?php echo $Annonce->getAnnonceur();?> : <?php echo $Annonce->getTelephone();?></p>
-	</div> <!-- /droit-haut -->
-	<div id="droit-bas">
-		<p>G&eacute;rer votre annonce</p>
-		<p><a href="">Modifier</a></p> <!-- Entrer dans href la page de modification -->
-		<p><a href="">Supprimer</a></p> <!-- Entrer dans href la page de suppression -->
-		<p><a href="">Remonter en t&ecirc;te de liste</a></p> <!-- Entrer dans href la page de remontage -->
-		<p><a href="">Mettre en avant</a></p> <!-- Entrer dans href la page de mise en avant -->
-	</div> <!-- /droit-bas -->
-</div> <!-- /droit -->
-<div id="bas">
-	<span><a href="">Sauvegarder l'annonce</a></span> <!-- Entrer dans href la page de sauvegarde -->
-	<span><a href="">Signaler un contenu abusif</a></span> <!-- Entrer dans href la page abusif -->
-	<span><a href="">Conseiller l'annonce à un ami</a></span> <!-- Entrer dans href la page de conseil -->
-</div>
+	<div id="titre-annonce">
+		<h1><?php echo $Annonce->getTitre();?></h1>
+	</div>
+	<div id="gauche">
+		<p>
+			Mis en ligne par 
+				<?php echo ucfirst($Annonce->getAnnonceur()->getPseudo());?> le
+				<?php echo $Annonce->getDateMiseEnLigne(); ?> à <?php echo $Annonce->getHeureMiseEnLigne(); ?>.
+			<br/>	 
+			photo
+			<br/>
+			<span>Prix : <?php echo $Annonce->getPrix();?> &euro;</span>
+			Ville : <?php echo $Annonce->getCodePostal();?> <?php echo $Annonce->getVille();?>
+			<br/>
+			<?php echo $Annonce->getContenu(); ?>
+		</p>
+	</div>
+	<div id="droit">
+		<div id="droit-haut">
+			<div class="droit-titre">Contacter l'annonceur</div>
+			<a href="">Envoyer un email</a> <!-- Entrer dans href la page d'ecriture de mail -->
+			<br/>
+			<?php echo $Annonce->getAnnonceur()->getPseudo();?> : <?php echo $Annonce->getTelephone();?>
+		</div>
+		<div id="droit-bas">
+			<div class="droit-titre">G&eacute;rer votre annonce</div>
+			<a href="">Modifier</a> <!-- Entrer dans href la page de modification -->
+			<br/>
+			<a href="">Supprimer</a> <!-- Entrer dans href la page de suppression -->
+			<br/>
+			<a href="">Remonter en t&ecirc;te de liste</a> <!-- Entrer dans href la page de remontage -->
+			<br/>
+			<a href="">Mettre en avant</a> <!-- Entrer dans href la page de mise en avant -->
+		</div>
+	</div>
+	<div id="bas">
+		<a class="bas" href="">Sauvegarder l'annonce</a> <!-- Entrer dans href la page de sauvegarde -->
+		<a class="bas" href="<?php echo url_for('abusif/index'); ?>">Signaler un contenu abusif</a> <!-- Entrer dans href la page abusif -->
+		<a class="bas" id ="conseiller" href="">Conseiller l'annonce à un ami</a> <!-- Entrer dans href la page de conseil -->
+		<div id="conseil">
+			<h2>Conseiller l'annonce à un ami</h2>
+			<div id="label">
+				<div class="champs">Votre adresse email:</div>
+				<div class="champs">L'adresse email de votre ami(e):</div>
+			</div>
+			<form action="" method="get">
+				<div class="champs"><input name="vous" type="text" size="30" /></div>
+				<div class="champs"><input name="ami" type="text" size="30" /></div>
+				<div class="champs"><input type="submit" value="Envoyer" onclick=""/></div>
+			</form>
+		</div>
+	</div>
 </div>
