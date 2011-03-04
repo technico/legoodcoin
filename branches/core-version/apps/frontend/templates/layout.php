@@ -7,17 +7,14 @@
 <link rel="shortcut icon" href="/favicon.ico" />
 </head>
 <body>
-<table cellspacing="0" cellpadding="0" class="header_wrapper">
-	<tbody>
-		<tr>
-			<td width="211px"><a href="<?php url_for( 'listing/index?r=0' ) ?>"><img border="0"
-				id="header_logo"
-				alt="Petites annonces gratuites d'occasion - legoodcoin.fr"
-				src="/images/legoodcoin.gif" /></a></td>
-			<td style="padding-top:3px;"><h1 class="fake_h3"><?php include_slot( 'zone_geo' ) ?></h1></td>
-		</tr>
-	</tbody>
-</table>
+	<div>
+		<div id="logo">
+			<a href="<?php url_for( 'listing/index?r=0' ) ?>">
+				<img border="0" id="header_logo" alt="Petites annonces gratuites d'occasion - legoodcoin.fr" src="/images/legoodcoin.gif" />
+			</a>
+		</div>
+		<div id="region"><?php include_slot( 'zone_geo' ) ?></div>
+	</div>
 <div id="nav"><a href="<?php echo url_for( 'listing/index?r=0' ) ?>">Accueil</a>
 &nbsp;|&nbsp; <a href="<?php echo url_for( 'depot/index' ) ?>"
 	rel="nofollow">Déposer une annonce</a> &nbsp;|&nbsp; <a
