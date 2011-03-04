@@ -27,33 +27,22 @@ class AnnonceForm extends BaseAnnonceForm
   		//$this['region'],
   		//$this['departement']
   	);
+	  	
+  	$this->widgetSchema['categorie']->setOption( 'add_empty', true );
+  	$this->validatorSchema['categorie']->setMessage( 'required', 'Veuillez selectionner une catégorie.' );
+  	 	
+  	$this->widgetSchema['departement']->setOption( 'add_empty', true );
+  	$this->validatorSchema['departement']->setMessage( 'required', 'Veuillez selectionner un département.' );
   	
-    $this->validatorSchema['ville'] = new sfValidatorString(
-      array('required' => true),
-      array('required' => 'Veuillez renseigner une ville.')
-    );
+  	$this->widgetSchema['region']->setOption( 'add_empty', true );
+  	$this->validatorSchema['region']->setMessage( 'required', 'Veuillez selectionner une région.' );
+  	
+	$this->validatorSchema['ville']->setMessage( 'required', 'Veuillez renseigner une ville.' );
 
-    $this->validatorSchema['code_postal'] = new sfValidatorString(
-      array('required' => true),
-      array('required' => 'Veuillez renseigner un code postal.')
-    );
+    $this->validatorSchema['code_postal']->setMessage( 'required', 'Veuillez renseigner un code postal.' );
 
-    $this->validatorSchema['contenu'] = new sfValidatorString(
-      array('required' => true),
-      array('required' => 'Veuillez rediger un texte d\'annonce.')
-    );
-
-    $this->validatorSchema['titre'] = new sfValidatorString(
-      array('required' => true),
-      array('required' => 'Veuillez donner un titre à votre annnonce.')
-    );
+    $this->validatorSchema['contenu']->setMessage( 'required', 'Veuillez rediger un texte d\'annonce.' );
     
-    $this->validatorSchema['telephone'] = new sfValidatorString(
-      array('required' => false)
-    );
-    
-    $this->validatorSchema['prix'] = new sfValidatorString(
-      array('required' => false)
-    );  
+    $this->validatorSchema['titre']->setMessage( 'required', 'Veuillez donner un titre à votre annnonce.' );
   }
 }

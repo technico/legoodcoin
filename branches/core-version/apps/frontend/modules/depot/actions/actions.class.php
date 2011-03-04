@@ -21,11 +21,11 @@ class depotActions extends sfActions
 		$this->oFormAnnonceur = new AnnonceurForm();
 		$this->oForm->mergeForm( $this->oFormAnnonceur );
 		
-		if($request->isMethod('post'))
+		if( $request->isMethod( 'post' ) )
 	    {
-	      $this->oForm->bind($request->getParameter('annonce'));
+	      $this->oForm->bind( $request->getParameter( 'annonce' ) );
 	      //echo var_export( $request->getParameter('annonce'), true );
-	      if($this->oForm->isValid())
+	      if( $this->oForm->isValid() )
 	      {
 	      	$aAnnonces = $request->getParameter('annonce');
 			$this->sTypeAnnonce = $aAnnonces['type_annonce'];
@@ -36,8 +36,8 @@ class depotActions extends sfActions
 			$this->sPrix        = $aAnnonces['prix'];
 			$this->sTel         = $aAnnonces['telephone'];
 
-	        $this->getUser()->setAttribute('annonce', $aAnnonces);
-	        $this->setTemplate('previsu');
+	        $this->getUser()->setAttribute( 'annonce', $aAnnonces );
+	        $this->setTemplate( 'previsu' );
 	      }
 	    }
 	}
