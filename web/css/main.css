@@ -7,3 +7,33 @@ body {
     width: 978px;
     padding: 5px;
 }
+
+#nav {
+	color: #999999;
+	margin: 13px 0 4px;
+}
+
+a:link, a:visited {
+    color: #336699;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#nav a:link, #nav a:visited {
+    font-size: 13px;
+}
+
+.headerline {
+	border-bottom: 2px solid #FF6600;
+	clear: both;
+	font-size: 0;
+	height: 6px;
+	width: 978px;
+	margin-bottom: 3px;
+}
+
+.fake_h3 {
+    display: inline;
+    font-size: 16px;
+    font-weight: normal;
+}

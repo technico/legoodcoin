@@ -1,3 +1,4 @@
+<?php use_stylesheet ('detail.css')?>
 <?php use_helper('Date');?>
 <?php slot( 'url_annonce', url_for( 'listing/index?r='.$Annonce->getRegion()->getId() ) ) ?>
 <?php slot( 'zone_geo', $Annonce->getRegion() ) ?>
@@ -15,7 +16,7 @@
 	<h1 style="margin-top:10px; margin-bottom:20px;"><?php echo $Annonce->getTitre();?></h1>
 	<!-- <div class="headerline"></div> -->
 	<div id="gauche">
-	Mis en ligne par <?php echo ucfirst($Annonce->getAnnonceur()->getPseudo());?>
+	Mis en ligne par <a href=""><?php echo ucfirst($Annonce->getAnnonceur()->getPseudo());?></a> <!-- Rentrez la valeur dans href -->
 	le <?php echo $Annonce->getDateMiseEnLigne(); ?> à <?php echo $Annonce->getHeureMiseEnLigne(); ?>.
 	<br /><br />
 	photo <br /><br />

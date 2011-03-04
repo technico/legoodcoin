@@ -5,27 +5,6 @@
 <?php include_metas() ?>
 <?php include_title() ?>
 <link rel="shortcut icon" href="/favicon.ico" />
-<style>
-#nav {
-	color: #999999;
-	margin: 13px 0 4px;
-}
-
-.headerline {
-	border-bottom: 2px solid #FF6600;
-	clear: both;
-	font-size: 0;
-	height: 6px;
-	width: 978px;
-	margin-bottom: 3px;
-}
-
-.fake_h3 {
-    display: inline;
-    font-size: 16px;
-    font-weight: normal;
-}
-</style>
 </head>
 <body>
 <table cellspacing="0" cellpadding="0" class="header_wrapper">

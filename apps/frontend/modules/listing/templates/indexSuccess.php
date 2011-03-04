@@ -1,3 +1,4 @@
+<?php use_stylesheet ('listing.css')?>
 <?php use_helper('Date') ?>
 <?php slot( 'zone_geo', $sRegion === NULL ? 'Toute la France' : $sNomRegion ) ?>
 <?php slot( 'url_annonce', url_for( 'listing/index?r='.( $sRegion === NULL ? '0' : $sRegion ) ) ) ?>
