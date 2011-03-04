@@ -59,12 +59,17 @@ Annonce:
     type_annonce:
       type: enum(7)
       values: [offre, demande]
-      default: offre
+      notnull: true
+    categorie:
+      type: integer(4)
+      notnull: true
+    region:
+      type: integer(4)
+      notnull: true
+    departement:
+      type: integer(4)
       notnull: true
     telephone: string(10)
-    categorie: integer(4)
-    region: integer(4)
-    departement: integer(4)
     annonceur: integer(4)
     validee_par: integer(4)
     date_control: timestamp(25)

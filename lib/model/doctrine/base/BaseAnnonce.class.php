@@ -62,25 +62,27 @@ abstract class BaseAnnonce extends sfDoctrineRecord
               0 => 'offre',
               1 => 'demande',
              ),
-             'default' => 'offre',
              'notnull' => true,
              'length' => '7',
              ));
-        $this->hasColumn('telephone', 'string', 10, array(
-             'type' => 'string',
-             'length' => '10',
-             ));
         $this->hasColumn('categorie', 'integer', 4, array(
              'type' => 'integer',
+             'notnull' => true,
              'length' => '4',
              ));
         $this->hasColumn('region', 'integer', 4, array(
              'type' => 'integer',
+             'notnull' => true,
              'length' => '4',
              ));
         $this->hasColumn('departement', 'integer', 4, array(
              'type' => 'integer',
+             'notnull' => true,
              'length' => '4',
+             ));
+        $this->hasColumn('telephone', 'string', 10, array(
+             'type' => 'string',
+             'length' => '10',
              ));
         $this->hasColumn('annonceur', 'integer', 4, array(
              'type' => 'integer',
