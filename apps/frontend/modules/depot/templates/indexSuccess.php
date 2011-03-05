@@ -1,39 +1,24 @@
 <?php slot( 'url_annonce', url_for( 'listing/index?r=0' ) ) ?>
-<style>
-#depot th {
-	width: 100px;
-}
-</style>
+<?php use_stylesheet( 'depot' )?>
 <div id="depot">
-<form action="<?php echo url_for('depot/index') ?>" method="POST">
+<div class="maintext">
+	<strong>Déposer une annonce sur Le<s>bon</s>goodcoin.fr est GRATUIT. Votre annonce sera validée par notre équipe éditoriale avant mise en ligne. Elle restera sur le site pendant 60 jours. Pendant cette période, vous pourrez la supprimer à tout moment.</strong>
+</div>
+<?php if( $oForm->hasErrors() ): ?>
+<div class="global error">Attention : le formulaire comporte des erreurs.</div>
+<?php endif; ?>
+<form action="<?php echo url_for('depot/create') ?>" method="POST">
 <?php echo $oForm->renderHiddenFields() ?>
-<fieldset><legend>Informations</legend>
-<table>
-<?php echo $oForm[ 'categorie' ]->renderRow() ?>
-<?php echo $oForm[ 'type_annonce' ]->renderRow() ?>
-<?php echo $oForm[ 'titre' ]->renderRow() ?>
-<?php echo $oForm[ 'contenu' ]->renderRow() ?>
-<?php echo $oForm[ 'prix' ]->renderRow() ?>
-<?php echo $oForm[ 'telephone' ]->renderRow() ?>
-</table>
-</fieldset>
-<fieldset><legend>Localisation</legend>
-<table>
-<?php echo $oForm[ 'region' ]->renderRow() ?>
-<?php echo $oForm[ 'departement' ]->renderRow() ?>
-<?php echo $oForm[ 'code_postal' ]->renderRow() ?>
-<?php echo $oForm[ 'ville' ]->renderRow() ?>
-</table>
-</fieldset>
-<fieldset><legend>Annonceur</legend>
-<table>
-<?php echo $oForm[ 'mail' ]->renderRow() ?>
-</table>
-</fieldset>
-<table>
-	<tr>
-		<td colspan="2"><input type="submit" /></td>
-	</tr>
-</table>
+<?php $aChamps = array( 'categorie', 'type_annonce', 'titre', 
+'contenu', 'prix', 'telephone', 'region', 'departement', 
+'code_postal', 'ville', 'mail', 'mdp' ); ?>
+<?php foreach( $aChamps as $sChampNom ): ?>
+	<div class="cell">
+		<div><?php echo $oForm[ $sChampNom ]->renderLabel() ?></div>
+		<div><?php echo $oForm[ $sChampNom ] ?></div>	
+		<div class="error"><?php echo $oForm[ $sChampNom ]->renderError() ?></div>
+	</div>
+<?php endforeach; ?>
+<input type="submit" value="valider" />
 </form>
 </div>

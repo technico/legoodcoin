@@ -33,17 +33,30 @@ class listingActions extends sfActions
     {
     	$this->sRegion = ($this->sRegion <= '0') ? null : $this->sRegion;
     	
-    	if( $this->sRegion !== null )
-    	{
-    		$this->sNomRegion = Doctrine::getTable( 'Region' )->find( $this->sRegion )->getNom();
+    	if( $this->sRegion !== null ) {
+    		$this->sNomRegion = Doctrine::getTable( 'Region' )->find( $this->sRegion );
+    		
+    		if( $this->sNomRegion ) 
+    		{
+    			$this->sNomRegion = Doctrine::getTable( 'Region' )->find( $this->sRegion )->getNom();
+    		}
+    		else
+    		{
+    			$this->sNomRegion = Doctrine::getTable( 'Departement' )->find( $this->sRegion )->getNom();
+    		}
+    		
+    		//HACK departement
+    		$this->aRegions   = Doctrine::getTable( 'Departement' )->findALl();	
     	}
     }
-    
+ //var_dump( $this->sNomRegion, $this->sRegion );
     $oQuery = $oFilters->buildQuery( 
     		array ( 'titre' => array ( 'text' => $this->sTitre, ), 
     		        'categorie' => $this->sCategorie, 
     		        'etat_de_validation' => 'accepted',
-    		        'region'    => $this->sRegion) ) ;
+    		        /*'region'    => $this->sRegion*/) ) ;
+    		if($this->sRegion)
+	$oQuery = $oQuery->addWhere( '(region = ? OR departement = ?)', array( $this->sRegion, $this->sRegion ) );   
     		
     $oQuery->addOrderBy( 'date_control DESC' );
     

@@ -13,10 +13,10 @@ Annonce:
     titre: 'Je vend ma super jolie bmw !'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_2
     date_control: '2011-03-04 04:07:48'
@@ -28,10 +28,10 @@ Annonce:
     titre: 'Chaussures à talons vernies'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -43,10 +43,10 @@ Annonce:
     titre: 'Cherche bibliothèque pour enfant ronde, blanche'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-03-04 04:04:38'
@@ -58,10 +58,10 @@ Annonce:
     titre: 'Recherche caisse transport chien L ou XL'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -73,10 +73,10 @@ Annonce:
     titre: '[specimen] Annonce super bien'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-03-04 04:09:13'
@@ -88,10 +88,10 @@ Annonce:
     titre: 'Rasoire fille'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -103,7 +103,7 @@ Annonce:
     titre: 'Ceinture noir'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
@@ -118,10 +118,10 @@ Annonce:
     titre: 'Sac papier Or et Argent'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -133,10 +133,10 @@ Annonce:
     titre: Bottines
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -148,10 +148,10 @@ Annonce:
     titre: 'Chaussures à talons vernies'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -163,10 +163,10 @@ Annonce:
     titre: 'Piano déco'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -178,7 +178,7 @@ Annonce:
     titre: 'Range dossiers'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_75
@@ -193,10 +193,10 @@ Annonce:
     titre: 'Meuble informatique'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -208,7 +208,7 @@ Annonce:
     titre: 'Ensemble table basse "bar" + Meuble TV'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_75
@@ -223,10 +223,10 @@ Annonce:
     titre: 'Table basse design rectangle neuf ds carton'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-03-04 04:14:29'
@@ -238,7 +238,7 @@ Annonce:
     titre: 'Cherche contour de cheminée Interior''s'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_75
@@ -253,7 +253,7 @@ Annonce:
     titre: 'Meuble lit avec son armoire'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
@@ -268,7 +268,7 @@ Annonce:
     titre: 'Cage de voyage Chien agréée Air France'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
@@ -283,7 +283,7 @@ Annonce:
     titre: 'Canes barbaries'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
@@ -298,10 +298,10 @@ Annonce:
     titre: Aquarium
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -313,10 +313,10 @@ Annonce:
     titre: 'Cherche pré pour mini bouc'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     Administrateur: Administrateur_1
@@ -329,10 +329,10 @@ Annonce:
     titre: 'Recherche chaton a donné'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     Administrateur: Administrateur_1
@@ -345,28 +345,29 @@ Annonce:
     titre: 'Recherche bouledogue francais'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
   Annonce_25:
-    etat_de_validation: wait
+    etat_de_validation: rejected
     ville: ''
     code_postal: ''
     contenu: ''
     titre: 'Cherche chaton femelle'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
-    date_control: '2011-02-23 09:40:55'
+    Administrateur: Administrateur_1
+    date_control: '2011-03-06 08:48:34'
   Annonce_26:
     etat_de_validation: accepted
     ville: ''
@@ -375,7 +376,7 @@ Annonce:
     titre: 'Recherche caisse transport chien L ou XL'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_75
@@ -390,7 +391,7 @@ Annonce:
     titre: Cheval/Poney
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
@@ -405,10 +406,10 @@ Annonce:
     titre: 'Je recherche des guppy'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -420,28 +421,29 @@ Annonce:
     titre: 'Pince Certisseuse'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
   Annonce_30:
-    etat_de_validation: wait
+    etat_de_validation: rejected
     ville: ''
     code_postal: ''
     contenu: ''
     titre: 'Lavabo avec robinet'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
-    date_control: '2011-02-23 09:40:55'
+    Administrateur: Administrateur_1
+    date_control: '2011-03-06 10:17:21'
   Annonce_31:
     etat_de_validation: rejected
     ville: ''
@@ -450,7 +452,7 @@ Annonce:
     titre: 'Double vitrage 4-6-4'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_75
@@ -458,50 +460,53 @@ Annonce:
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
   Annonce_32:
-    etat_de_validation: wait
+    etat_de_validation: rejected
     ville: ''
     code_postal: ''
     contenu: ''
     titre: Argile
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_75
     telephone: '0674342567'
     Annonceur: Annonceur_1
-    date_control: '2011-02-23 09:40:55'
+    Administrateur: Administrateur_1
+    date_control: '2011-03-06 14:38:36'
   Annonce_33:
-    etat_de_validation: wait
+    etat_de_validation: rejected
     ville: ''
     code_postal: ''
     contenu: ''
     titre: Argile
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_75
     telephone: '0674342567'
     Annonceur: Annonceur_1
-    date_control: '2011-02-23 09:40:55'
+    Administrateur: Administrateur_1
+    date_control: '2011-03-06 14:38:43'
   Annonce_34:
-    etat_de_validation: wait
+    etat_de_validation: rejected
     ville: ''
     code_postal: ''
     contenu: ''
     titre: 'Recherche laine de verre'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
-    date_control: '2011-02-23 09:40:55'
+    Administrateur: Administrateur_1
+    date_control: '2011-03-06 15:57:55'
   Annonce_35:
     etat_de_validation: wait
     ville: ''
@@ -510,7 +515,7 @@ Annonce:
     titre: 'Miroir salle de bain'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
@@ -525,10 +530,10 @@ Annonce:
     titre: 'Volet electique alu pour porte d'' entree'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -540,10 +545,10 @@ Annonce:
     titre: 'Surface a louer minimum 30m2 recherche'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -555,10 +560,10 @@ Annonce:
     titre: 'Lot de 2 CD Jazz'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -570,7 +575,7 @@ Annonce:
     titre: 'Maxi 45T Mirwais Naïve Song'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_75
@@ -585,7 +590,7 @@ Annonce:
     titre: 'Ourson chateau d''artigny'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
@@ -600,10 +605,10 @@ Annonce:
     titre: 'Plaque Immatriculation Américaine Dakota du Nord'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -615,10 +620,10 @@ Annonce:
     titre: 'Poupées anciennes porcelaine'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -630,7 +635,7 @@ Annonce:
     titre: 'CPA LOCHES Place du Marché au Blé'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
@@ -645,7 +650,7 @@ Annonce:
     titre: 'Recherche carte disney auchan n° 55'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
@@ -660,10 +665,10 @@ Annonce:
     titre: '5 francs Hercule 1875 petit A'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -675,10 +680,10 @@ Annonce:
     titre: '2 francs ceres 1887 A'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -690,10 +695,10 @@ Annonce:
     titre: 'Document Automoto'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -705,7 +710,7 @@ Annonce:
     titre: 'Colocation grans'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_75
@@ -720,10 +725,10 @@ Annonce:
     titre: 'Urgent cherche sous location paris nov'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -735,10 +740,10 @@ Annonce:
     titre: 'Chercher jeu ps2 rayman contre les lapins crétins'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -750,7 +755,7 @@ Annonce:
     titre: 'Volant Officiel Microsoft XBOX 360 ou Drive FX'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
@@ -765,10 +770,10 @@ Annonce:
     titre: 'Paire de double rideaux'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -780,10 +785,10 @@ Annonce:
     titre: 'Tapis épais colorado'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -795,10 +800,10 @@ Annonce:
     titre: 'Plaque de porte "chambre'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -810,10 +815,10 @@ Annonce:
     titre: 'Petite gaziniere'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -825,7 +830,7 @@ Annonce:
     titre: 'Chercher gazinière a donner pour mettre ds garage'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_75
@@ -840,10 +845,10 @@ Annonce:
     titre: 'Maxi scooter'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -855,10 +860,10 @@ Annonce:
     titre: 'Cherche tout travaux de maçonnerie'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -870,10 +875,10 @@ Annonce:
     titre: 'Disponible pour travailler'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -885,10 +890,10 @@ Annonce:
     titre: 'MANUCURE mains et pieds'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -900,10 +905,10 @@ Annonce:
     titre: 'Recherche d emploi'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -915,7 +920,7 @@ Annonce:
     titre: 'Serveur en extra repas / mariage/ association'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_75
@@ -930,10 +935,10 @@ Annonce:
     titre: 'Étudiante cherche job'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -945,7 +950,7 @@ Annonce:
     titre: 'Recherche emploi à temps partiel'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
@@ -960,10 +965,10 @@ Annonce:
     titre: 'Recheche un emploi dans le batiment'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -975,7 +980,7 @@ Annonce:
     titre: 'Cheche travail week-end'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
@@ -990,10 +995,10 @@ Annonce:
     titre: 'Démarreur pour peugeot 309 diesel'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1005,10 +1010,10 @@ Annonce:
     titre: 'Pare Choc avant Seat Ibiza -99(CZ 501100)'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1020,10 +1025,10 @@ Annonce:
     titre: 'Cherche pieces opel admiral 1969'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1035,10 +1040,10 @@ Annonce:
     titre: 'Jantes BMW'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1050,10 +1055,10 @@ Annonce:
     titre: 'Manteau "motomod" taille fo = 34-36'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1065,10 +1070,10 @@ Annonce:
     titre: 'Boite à gant & cache sous volant Peugeot 406'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1080,10 +1085,10 @@ Annonce:
     titre: 'Compteur smiths'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1095,10 +1100,10 @@ Annonce:
     titre: '2 jantes tôle citroën BX'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1110,10 +1115,10 @@ Annonce:
     titre: 'PORTE SKI mercedes'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1125,10 +1130,10 @@ Annonce:
     titre: 'Recherche pare choc avant Ford escort année 1995'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1140,10 +1145,10 @@ Annonce:
     titre: 'Pare choc vert foncé de laguna phase1'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1155,10 +1160,10 @@ Annonce:
     titre: '3 refroidisseurs d''huile de 2ch'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1170,10 +1175,10 @@ Annonce:
     titre: 'Barriere securite cheminee'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1185,10 +1190,10 @@ Annonce:
     titre: 'Housse bebe pour siege auto'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1200,10 +1205,10 @@ Annonce:
     titre: 'Table a langer'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1215,10 +1220,10 @@ Annonce:
     titre: 'Habillage pluie et canopy mac laren rally twin'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1230,7 +1235,7 @@ Annonce:
     titre: 'Cherche parents ou ass mat'' pour équipements bébé'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
@@ -1245,7 +1250,7 @@ Annonce:
     titre: 'Lot vetement fille 6 mois'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
@@ -1260,10 +1265,10 @@ Annonce:
     titre: Chanceliere
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1275,10 +1280,10 @@ Annonce:
     titre: 'Cherche poussette bébé comfort ou loola'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1290,10 +1295,10 @@ Annonce:
     titre: Poussette
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1305,7 +1310,7 @@ Annonce:
     titre: 'Garde boue avant raz de roue acerbis noir'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_75
@@ -1320,7 +1325,7 @@ Annonce:
     titre: 'Cylindre type origine derbi senda'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
@@ -1335,10 +1340,10 @@ Annonce:
     titre: 'Chercher typhoon pour piece ou autre'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1350,10 +1355,10 @@ Annonce:
     titre: 'Filtre à air BMC R1 2004 à 2006'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1365,10 +1370,10 @@ Annonce:
     titre: 'Carton de piece de sym 4 temps'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1380,10 +1385,10 @@ Annonce:
     titre: 'Diver piece de sym 4 temps'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1395,10 +1400,10 @@ Annonce:
     titre: 'Recherche compteur huret'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1410,10 +1415,10 @@ Annonce:
     titre: 'Carenage 125 rs'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1425,7 +1430,7 @@ Annonce:
     titre: 'Collecteur echappement ltz 400'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
@@ -1440,7 +1445,7 @@ Annonce:
     titre: 'ORDINATEUR Pentium core2duo/CG 512Mo/dd160Go/ECRAN'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
@@ -1455,7 +1460,7 @@ Annonce:
     titre: 'Processeur Intel Pentium E 2180 2Ghz LGA 775'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
@@ -1470,10 +1475,10 @@ Annonce:
     titre: 'Piano weinbach'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1485,10 +1490,10 @@ Annonce:
     titre: 'Korg Nano Kontrol'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1500,10 +1505,10 @@ Annonce:
     titre: 'DINKY TOYS 1945 1947 roue metal Bus Jeep'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1515,10 +1520,10 @@ Annonce:
     titre: 'Jeu secret girl'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1530,10 +1535,10 @@ Annonce:
     titre: 'Circuit catronic'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1545,10 +1550,10 @@ Annonce:
     titre: 'P''tit lot de cartes yu gi oh chrysalide'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1560,10 +1565,10 @@ Annonce:
     titre: 'Souris verte'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1575,10 +1580,10 @@ Annonce:
     titre: 'Lot de jeux premier age'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1590,10 +1595,10 @@ Annonce:
     titre: 'Petit escargot'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1605,10 +1610,10 @@ Annonce:
     titre: 'Cartes Carrefour Dreamworks (recherche)'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1620,10 +1625,10 @@ Annonce:
     titre: 'L''officiel du marché de la miniature 2007'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1635,10 +1640,10 @@ Annonce:
     titre: 'Livre bts neuf assistant manager castel dijon'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1650,10 +1655,10 @@ Annonce:
     titre: 'Livre "montbron en charente"'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1665,7 +1670,7 @@ Annonce:
     titre: Roman
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
@@ -1680,10 +1685,10 @@ Annonce:
     titre: 'Roman de Bernard Simonay "Princesse Maorie"'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1695,10 +1700,10 @@ Annonce:
     titre: 'Gilbert Tournier Le Rhône fleuve dieu'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1710,10 +1715,10 @@ Annonce:
     titre: 'Recherche T1 bis à Lyon'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1725,10 +1730,10 @@ Annonce:
     titre: 'Loue loft T5+ 110 M2. 10 min centre ville/ TGV'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1740,10 +1745,10 @@ Annonce:
     titre: 'Couple militaire/location'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1755,10 +1760,10 @@ Annonce:
     titre: 'Urgent cherche maison sur fouesnant'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1770,10 +1775,10 @@ Annonce:
     titre: 'Recherche studio(avec mezzanine)ou Appartement t2'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1785,7 +1790,7 @@ Annonce:
     titre: 'Recherche maison avec minimum 2 chambres'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_75
@@ -1800,7 +1805,7 @@ Annonce:
     titre: 'Cherche F2 ou F3'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_75
@@ -1815,7 +1820,7 @@ Annonce:
     titre: 'Cherche maison a louer'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
@@ -1830,10 +1835,10 @@ Annonce:
     titre: 'Location berck'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1845,7 +1850,7 @@ Annonce:
     titre: 'Pompe électrique fontaine de nettoyage'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
@@ -1860,10 +1865,10 @@ Annonce:
     titre: Bracelet
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1875,7 +1880,7 @@ Annonce:
     titre: 'Magnifique parure negafa'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_75
@@ -1890,7 +1895,7 @@ Annonce:
     titre: 'Yamaha 850 TDM'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
@@ -1905,10 +1910,10 @@ Annonce:
     titre: 'Cadre 103 chrome'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1920,10 +1925,10 @@ Annonce:
     titre: 'Velo vtc femme'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1935,10 +1940,10 @@ Annonce:
     titre: 'Kymco Agility'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1950,10 +1955,10 @@ Annonce:
     titre: 'Ducati 748 ou 916'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1965,7 +1970,7 @@ Annonce:
     titre: 'Recherches piéces 1500 goldwing honda se'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_75
@@ -1980,10 +1985,10 @@ Annonce:
     titre: 'Recherche trail, scooter 50 cm3 à 125 cm3 en panne'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1995,10 +2000,10 @@ Annonce:
     titre: 'Cherche carte marine'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -2010,10 +2015,10 @@ Annonce:
     titre: 'Pêche promenade'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -2025,10 +2030,10 @@ Annonce:
     titre: 'Groupe anachid'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -2040,10 +2045,10 @@ Annonce:
     titre: 'Vos travaux'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -2055,10 +2060,10 @@ Annonce:
     titre: 'CHERCHE Jeune Fille au Pair'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -2070,10 +2075,10 @@ Annonce:
     titre: Depanneuse
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -2085,10 +2090,10 @@ Annonce:
     titre: 'Entretien et Fleurissement de vos sepultures'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -2100,10 +2105,10 @@ Annonce:
     titre: 'Recherche maillot rct domicile 2007 2008'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -2115,10 +2120,10 @@ Annonce:
     titre: 'Accessoire planche haleakala'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -2130,10 +2135,10 @@ Annonce:
     titre: 'Hosse en cuir pour GPS michelin XT950 ou 930'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -2145,10 +2150,10 @@ Annonce:
     titre: 'Echange sony ericsson contre blackberry'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -2160,10 +2165,10 @@ Annonce:
     titre: '504 benne'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -2175,10 +2180,10 @@ Annonce:
     titre: 'Appartement T3 ? Lille Vauban Université Catho'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -2190,10 +2195,10 @@ Annonce:
     titre: 'Longère proche Cloyes sur loir 28220'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -2205,10 +2210,10 @@ Annonce:
     titre: 'Terrain 427 m² (56190)'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -2220,10 +2225,10 @@ Annonce:
     titre: 'Maison de campagne proximité de Landerneau'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -2235,7 +2240,7 @@ Annonce:
     titre: 'Cherche villa à 66140 Canet-Plage'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
@@ -2250,10 +2255,10 @@ Annonce:
     titre: 'Terrain 410 m² (56190)'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -2265,7 +2270,7 @@ Annonce:
     titre: 'Appartement 2 pièces à ETAMPES (91)'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
@@ -2280,10 +2285,10 @@ Annonce:
     titre: 'Recherche appartement ou maison'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -2295,10 +2300,10 @@ Annonce:
     titre: 'Recherche appartement à Saint pee sur nivelle'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -2310,10 +2315,10 @@ Annonce:
     titre: 'Pavillon de 5 pièces'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -2325,10 +2330,10 @@ Annonce:
     titre: 'Appartement type loft'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -2340,7 +2345,7 @@ Annonce:
     titre: 'Studio 17m2'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
@@ -2355,10 +2360,10 @@ Annonce:
     titre: 'Appartement F4 sur Meaux quartier Clémenceau'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -2370,10 +2375,10 @@ Annonce:
     titre: 'Recherche maison sur Montauban ou Caussade'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -2385,7 +2390,7 @@ Annonce:
     titre: 'Chaussure fille neuve'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_75
@@ -2400,10 +2405,10 @@ Annonce:
     titre: 'Chausson enfant'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -2415,10 +2420,10 @@ Annonce:
     titre: Survêtement
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -2430,10 +2435,10 @@ Annonce:
     titre: 'Pantalon kenzo femme'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -2445,10 +2450,10 @@ Annonce:
     titre: 'Garçon 4 ans - okaidi et sergent major'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -2460,10 +2465,10 @@ Annonce:
     titre: 'Pull Jennyfer'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -2475,7 +2480,7 @@ Annonce:
     titre: 'Sandale :30'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_75
@@ -2490,10 +2495,10 @@ Annonce:
     titre: Blouson
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -2505,7 +2510,7 @@ Annonce:
     titre: 'Vêtement grossesse - Pantalon Taille 44 (bb46)'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_75
@@ -2520,7 +2525,7 @@ Annonce:
     titre: 'Pull femme'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_75
@@ -2535,10 +2540,10 @@ Annonce:
     titre: 'Rachat de vos vieux véhicules'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -2550,10 +2555,10 @@ Annonce:
     titre: 'Peugeot ou renault'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -2568,7 +2573,7 @@ Annonce:
     type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -2580,10 +2585,10 @@ Annonce:
     titre: 'BMW M3 Coupe M Xenon'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -2595,7 +2600,7 @@ Annonce:
     titre: 'Cherche 206cc 2800 euros maxi'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: ''
+    type_annonce: 'offre'
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
@@ -2613,7 +2618,7 @@ Annonce:
     type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-25 11:29:45'
@@ -2628,7 +2633,7 @@ Annonce:
     type_annonce: demande
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-25 11:30:03'
@@ -2646,34 +2651,6 @@ Annonce:
     Departement: Departement_75
     telephone: '0674342567'
     date_control: '2011-03-01 16:17:41'
-  Annonce_178:
-    etat_de_validation: wait
-    ville: créteil
-    code_postal: '94000'
-    contenu: 'PNEU NEUF CONTINENTAL VANCO - 6 EN 195/65 R 16 C 100 / 98 T DE RENAULT TRAFIC DU 12 / 2006 . ETAIT EN ROUE DE SECOURS ET JAMAIS ROULE . ATTENTION PLUS FABRIQUE ET PLUS DISPONIBLE . IDEAL EN ROUE DE SECOURS OU CELUI QUI EN A DEJA UN . PRIX 100 EUROS . TEL 06 11 27 Trafic pneu neuf contInental vanco 6 195/65r16c08 75'
-    titre: 'Trafic pneu neuf contInental vanco 6 195/65r16c'
-    prix: '121.00'
-    est_abusif: '0'
-    type_annonce: offre
-    Categorie: Categorie_2
-    Region: Region_1
-    Departement: Departement_75
-    telephone: '0611270875'
-    date_control: null
-  Annonce_179:
-    etat_de_validation: wait
-    ville: créteil
-    code_postal: '94000'
-    contenu: 'PNEU NEUF CONTINENTAL VANCO - 6 EN 195/65 R 16 C 100 / 98 T DE RENAULT TRAFIC DU 12 / 2006 . ETAIT EN ROUE DE SECOURS ET JAMAIS ROULE . ATTENTION PLUS FABRIQUE ET PLUS DISPONIBLE . IDEAL EN ROUE DE SECOURS OU CELUI QUI EN A DEJA UN . PRIX 100 EUROS . TEL 06 11 27 Trafic pneu neuf contInental vanco 6 195/65r16c08 75'
-    titre: 'Trafic pneu neuf contInental vanco 6 195/65r16c'
-    prix: '121.00'
-    est_abusif: '0'
-    type_annonce: offre
-    Categorie: Categorie_2
-    Region: Region_1
-    Departement: Departement_75
-    telephone: '0611270875'
-    date_control: null
   Annonce_180:
     etat_de_validation: accepted
     ville: créteil
@@ -2685,10 +2662,24 @@ Annonce:
     type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0611270875'
     Annonceur: Annonceur_2
     date_control: '2011-03-04 15:09:34'
+  Annonce_185:
+    etat_de_validation: wait
+    ville: créteil
+    code_postal: '94000'
+    contenu: 'Petite boufonne'
+    titre: 'Estelle est une boufonne'
+    prix: '121.00'
+    est_abusif: '0'
+    type_annonce: offre
+    Categorie: Categorie_1
+    Region: Region_1
+    Departement: Departement_75
+    telephone: '0121321150'
+    date_control: null
 Annonceur:
   Annonceur_1:
     mail: kratos@godofwar.com
@@ -2703,8 +2694,19 @@ Categorie:
     nom: voitures
 Departement:
   Departement_75:
+    code_dep: 75
     nom: Paris
+    Region: Region_1
+  Departement_92:
+    code_dep: 92
+    nom: 'Hauts de Seine'
+    Region: Region_1
+  Departement_94:
+    code_dep: 94
+    nom: 'Val de Marne'
     Region: Region_1
 Region:
   Region_1:
     nom: 'Ile de France'
+  Region_2:
+    nom: 'Provence-Alpes-Côte d Azur'
