@@ -1,5 +1,5 @@
 <?php use_stylesheet ('listing.css')?>
-<?php use_helper('Date') ?>
+<?php use_helper('Date'); ?>
 <?php slot( 'zone_geo', $sRegion === NULL ? 'Toute la France' : $sNomRegion ) ?>
 <?php slot( 'url_annonce', url_for( 'listing/index?r='.( $sRegion === NULL ? '0' : $sRegion ) ) ) ?>
 <div id="listing">
@@ -8,9 +8,10 @@
         <div id="search" style="margin-top:14px">
             <span>
                 <input type="text" maxlength="30" size="30" name="t" value="<?php echo $sTitre; ?>" />
-                <select name="r"><?php include_partial( 'regions', array( 'aRegions' => $aRegions, 'sRegion' => $sRegion ) ) ?></select>
+                <select name="r"><?php include_partial( 'regions', array( 'aRegions' => $aRegions, 'sRegion' => $sRegion, 'sNomRegion' => $sNomRegion ) ) ?></select>
                 <input type="submit" value="Chercher" />
             </span>
+            <?php if( $sf_user->isAuthenticated() ):?><div><label><input type="checkbox"  />Mes annonces uniquement</label></div><?php endif ?>
         </div>
 	</form>     
 <?php if( count( $aAnnonces ) === 0 ): ?>

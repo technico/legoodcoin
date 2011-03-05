@@ -11,5 +11,7 @@ class AnnonceurForm extends BaseAnnonceurForm
 {
   public function configure()
   {
+  	$this->validatorSchema['mail']->setMessage( 'required', 'Veuillez indiquer votre mail.' );
+  	$this->validatorSchema['mdp']->setMessage( 'required', 'Veuillez renseigner un mot de passe.' );
   }
 }

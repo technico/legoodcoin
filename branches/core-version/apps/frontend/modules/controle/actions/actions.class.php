@@ -17,6 +17,7 @@ class controleActions extends sfActions
   	$this->Annonce = $oTableAnnonce->findWait();
   	
   	$this->sHtmlControle = true;
+  	$this->bIsAdmin = true;
   	
   	$this->setTemplate( 'index', 'detail' );
   }
