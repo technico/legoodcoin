@@ -13,7 +13,7 @@ Annonce:
     titre: 'Je vend ma super jolie bmw !'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_94
@@ -28,7 +28,7 @@ Annonce:
     titre: 'Chaussures à talons vernies'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_94
@@ -43,7 +43,7 @@ Annonce:
     titre: 'Cherche bibliothèque pour enfant ronde, blanche'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_92
@@ -58,7 +58,7 @@ Annonce:
     titre: 'Recherche caisse transport chien L ou XL'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_92
@@ -73,7 +73,7 @@ Annonce:
     titre: '[specimen] Annonce super bien'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_94
@@ -88,7 +88,7 @@ Annonce:
     titre: 'Rasoire fille'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_94
@@ -103,7 +103,7 @@ Annonce:
     titre: 'Ceinture noir'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
@@ -118,7 +118,7 @@ Annonce:
     titre: 'Sac papier Or et Argent'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_94
@@ -133,7 +133,7 @@ Annonce:
     titre: Bottines
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_94
@@ -148,7 +148,7 @@ Annonce:
     titre: 'Chaussures à talons vernies'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_94
@@ -163,7 +163,7 @@ Annonce:
     titre: 'Piano déco'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_94
@@ -178,7 +178,7 @@ Annonce:
     titre: 'Range dossiers'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_75
@@ -193,7 +193,7 @@ Annonce:
     titre: 'Meuble informatique'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_94
@@ -208,7 +208,7 @@ Annonce:
     titre: 'Ensemble table basse "bar" + Meuble TV'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_75
@@ -223,14 +223,14 @@ Annonce:
     titre: 'Table basse design rectangle neuf ds carton'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-03-04 04:14:29'
-  Annonce_17:
+  Annonce_16:
     etat_de_validation: accepted
     ville: ''
     code_postal: ''
@@ -238,14 +238,14 @@ Annonce:
     titre: 'Cherche contour de cheminée Interior''s'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_75
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_18:
+  Annonce_17:
     etat_de_validation: accepted
     ville: ''
     code_postal: ''
@@ -253,14 +253,14 @@ Annonce:
     titre: 'Meuble lit avec son armoire'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-03-04 16:15:46'
-  Annonce_19:
+  Annonce_18:
     etat_de_validation: accepted
     ville: ''
     code_postal: ''
@@ -268,7 +268,22 @@ Annonce:
     titre: 'Cage de voyage Chien agréée Air France'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
+    Categorie: Categorie_2
+    Region: Region_1
+    Departement: Departement_75
+    telephone: '0674342567'
+    Annonceur: Annonceur_1
+    date_control: '2011-02-23 09:40:55'
+  Annonce_19:
+    etat_de_validation: rejected
+    ville: ''
+    code_postal: ''
+    contenu: ''
+    titre: 'Canes barbaries'
+    prix: '0.00'
+    est_abusif: '0'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
@@ -280,32 +295,17 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Canes barbaries'
-    prix: '0.00'
-    est_abusif: '0'
-    type_annonce: 'offre'
-    Categorie: Categorie_2
-    Region: Region_1
-    Departement: Departement_75
-    telephone: '0674342567'
-    Annonceur: Annonceur_1
-    date_control: '2011-02-23 09:40:55'
-  Annonce_21:
-    etat_de_validation: rejected
-    ville: ''
-    code_postal: ''
-    contenu: ''
     titre: Aquarium
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_22:
+  Annonce_21:
     etat_de_validation: accepted
     ville: ''
     code_postal: ''
@@ -313,7 +313,7 @@ Annonce:
     titre: 'Cherche pré pour mini bouc'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_94
@@ -321,7 +321,7 @@ Annonce:
     Annonceur: Annonceur_1
     Administrateur: Administrateur_1
     date_control: '2011-03-05 09:18:07'
-  Annonce_23:
+  Annonce_22:
     etat_de_validation: rejected
     ville: ''
     code_postal: ''
@@ -329,7 +329,7 @@ Annonce:
     titre: 'Recherche chaton a donné'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_94
@@ -337,7 +337,7 @@ Annonce:
     Annonceur: Annonceur_1
     Administrateur: Administrateur_1
     date_control: '2011-03-05 09:19:55'
-  Annonce_24:
+  Annonce_23:
     etat_de_validation: accepted
     ville: ''
     code_postal: ''
@@ -345,14 +345,14 @@ Annonce:
     titre: 'Recherche bouledogue francais'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_25:
+  Annonce_24:
     etat_de_validation: rejected
     ville: ''
     code_postal: ''
@@ -360,7 +360,7 @@ Annonce:
     titre: 'Cherche chaton femelle'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_94
@@ -368,7 +368,7 @@ Annonce:
     Annonceur: Annonceur_1
     Administrateur: Administrateur_1
     date_control: '2011-03-06 08:48:34'
-  Annonce_26:
+  Annonce_25:
     etat_de_validation: accepted
     ville: ''
     code_postal: ''
@@ -376,14 +376,14 @@ Annonce:
     titre: 'Recherche caisse transport chien L ou XL'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_75
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_27:
+  Annonce_26:
     etat_de_validation: rejected
     ville: ''
     code_postal: ''
@@ -391,10 +391,25 @@ Annonce:
     titre: Cheval/Poney
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
+    telephone: '0674342567'
+    Annonceur: Annonceur_1
+    date_control: '2011-02-23 09:40:55'
+  Annonce_27:
+    etat_de_validation: accepted
+    ville: ''
+    code_postal: ''
+    contenu: ''
+    titre: 'Je recherche des guppy'
+    prix: '0.00'
+    est_abusif: '0'
+    type_annonce: offre
+    Categorie: Categorie_1
+    Region: Region_1
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -403,32 +418,17 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Je recherche des guppy'
-    prix: '0.00'
-    est_abusif: '0'
-    type_annonce: 'offre'
-    Categorie: Categorie_1
-    Region: Region_1
-    Departement: Departement_94
-    telephone: '0674342567'
-    Annonceur: Annonceur_1
-    date_control: '2011-02-23 09:40:55'
-  Annonce_29:
-    etat_de_validation: accepted
-    ville: ''
-    code_postal: ''
-    contenu: ''
     titre: 'Pince Certisseuse'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_30:
+  Annonce_29:
     etat_de_validation: rejected
     ville: ''
     code_postal: ''
@@ -436,7 +436,7 @@ Annonce:
     titre: 'Lavabo avec robinet'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_92
@@ -444,7 +444,7 @@ Annonce:
     Annonceur: Annonceur_1
     Administrateur: Administrateur_1
     date_control: '2011-03-06 10:17:21'
-  Annonce_31:
+  Annonce_30:
     etat_de_validation: rejected
     ville: ''
     code_postal: ''
@@ -452,13 +452,29 @@ Annonce:
     titre: 'Double vitrage 4-6-4'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_75
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
+  Annonce_31:
+    etat_de_validation: rejected
+    ville: ''
+    code_postal: ''
+    contenu: ''
+    titre: Argile
+    prix: '0.00'
+    est_abusif: '0'
+    type_annonce: offre
+    Categorie: Categorie_1
+    Region: Region_1
+    Departement: Departement_75
+    telephone: '0674342567'
+    Annonceur: Annonceur_1
+    Administrateur: Administrateur_1
+    date_control: '2011-03-06 14:38:36'
   Annonce_32:
     etat_de_validation: rejected
     ville: ''
@@ -467,23 +483,7 @@ Annonce:
     titre: Argile
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
-    Categorie: Categorie_1
-    Region: Region_1
-    Departement: Departement_75
-    telephone: '0674342567'
-    Annonceur: Annonceur_1
-    Administrateur: Administrateur_1
-    date_control: '2011-03-06 14:38:36'
-  Annonce_33:
-    etat_de_validation: rejected
-    ville: ''
-    code_postal: ''
-    contenu: ''
-    titre: Argile
-    prix: '0.00'
-    est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_75
@@ -491,7 +491,7 @@ Annonce:
     Annonceur: Annonceur_1
     Administrateur: Administrateur_1
     date_control: '2011-03-06 14:38:43'
-  Annonce_34:
+  Annonce_33:
     etat_de_validation: rejected
     ville: ''
     code_postal: ''
@@ -499,7 +499,7 @@ Annonce:
     titre: 'Recherche laine de verre'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_92
@@ -507,7 +507,7 @@ Annonce:
     Annonceur: Annonceur_1
     Administrateur: Administrateur_1
     date_control: '2011-03-06 15:57:55'
-  Annonce_35:
+  Annonce_34:
     etat_de_validation: wait
     ville: ''
     code_postal: ''
@@ -515,14 +515,14 @@ Annonce:
     titre: 'Miroir salle de bain'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_36:
+  Annonce_35:
     etat_de_validation: accepted
     ville: ''
     code_postal: ''
@@ -530,14 +530,14 @@ Annonce:
     titre: 'Volet electique alu pour porte d'' entree'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_37:
+  Annonce_36:
     etat_de_validation: rejected
     ville: ''
     code_postal: ''
@@ -545,14 +545,14 @@ Annonce:
     titre: 'Surface a louer minimum 30m2 recherche'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_38:
+  Annonce_37:
     etat_de_validation: accepted
     ville: ''
     code_postal: ''
@@ -560,14 +560,14 @@ Annonce:
     titre: 'Lot de 2 CD Jazz'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_39:
+  Annonce_38:
     etat_de_validation: wait
     ville: ''
     code_postal: ''
@@ -575,14 +575,14 @@ Annonce:
     titre: 'Maxi 45T Mirwais Naïve Song'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_75
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_40:
+  Annonce_39:
     etat_de_validation: accepted
     ville: ''
     code_postal: ''
@@ -590,14 +590,14 @@ Annonce:
     titre: 'Ourson chateau d''artigny'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_41:
+  Annonce_40:
     etat_de_validation: rejected
     ville: ''
     code_postal: ''
@@ -605,14 +605,14 @@ Annonce:
     titre: 'Plaque Immatriculation Américaine Dakota du Nord'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_42:
+  Annonce_41:
     etat_de_validation: wait
     ville: ''
     code_postal: ''
@@ -620,14 +620,14 @@ Annonce:
     titre: 'Poupées anciennes porcelaine'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_43:
+  Annonce_42:
     etat_de_validation: accepted
     ville: ''
     code_postal: ''
@@ -635,14 +635,14 @@ Annonce:
     titre: 'CPA LOCHES Place du Marché au Blé'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_44:
+  Annonce_43:
     etat_de_validation: rejected
     ville: ''
     code_postal: ''
@@ -650,14 +650,14 @@ Annonce:
     titre: 'Recherche carte disney auchan n° 55'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_45:
+  Annonce_44:
     etat_de_validation: wait
     ville: ''
     code_postal: ''
@@ -665,14 +665,14 @@ Annonce:
     titre: '5 francs Hercule 1875 petit A'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_46:
+  Annonce_45:
     etat_de_validation: accepted
     ville: ''
     code_postal: ''
@@ -680,14 +680,14 @@ Annonce:
     titre: '2 francs ceres 1887 A'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_47:
+  Annonce_46:
     etat_de_validation: wait
     ville: ''
     code_postal: ''
@@ -695,14 +695,14 @@ Annonce:
     titre: 'Document Automoto'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_48:
+  Annonce_47:
     etat_de_validation: accepted
     ville: ''
     code_postal: ''
@@ -710,14 +710,14 @@ Annonce:
     titre: 'Colocation grans'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_75
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_49:
+  Annonce_48:
     etat_de_validation: rejected
     ville: ''
     code_postal: ''
@@ -725,14 +725,14 @@ Annonce:
     titre: 'Urgent cherche sous location paris nov'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_50:
+  Annonce_49:
     etat_de_validation: accepted
     ville: ''
     code_postal: ''
@@ -740,10 +740,25 @@ Annonce:
     titre: 'Chercher jeu ps2 rayman contre les lapins crétins'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_92
+    telephone: '0674342567'
+    Annonceur: Annonceur_1
+    date_control: '2011-02-23 09:40:55'
+  Annonce_50:
+    etat_de_validation: wait
+    ville: ''
+    code_postal: ''
+    contenu: ''
+    titre: 'Volant Officiel Microsoft XBOX 360 ou Drive FX'
+    prix: '0.00'
+    est_abusif: '0'
+    type_annonce: offre
+    Categorie: Categorie_2
+    Region: Region_1
+    Departement: Departement_75
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -752,13 +767,13 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Volant Officiel Microsoft XBOX 360 ou Drive FX'
+    titre: 'Paire de double rideaux'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -767,10 +782,10 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Paire de double rideaux'
+    titre: 'Tapis épais colorado'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_92
@@ -778,21 +793,6 @@ Annonce:
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
   Annonce_53:
-    etat_de_validation: wait
-    ville: ''
-    code_postal: ''
-    contenu: ''
-    titre: 'Tapis épais colorado'
-    prix: '0.00'
-    est_abusif: '0'
-    type_annonce: 'offre'
-    Categorie: Categorie_2
-    Region: Region_1
-    Departement: Departement_92
-    telephone: '0674342567'
-    Annonceur: Annonceur_1
-    date_control: '2011-02-23 09:40:55'
-  Annonce_54:
     etat_de_validation: rejected
     ville: ''
     code_postal: ''
@@ -800,14 +800,14 @@ Annonce:
     titre: 'Plaque de porte "chambre'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_55:
+  Annonce_54:
     etat_de_validation: wait
     ville: ''
     code_postal: ''
@@ -815,14 +815,14 @@ Annonce:
     titre: 'Petite gaziniere'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_56:
+  Annonce_55:
     etat_de_validation: accepted
     ville: ''
     code_postal: ''
@@ -830,14 +830,14 @@ Annonce:
     titre: 'Chercher gazinière a donner pour mettre ds garage'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_75
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_57:
+  Annonce_56:
     etat_de_validation: wait
     ville: ''
     code_postal: ''
@@ -845,14 +845,14 @@ Annonce:
     titre: 'Maxi scooter'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_58:
+  Annonce_57:
     etat_de_validation: rejected
     ville: ''
     code_postal: ''
@@ -860,14 +860,14 @@ Annonce:
     titre: 'Cherche tout travaux de maçonnerie'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_59:
+  Annonce_58:
     etat_de_validation: accepted
     ville: ''
     code_postal: ''
@@ -875,14 +875,14 @@ Annonce:
     titre: 'Disponible pour travailler'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_60:
+  Annonce_59:
     etat_de_validation: wait
     ville: ''
     code_postal: ''
@@ -890,14 +890,14 @@ Annonce:
     titre: 'MANUCURE mains et pieds'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_61:
+  Annonce_60:
     etat_de_validation: rejected
     ville: ''
     code_postal: ''
@@ -905,14 +905,14 @@ Annonce:
     titre: 'Recherche d emploi'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_62:
+  Annonce_61:
     etat_de_validation: accepted
     ville: ''
     code_postal: ''
@@ -920,10 +920,25 @@ Annonce:
     titre: 'Serveur en extra repas / mariage/ association'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_75
+    telephone: '0674342567'
+    Annonceur: Annonceur_1
+    date_control: '2011-02-23 09:40:55'
+  Annonce_62:
+    etat_de_validation: rejected
+    ville: ''
+    code_postal: ''
+    contenu: ''
+    titre: 'Étudiante cherche job'
+    prix: '0.00'
+    est_abusif: '0'
+    type_annonce: offre
+    Categorie: Categorie_1
+    Region: Region_1
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -932,28 +947,28 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Étudiante cherche job'
+    titre: 'Recherche emploi à temps partiel'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
-    Categorie: Categorie_1
+    type_annonce: offre
+    Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_94
+    Departement: Departement_75
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
   Annonce_64:
-    etat_de_validation: rejected
+    etat_de_validation: accepted
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Recherche emploi à temps partiel'
+    titre: 'Recheche un emploi dans le batiment'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
-    Categorie: Categorie_2
+    type_annonce: offre
+    Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -962,32 +977,17 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Recheche un emploi dans le batiment'
-    prix: '0.00'
-    est_abusif: '0'
-    type_annonce: 'offre'
-    Categorie: Categorie_1
-    Region: Region_1
-    Departement: Departement_94
-    telephone: '0674342567'
-    Annonceur: Annonceur_1
-    date_control: '2011-02-23 09:40:55'
-  Annonce_66:
-    etat_de_validation: accepted
-    ville: ''
-    code_postal: ''
-    contenu: ''
     titre: 'Cheche travail week-end'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_67:
+  Annonce_66:
     etat_de_validation: wait
     ville: ''
     code_postal: ''
@@ -995,10 +995,25 @@ Annonce:
     titre: 'Démarreur pour peugeot 309 diesel'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_94
+    telephone: '0674342567'
+    Annonceur: Annonceur_1
+    date_control: '2011-02-23 09:40:55'
+  Annonce_67:
+    etat_de_validation: rejected
+    ville: ''
+    code_postal: ''
+    contenu: ''
+    titre: 'Pare Choc avant Seat Ibiza -99(CZ 501100)'
+    prix: '0.00'
+    est_abusif: '0'
+    type_annonce: offre
+    Categorie: Categorie_2
+    Region: Region_1
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1007,13 +1022,13 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Pare Choc avant Seat Ibiza -99(CZ 501100)'
+    titre: 'Cherche pieces opel admiral 1969'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
-    Categorie: Categorie_2
+    type_annonce: offre
+    Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_92
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1022,28 +1037,28 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Cherche pieces opel admiral 1969'
+    titre: 'Jantes BMW'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
-    Categorie: Categorie_1
+    type_annonce: offre
+    Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_94
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
   Annonce_70:
-    etat_de_validation: rejected
+    etat_de_validation: wait
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Jantes BMW'
+    titre: 'Manteau "motomod" taille fo = 34-36'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_92
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1052,10 +1067,10 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Manteau "motomod" taille fo = 34-36'
+    titre: 'Boite à gant & cache sous volant Peugeot 406'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_94
@@ -1067,13 +1082,13 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Boite à gant & cache sous volant Peugeot 406'
+    titre: 'Compteur smiths'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_94
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1082,10 +1097,10 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Compteur smiths'
+    titre: '2 jantes tôle citroën BX'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_92
@@ -1097,25 +1112,25 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: '2 jantes tôle citroën BX'
+    titre: 'PORTE SKI mercedes'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
-    Categorie: Categorie_2
+    type_annonce: offre
+    Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_92
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
   Annonce_75:
-    etat_de_validation: wait
+    etat_de_validation: accepted
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'PORTE SKI mercedes'
+    titre: 'Recherche pare choc avant Ford escort année 1995'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_94
@@ -1127,32 +1142,17 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Recherche pare choc avant Ford escort année 1995'
-    prix: '0.00'
-    est_abusif: '0'
-    type_annonce: 'offre'
-    Categorie: Categorie_1
-    Region: Region_1
-    Departement: Departement_94
-    telephone: '0674342567'
-    Annonceur: Annonceur_1
-    date_control: '2011-02-23 09:40:55'
-  Annonce_77:
-    etat_de_validation: accepted
-    ville: ''
-    code_postal: ''
-    contenu: ''
     titre: 'Pare choc vert foncé de laguna phase1'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_78:
+  Annonce_77:
     etat_de_validation: rejected
     ville: ''
     code_postal: ''
@@ -1160,14 +1160,14 @@ Annonce:
     titre: '3 refroidisseurs d''huile de 2ch'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_79:
+  Annonce_78:
     etat_de_validation: wait
     ville: ''
     code_postal: ''
@@ -1175,14 +1175,14 @@ Annonce:
     titre: 'Barriere securite cheminee'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_80:
+  Annonce_79:
     etat_de_validation: accepted
     ville: ''
     code_postal: ''
@@ -1190,10 +1190,25 @@ Annonce:
     titre: 'Housse bebe pour siege auto'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_92
+    telephone: '0674342567'
+    Annonceur: Annonceur_1
+    date_control: '2011-02-23 09:40:55'
+  Annonce_80:
+    etat_de_validation: rejected
+    ville: ''
+    code_postal: ''
+    contenu: ''
+    titre: 'Table a langer'
+    prix: '0.00'
+    est_abusif: '0'
+    type_annonce: offre
+    Categorie: Categorie_1
+    Region: Region_1
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1202,32 +1217,17 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Table a langer'
-    prix: '0.00'
-    est_abusif: '0'
-    type_annonce: 'offre'
-    Categorie: Categorie_1
-    Region: Region_1
-    Departement: Departement_94
-    telephone: '0674342567'
-    Annonceur: Annonceur_1
-    date_control: '2011-02-23 09:40:55'
-  Annonce_82:
-    etat_de_validation: rejected
-    ville: ''
-    code_postal: ''
-    contenu: ''
     titre: 'Habillage pluie et canopy mac laren rally twin'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_83:
+  Annonce_82:
     etat_de_validation: accepted
     ville: ''
     code_postal: ''
@@ -1235,14 +1235,14 @@ Annonce:
     titre: 'Cherche parents ou ass mat'' pour équipements bébé'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_84:
+  Annonce_83:
     etat_de_validation: rejected
     ville: ''
     code_postal: ''
@@ -1250,14 +1250,14 @@ Annonce:
     titre: 'Lot vetement fille 6 mois'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_85:
+  Annonce_84:
     etat_de_validation: accepted
     ville: ''
     code_postal: ''
@@ -1265,14 +1265,14 @@ Annonce:
     titre: Chanceliere
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_86:
+  Annonce_85:
     etat_de_validation: wait
     ville: ''
     code_postal: ''
@@ -1280,14 +1280,14 @@ Annonce:
     titre: 'Cherche poussette bébé comfort ou loola'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_87:
+  Annonce_86:
     etat_de_validation: accepted
     ville: ''
     code_postal: ''
@@ -1295,14 +1295,14 @@ Annonce:
     titre: Poussette
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_88:
+  Annonce_87:
     etat_de_validation: wait
     ville: ''
     code_postal: ''
@@ -1310,14 +1310,14 @@ Annonce:
     titre: 'Garde boue avant raz de roue acerbis noir'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_75
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_89:
+  Annonce_88:
     etat_de_validation: accepted
     ville: ''
     code_postal: ''
@@ -1325,14 +1325,14 @@ Annonce:
     titre: 'Cylindre type origine derbi senda'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_90:
+  Annonce_89:
     etat_de_validation: wait
     ville: ''
     code_postal: ''
@@ -1340,14 +1340,14 @@ Annonce:
     titre: 'Chercher typhoon pour piece ou autre'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_91:
+  Annonce_90:
     etat_de_validation: accepted
     ville: ''
     code_postal: ''
@@ -1355,14 +1355,14 @@ Annonce:
     titre: 'Filtre à air BMC R1 2004 à 2006'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_92:
+  Annonce_91:
     etat_de_validation: rejected
     ville: ''
     code_postal: ''
@@ -1370,10 +1370,25 @@ Annonce:
     titre: 'Carton de piece de sym 4 temps'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_92
+    telephone: '0674342567'
+    Annonceur: Annonceur_1
+    date_control: '2011-02-23 09:40:55'
+  Annonce_92:
+    etat_de_validation: wait
+    ville: ''
+    code_postal: ''
+    contenu: ''
+    titre: 'Diver piece de sym 4 temps'
+    prix: '0.00'
+    est_abusif: '0'
+    type_annonce: offre
+    Categorie: Categorie_1
+    Region: Region_1
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1382,13 +1397,13 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Diver piece de sym 4 temps'
+    titre: 'Recherche compteur huret'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_94
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1397,13 +1412,13 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Recherche compteur huret'
+    titre: 'Carenage 125 rs'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_92
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1412,25 +1427,25 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Carenage 125 rs'
+    titre: 'Collecteur echappement ltz 400'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
-    Categorie: Categorie_1
+    type_annonce: offre
+    Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_94
+    Departement: Departement_75
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
   Annonce_96:
-    etat_de_validation: wait
+    etat_de_validation: rejected
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Collecteur echappement ltz 400'
+    titre: 'ORDINATEUR Pentium core2duo/CG 512Mo/dd160Go/ECRAN'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
@@ -1442,10 +1457,10 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'ORDINATEUR Pentium core2duo/CG 512Mo/dd160Go/ECRAN'
+    titre: 'Processeur Intel Pentium E 2180 2Ghz LGA 775'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
@@ -1453,21 +1468,6 @@ Annonce:
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
   Annonce_98:
-    etat_de_validation: rejected
-    ville: ''
-    code_postal: ''
-    contenu: ''
-    titre: 'Processeur Intel Pentium E 2180 2Ghz LGA 775'
-    prix: '0.00'
-    est_abusif: '0'
-    type_annonce: 'offre'
-    Categorie: Categorie_2
-    Region: Region_1
-    Departement: Departement_75
-    telephone: '0674342567'
-    Annonceur: Annonceur_1
-    date_control: '2011-02-23 09:40:55'
-  Annonce_99:
     etat_de_validation: accepted
     ville: ''
     code_postal: ''
@@ -1475,14 +1475,14 @@ Annonce:
     titre: 'Piano weinbach'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_100:
+  Annonce_99:
     etat_de_validation: wait
     ville: ''
     code_postal: ''
@@ -1490,10 +1490,25 @@ Annonce:
     titre: 'Korg Nano Kontrol'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_94
+    telephone: '0674342567'
+    Annonceur: Annonceur_1
+    date_control: '2011-02-23 09:40:55'
+  Annonce_100:
+    etat_de_validation: rejected
+    ville: ''
+    code_postal: ''
+    contenu: ''
+    titre: 'DINKY TOYS 1945 1947 roue metal Bus Jeep'
+    prix: '0.00'
+    est_abusif: '0'
+    type_annonce: offre
+    Categorie: Categorie_1
+    Region: Region_1
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1502,10 +1517,10 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'DINKY TOYS 1945 1947 roue metal Bus Jeep'
+    titre: 'Jeu secret girl'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_92
@@ -1513,15 +1528,15 @@ Annonce:
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
   Annonce_102:
-    etat_de_validation: rejected
+    etat_de_validation: accepted
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Jeu secret girl'
+    titre: 'Circuit catronic'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
-    Categorie: Categorie_1
+    type_annonce: offre
+    Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_92
     telephone: '0674342567'
@@ -1532,13 +1547,13 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Circuit catronic'
+    titre: 'P''tit lot de cartes yu gi oh chrysalide'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_92
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1547,32 +1562,17 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'P''tit lot de cartes yu gi oh chrysalide'
-    prix: '0.00'
-    est_abusif: '0'
-    type_annonce: 'offre'
-    Categorie: Categorie_2
-    Region: Region_1
-    Departement: Departement_94
-    telephone: '0674342567'
-    Annonceur: Annonceur_1
-    date_control: '2011-02-23 09:40:55'
-  Annonce_105:
-    etat_de_validation: accepted
-    ville: ''
-    code_postal: ''
-    contenu: ''
     titre: 'Souris verte'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_106:
+  Annonce_105:
     etat_de_validation: rejected
     ville: ''
     code_postal: ''
@@ -1580,8 +1580,23 @@ Annonce:
     titre: 'Lot de jeux premier age'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
+    Region: Region_1
+    Departement: Departement_92
+    telephone: '0674342567'
+    Annonceur: Annonceur_1
+    date_control: '2011-02-23 09:40:55'
+  Annonce_106:
+    etat_de_validation: accepted
+    ville: ''
+    code_postal: ''
+    contenu: ''
+    titre: 'Petit escargot'
+    prix: '0.00'
+    est_abusif: '0'
+    type_annonce: offre
+    Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_92
     telephone: '0674342567'
@@ -1592,13 +1607,13 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Petit escargot'
+    titre: 'Cartes Carrefour Dreamworks (recherche)'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
-    Categorie: Categorie_1
+    type_annonce: offre
+    Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_92
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1607,28 +1622,28 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Cartes Carrefour Dreamworks (recherche)'
+    titre: 'L''officiel du marché de la miniature 2007'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
-    Categorie: Categorie_2
+    type_annonce: offre
+    Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_94
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
   Annonce_109:
-    etat_de_validation: accepted
+    etat_de_validation: rejected
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'L''officiel du marché de la miniature 2007'
+    titre: 'Livre bts neuf assistant manager castel dijon'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
-    Categorie: Categorie_1
+    type_annonce: offre
+    Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_92
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1637,32 +1652,17 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Livre bts neuf assistant manager castel dijon'
-    prix: '0.00'
-    est_abusif: '0'
-    type_annonce: 'offre'
-    Categorie: Categorie_2
-    Region: Region_1
-    Departement: Departement_94
-    telephone: '0674342567'
-    Annonceur: Annonceur_1
-    date_control: '2011-02-23 09:40:55'
-  Annonce_111:
-    etat_de_validation: rejected
-    ville: ''
-    code_postal: ''
-    contenu: ''
     titre: 'Livre "montbron en charente"'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_112:
+  Annonce_111:
     etat_de_validation: accepted
     ville: ''
     code_postal: ''
@@ -1670,14 +1670,14 @@ Annonce:
     titre: Roman
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_113:
+  Annonce_112:
     etat_de_validation: rejected
     ville: ''
     code_postal: ''
@@ -1685,14 +1685,14 @@ Annonce:
     titre: 'Roman de Bernard Simonay "Princesse Maorie"'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_114:
+  Annonce_113:
     etat_de_validation: accepted
     ville: ''
     code_postal: ''
@@ -1700,14 +1700,14 @@ Annonce:
     titre: 'Gilbert Tournier Le Rhône fleuve dieu'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_115:
+  Annonce_114:
     etat_de_validation: rejected
     ville: ''
     code_postal: ''
@@ -1715,14 +1715,14 @@ Annonce:
     titre: 'Recherche T1 bis à Lyon'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_116:
+  Annonce_115:
     etat_de_validation: wait
     ville: ''
     code_postal: ''
@@ -1730,14 +1730,14 @@ Annonce:
     titre: 'Loue loft T5+ 110 M2. 10 min centre ville/ TGV'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_117:
+  Annonce_116:
     etat_de_validation: rejected
     ville: ''
     code_postal: ''
@@ -1745,14 +1745,14 @@ Annonce:
     titre: 'Couple militaire/location'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_118:
+  Annonce_117:
     etat_de_validation: accepted
     ville: ''
     code_postal: ''
@@ -1760,14 +1760,14 @@ Annonce:
     titre: 'Urgent cherche maison sur fouesnant'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_119:
+  Annonce_118:
     etat_de_validation: rejected
     ville: ''
     code_postal: ''
@@ -1775,10 +1775,25 @@ Annonce:
     titre: 'Recherche studio(avec mezzanine)ou Appartement t2'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_94
+    telephone: '0674342567'
+    Annonceur: Annonceur_1
+    date_control: '2011-02-23 09:40:55'
+  Annonce_119:
+    etat_de_validation: wait
+    ville: ''
+    code_postal: ''
+    contenu: ''
+    titre: 'Recherche maison avec minimum 2 chambres'
+    prix: '0.00'
+    est_abusif: '0'
+    type_annonce: offre
+    Categorie: Categorie_1
+    Region: Region_1
+    Departement: Departement_75
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1787,10 +1802,10 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Recherche maison avec minimum 2 chambres'
+    titre: 'Cherche F2 ou F3'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_75
@@ -1802,32 +1817,17 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Cherche F2 ou F3'
-    prix: '0.00'
-    est_abusif: '0'
-    type_annonce: 'offre'
-    Categorie: Categorie_1
-    Region: Region_1
-    Departement: Departement_75
-    telephone: '0674342567'
-    Annonceur: Annonceur_1
-    date_control: '2011-02-23 09:40:55'
-  Annonce_122:
-    etat_de_validation: wait
-    ville: ''
-    code_postal: ''
-    contenu: ''
     titre: 'Cherche maison a louer'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_123:
+  Annonce_122:
     etat_de_validation: rejected
     ville: ''
     code_postal: ''
@@ -1835,10 +1835,25 @@ Annonce:
     titre: 'Location berck'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_92
+    telephone: '0674342567'
+    Annonceur: Annonceur_1
+    date_control: '2011-02-23 09:40:55'
+  Annonce_123:
+    etat_de_validation: accepted
+    ville: ''
+    code_postal: ''
+    contenu: ''
+    titre: 'Pompe électrique fontaine de nettoyage'
+    prix: '0.00'
+    est_abusif: '0'
+    type_annonce: offre
+    Categorie: Categorie_2
+    Region: Region_1
+    Departement: Departement_75
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1847,28 +1862,28 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Pompe électrique fontaine de nettoyage'
+    titre: Bracelet
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
   Annonce_125:
-    etat_de_validation: accepted
+    etat_de_validation: wait
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: Bracelet
+    titre: 'Magnifique parure negafa'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
-    Categorie: Categorie_2
+    type_annonce: offre
+    Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_94
+    Departement: Departement_75
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -1877,32 +1892,17 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Magnifique parure negafa'
-    prix: '0.00'
-    est_abusif: '0'
-    type_annonce: 'offre'
-    Categorie: Categorie_1
-    Region: Region_1
-    Departement: Departement_75
-    telephone: '0674342567'
-    Annonceur: Annonceur_1
-    date_control: '2011-02-23 09:40:55'
-  Annonce_127:
-    etat_de_validation: wait
-    ville: ''
-    code_postal: ''
-    contenu: ''
     titre: 'Yamaha 850 TDM'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_128:
+  Annonce_127:
     etat_de_validation: rejected
     ville: ''
     code_postal: ''
@@ -1910,8 +1910,23 @@ Annonce:
     titre: 'Cadre 103 chrome'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
+    Region: Region_1
+    Departement: Departement_94
+    telephone: '0674342567'
+    Annonceur: Annonceur_1
+    date_control: '2011-02-23 09:40:55'
+  Annonce_128:
+    etat_de_validation: accepted
+    ville: ''
+    code_postal: ''
+    contenu: ''
+    titre: 'Velo vtc femme'
+    prix: '0.00'
+    est_abusif: '0'
+    type_annonce: offre
+    Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_94
     telephone: '0674342567'
@@ -1922,32 +1937,17 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Velo vtc femme'
-    prix: '0.00'
-    est_abusif: '0'
-    type_annonce: 'offre'
-    Categorie: Categorie_1
-    Region: Region_1
-    Departement: Departement_94
-    telephone: '0674342567'
-    Annonceur: Annonceur_1
-    date_control: '2011-02-23 09:40:55'
-  Annonce_130:
-    etat_de_validation: accepted
-    ville: ''
-    code_postal: ''
-    contenu: ''
     titre: 'Kymco Agility'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_131:
+  Annonce_130:
     etat_de_validation: rejected
     ville: ''
     code_postal: ''
@@ -1955,14 +1955,14 @@ Annonce:
     titre: 'Ducati 748 ou 916'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_132:
+  Annonce_131:
     etat_de_validation: accepted
     ville: ''
     code_postal: ''
@@ -1970,14 +1970,14 @@ Annonce:
     titre: 'Recherches piéces 1500 goldwing honda se'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_75
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_133:
+  Annonce_132:
     etat_de_validation: wait
     ville: ''
     code_postal: ''
@@ -1985,7 +1985,22 @@ Annonce:
     titre: 'Recherche trail, scooter 50 cm3 à 125 cm3 en panne'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
+    Categorie: Categorie_2
+    Region: Region_1
+    Departement: Departement_92
+    telephone: '0674342567'
+    Annonceur: Annonceur_1
+    date_control: '2011-02-23 09:40:55'
+  Annonce_133:
+    etat_de_validation: accepted
+    ville: ''
+    code_postal: ''
+    contenu: ''
+    titre: 'Cherche carte marine'
+    prix: '0.00'
+    est_abusif: '0'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_92
@@ -1997,11 +2012,11 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Cherche carte marine'
+    titre: 'Pêche promenade'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
-    Categorie: Categorie_2
+    type_annonce: offre
+    Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_92
     telephone: '0674342567'
@@ -2012,28 +2027,28 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Pêche promenade'
+    titre: 'Groupe anachid'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_92
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
   Annonce_136:
-    etat_de_validation: accepted
+    etat_de_validation: wait
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Groupe anachid'
+    titre: 'Vos travaux'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
-    Categorie: Categorie_1
+    type_annonce: offre
+    Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_94
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -2042,25 +2057,25 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Vos travaux'
+    titre: 'CHERCHE Jeune Fille au Pair'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
-    Categorie: Categorie_2
+    type_annonce: offre
+    Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_92
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
   Annonce_138:
-    etat_de_validation: wait
+    etat_de_validation: accepted
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'CHERCHE Jeune Fille au Pair'
+    titre: Depanneuse
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_94
@@ -2072,13 +2087,13 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: Depanneuse
+    titre: 'Entretien et Fleurissement de vos sepultures'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
-    Categorie: Categorie_1
+    type_annonce: offre
+    Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_94
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -2087,25 +2102,25 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Entretien et Fleurissement de vos sepultures'
+    titre: 'Recherche maillot rct domicile 2007 2008'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
-    Categorie: Categorie_2
+    type_annonce: offre
+    Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
   Annonce_141:
-    etat_de_validation: accepted
+    etat_de_validation: rejected
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Recherche maillot rct domicile 2007 2008'
+    titre: 'Accessoire planche haleakala'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_92
@@ -2117,10 +2132,10 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Accessoire planche haleakala'
+    titre: 'Hosse en cuir pour GPS michelin XT950 ou 930'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_92
@@ -2132,13 +2147,13 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Hosse en cuir pour GPS michelin XT950 ou 930'
+    titre: 'Echange sony ericsson contre blackberry'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_92
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -2147,32 +2162,17 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Echange sony ericsson contre blackberry'
-    prix: '0.00'
-    est_abusif: '0'
-    type_annonce: 'offre'
-    Categorie: Categorie_1
-    Region: Region_1
-    Departement: Departement_94
-    telephone: '0674342567'
-    Annonceur: Annonceur_1
-    date_control: '2011-02-23 09:40:55'
-  Annonce_145:
-    etat_de_validation: rejected
-    ville: ''
-    code_postal: ''
-    contenu: ''
     titre: '504 benne'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_146:
+  Annonce_145:
     etat_de_validation: wait
     ville: ''
     code_postal: ''
@@ -2180,10 +2180,25 @@ Annonce:
     titre: 'Appartement T3 ? Lille Vauban Université Catho'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_92
+    telephone: '0674342567'
+    Annonceur: Annonceur_1
+    date_control: '2011-02-23 09:40:55'
+  Annonce_146:
+    etat_de_validation: accepted
+    ville: ''
+    code_postal: ''
+    contenu: ''
+    titre: 'Longère proche Cloyes sur loir 28220'
+    prix: '0.00'
+    est_abusif: '0'
+    type_annonce: offre
+    Categorie: Categorie_2
+    Region: Region_1
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -2192,10 +2207,10 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Longère proche Cloyes sur loir 28220'
+    titre: 'Terrain 427 m² (56190)'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_94
@@ -2207,28 +2222,28 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Terrain 427 m² (56190)'
+    titre: 'Maison de campagne proximité de Landerneau'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_94
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
   Annonce_149:
-    etat_de_validation: accepted
+    etat_de_validation: wait
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Maison de campagne proximité de Landerneau'
+    titre: 'Cherche villa à 66140 Canet-Plage'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_92
+    Departement: Departement_75
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -2237,32 +2252,17 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Cherche villa à 66140 Canet-Plage'
-    prix: '0.00'
-    est_abusif: '0'
-    type_annonce: 'offre'
-    Categorie: Categorie_2
-    Region: Region_1
-    Departement: Departement_75
-    telephone: '0674342567'
-    Annonceur: Annonceur_1
-    date_control: '2011-02-23 09:40:55'
-  Annonce_151:
-    etat_de_validation: wait
-    ville: ''
-    code_postal: ''
-    contenu: ''
     titre: 'Terrain 410 m² (56190)'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_152:
+  Annonce_151:
     etat_de_validation: rejected
     ville: ''
     code_postal: ''
@@ -2270,14 +2270,14 @@ Annonce:
     titre: 'Appartement 2 pièces à ETAMPES (91)'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_153:
+  Annonce_152:
     etat_de_validation: accepted
     ville: ''
     code_postal: ''
@@ -2285,14 +2285,14 @@ Annonce:
     titre: 'Recherche appartement ou maison'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_154:
+  Annonce_153:
     etat_de_validation: rejected
     ville: ''
     code_postal: ''
@@ -2300,14 +2300,14 @@ Annonce:
     titre: 'Recherche appartement à Saint pee sur nivelle'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_155:
+  Annonce_154:
     etat_de_validation: accepted
     ville: ''
     code_postal: ''
@@ -2315,14 +2315,14 @@ Annonce:
     titre: 'Pavillon de 5 pièces'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_156:
+  Annonce_155:
     etat_de_validation: rejected
     ville: ''
     code_postal: ''
@@ -2330,14 +2330,14 @@ Annonce:
     titre: 'Appartement type loft'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_157:
+  Annonce_156:
     etat_de_validation: accepted
     ville: ''
     code_postal: ''
@@ -2345,10 +2345,25 @@ Annonce:
     titre: 'Studio 17m2'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
+    telephone: '0674342567'
+    Annonceur: Annonceur_1
+    date_control: '2011-02-23 09:40:55'
+  Annonce_157:
+    etat_de_validation: wait
+    ville: ''
+    code_postal: ''
+    contenu: ''
+    titre: 'Appartement F4 sur Meaux quartier Clémenceau'
+    prix: '0.00'
+    est_abusif: '0'
+    type_annonce: offre
+    Categorie: Categorie_1
+    Region: Region_1
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -2357,10 +2372,10 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Appartement F4 sur Meaux quartier Clémenceau'
+    titre: 'Recherche maison sur Montauban ou Caussade'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_94
@@ -2368,17 +2383,17 @@ Annonce:
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
   Annonce_159:
-    etat_de_validation: wait
+    etat_de_validation: rejected
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Recherche maison sur Montauban ou Caussade'
+    titre: 'Chaussure fille neuve'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_94
+    Departement: Departement_75
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -2387,32 +2402,17 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Chaussure fille neuve'
-    prix: '0.00'
-    est_abusif: '0'
-    type_annonce: 'offre'
-    Categorie: Categorie_1
-    Region: Region_1
-    Departement: Departement_75
-    telephone: '0674342567'
-    Annonceur: Annonceur_1
-    date_control: '2011-02-23 09:40:55'
-  Annonce_161:
-    etat_de_validation: rejected
-    ville: ''
-    code_postal: ''
-    contenu: ''
     titre: 'Chausson enfant'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_162:
+  Annonce_161:
     etat_de_validation: accepted
     ville: ''
     code_postal: ''
@@ -2420,7 +2420,22 @@ Annonce:
     titre: Survêtement
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
+    Categorie: Categorie_2
+    Region: Region_1
+    Departement: Departement_94
+    telephone: '0674342567'
+    Annonceur: Annonceur_1
+    date_control: '2011-02-23 09:40:55'
+  Annonce_162:
+    etat_de_validation: wait
+    ville: ''
+    code_postal: ''
+    contenu: ''
+    titre: 'Pantalon kenzo femme'
+    prix: '0.00'
+    est_abusif: '0'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_94
@@ -2432,25 +2447,25 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Pantalon kenzo femme'
+    titre: 'Garçon 4 ans - okaidi et sergent major'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_94
+    Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
   Annonce_164:
-    etat_de_validation: wait
+    etat_de_validation: rejected
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Garçon 4 ans - okaidi et sergent major'
+    titre: 'Pull Jennyfer'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_92
@@ -2462,13 +2477,13 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Pull Jennyfer'
+    titre: 'Sandale :30'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
-    Categorie: Categorie_2
+    type_annonce: offre
+    Categorie: Categorie_1
     Region: Region_1
-    Departement: Departement_92
+    Departement: Departement_75
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -2477,13 +2492,13 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: 'Sandale :30'
+    titre: Blouson
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
-    Categorie: Categorie_1
+    type_annonce: offre
+    Categorie: Categorie_2
     Region: Region_1
-    Departement: Departement_75
+    Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
@@ -2492,32 +2507,17 @@ Annonce:
     ville: ''
     code_postal: ''
     contenu: ''
-    titre: Blouson
-    prix: '0.00'
-    est_abusif: '0'
-    type_annonce: 'offre'
-    Categorie: Categorie_2
-    Region: Region_1
-    Departement: Departement_94
-    telephone: '0674342567'
-    Annonceur: Annonceur_1
-    date_control: '2011-02-23 09:40:55'
-  Annonce_168:
-    etat_de_validation: rejected
-    ville: ''
-    code_postal: ''
-    contenu: ''
     titre: 'Vêtement grossesse - Pantalon Taille 44 (bb46)'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_75
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_169:
+  Annonce_168:
     etat_de_validation: accepted
     ville: ''
     code_postal: ''
@@ -2525,14 +2525,14 @@ Annonce:
     titre: 'Pull femme'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_75
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_170:
+  Annonce_169:
     etat_de_validation: wait
     ville: ''
     code_postal: ''
@@ -2540,14 +2540,14 @@ Annonce:
     titre: 'Rachat de vos vieux véhicules'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_94
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_171:
+  Annonce_170:
     etat_de_validation: accepted
     ville: ''
     code_postal: ''
@@ -2555,14 +2555,14 @@ Annonce:
     titre: 'Peugeot ou renault'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_172:
+  Annonce_171:
     etat_de_validation: accepted
     ville: ''
     code_postal: ''
@@ -2577,7 +2577,7 @@ Annonce:
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_173:
+  Annonce_172:
     etat_de_validation: rejected
     ville: ''
     code_postal: ''
@@ -2585,14 +2585,14 @@ Annonce:
     titre: 'BMW M3 Coupe M Xenon'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_1
     Region: Region_1
     Departement: Departement_92
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_174:
+  Annonce_173:
     etat_de_validation: wait
     ville: ''
     code_postal: ''
@@ -2600,14 +2600,14 @@ Annonce:
     titre: 'Cherche 206cc 2800 euros maxi'
     prix: '0.00'
     est_abusif: '0'
-    type_annonce: 'offre'
+    type_annonce: offre
     Categorie: Categorie_2
     Region: Region_1
     Departement: Departement_75
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-23 09:40:55'
-  Annonce_175:
+  Annonce_174:
     etat_de_validation: wait
     ville: créteil
     code_postal: '94000'
@@ -2622,7 +2622,7 @@ Annonce:
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-25 11:29:45'
-  Annonce_176:
+  Annonce_175:
     etat_de_validation: accepted
     ville: créteil
     code_postal: '94000'
@@ -2637,7 +2637,7 @@ Annonce:
     telephone: '0674342567'
     Annonceur: Annonceur_1
     date_control: '2011-02-25 11:30:03'
-  Annonce_177:
+  Annonce_176:
     etat_de_validation: rejected
     ville: créteil
     code_postal: '94000'
@@ -2651,7 +2651,7 @@ Annonce:
     Departement: Departement_75
     telephone: '0674342567'
     date_control: '2011-03-01 16:17:41'
-  Annonce_180:
+  Annonce_177:
     etat_de_validation: accepted
     ville: créteil
     code_postal: '94000'
@@ -2666,7 +2666,7 @@ Annonce:
     telephone: '0611270875'
     Annonceur: Annonceur_2
     date_control: '2011-03-04 15:09:34'
-  Annonce_185:
+  Annonce_178:
     etat_de_validation: wait
     ville: créteil
     code_postal: '94000'
@@ -2680,13 +2680,57 @@ Annonce:
     Departement: Departement_75
     telephone: '0121321150'
     date_control: null
+  Annonce_184:
+    etat_de_validation: wait
+    ville: 'annonce[ville]'
+    code_postal: '94000'
+    contenu: 'annonce[contenu]'
+    titre: 'annonce[titre]'
+    prix: '1.00'
+    est_abusif: '0'
+    type_annonce: offre
+    Categorie: Categorie_1
+    Region: Region_1
+    Departement: Departement_75
+    telephone: '1'
+    Annonceur: Annonceur_4
+    date_control: null
+  Annonce_185:
+    etat_de_validation: wait
+    ville: '1'
+    code_postal: '1'
+    contenu: a
+    titre: a
+    prix: '1.00'
+    est_abusif: '0'
+    type_annonce: offre
+    Categorie: Categorie_1
+    Region: Region_1
+    Departement: Departement_75
+    telephone: '1'
+    Annonceur: Annonceur_5
+    date_control: null
 Annonceur:
   Annonceur_1:
+    sfGuardUser: sfGuardUser_2
     mail: kratos@godofwar.com
     mdp: test
   Annonceur_2:
+    sfGuardUser: sfGuardUser_3
     mail: a@a.a
     mdp: '123'
+  Annonceur_3:
+    sfGuardUser: sfGuardUser_8
+    mail: null
+    mdp: null
+  Annonceur_4:
+    sfGuardUser: sfGuardUser_9
+    mail: null
+    mdp: null
+  Annonceur_5:
+    sfGuardUser: sfGuardUser_10
+    mail: null
+    mdp: null
 Categorie:
   Categorie_1:
     nom: informatique
@@ -2710,3 +2754,64 @@ Region:
     nom: 'Ile de France'
   Region_2:
     nom: 'Provence-Alpes-Côte d Azur'
+sfGuardUser:
+  sfGuardUser_1:
+    username: olivier
+    algorithm: sha1
+    is_active: '1'
+    is_super_admin: '1'
+    salt: 47daf2354c216efccb8679be2fe62609
+    password: 4c59072f73514f7f090052146382d04498fee553
+    last_login: null
+    created_at: '2011-03-09 18:08:22'
+    updated_at: '2011-03-09 18:08:34'
+  sfGuardUser_2:
+    username: max
+    algorithm: sha1
+    is_active: '1'
+    is_super_admin: '0'
+    salt: e4dfbd854d7ac7b8497023bad1a9abad
+    password: d14ca52ba19dfc33166709ff15e40c6864013aa0
+    last_login: null
+    created_at: '2011-03-09 18:08:58'
+    updated_at: '2011-03-09 18:08:58'
+  sfGuardUser_3:
+    username: estelle
+    algorithm: sha1
+    is_active: '1'
+    is_super_admin: '0'
+    salt: fef912b892e75cd6b57028136387cdbf
+    password: f0c799d715f57a648595ca3c9b4aeed73df5cafd
+    last_login: null
+    created_at: '2011-03-09 18:10:50'
+    updated_at: '2011-03-09 18:10:50'
+  sfGuardUser_8:
+    username: obarbier@me.com
+    algorithm: sha1
+    is_active: '1'
+    is_super_admin: '0'
+    salt: dd047d1c9f1fd6c03122409f66ddf9e2
+    password: 9f383816b68c695ef65fffb046bc1a8e21f8663b
+    last_login: null
+    created_at: '2011-03-09 18:48:44'
+    updated_at: '2011-03-09 18:48:44'
+  sfGuardUser_9:
+    username: pouet@pouet.com
+    algorithm: sha1
+    is_active: '1'
+    is_super_admin: '0'
+    salt: ec329732aaced3bbd8b95051302ca9bf
+    password: fc9e309623e72a8d9a14c727de8e13d4aeb549eb
+    last_login: null
+    created_at: '2011-03-09 18:53:22'
+    updated_at: '2011-03-09 18:53:22'
+  sfGuardUser_10:
+    username: az@az.com
+    algorithm: sha1
+    is_active: '1'
+    is_super_admin: '0'
+    salt: 813c53a57c129aafcc0afd3180063ca8
+    password: 6970ef1cdf1e7cbb9c259c51b66d1056e9f80353
+    last_login: null
+    created_at: '2011-03-09 18:59:29'
+    updated_at: '2011-03-09 18:59:29'

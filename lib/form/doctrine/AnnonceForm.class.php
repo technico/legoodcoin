@@ -11,6 +11,21 @@ class AnnonceForm extends BaseAnnonceForm
 {
   public function configure()
   {
+  $this->setWidget('filename', new sfWidgetFormInputFileEditable(array(
+    'file_src'    => sfConfig::get('sf_upload_dir').'/assets/'.$this->getObject()->filename,
+    'edit_mode'   => !$this->isNew(),
+    'is_image'    => true,
+    'with_delete' => false,
+  )));
+  	
+  $this->setValidator('filename', new sfValidatorFile(array(
+    'mime_types' => 'web_images',
+    'path' => sfConfig::get('sf_upload_dir').'/assets',
+  	'required' => false
+  )));
+
+  	$this->setWidget( 'mail', new sfWidgetFormInput() );
+	$this->setValidator( 'mail', new sfValidatorEmail() );
   	unset( 
   		$this['date_control'],
   		$this['validee_par'],
@@ -44,5 +59,7 @@ class AnnonceForm extends BaseAnnonceForm
     $this->validatorSchema['contenu']->setMessage( 'required', 'Veuillez rediger un texte d\'annonce.' );
     
     $this->validatorSchema['titre']->setMessage( 'required', 'Veuillez donner un titre à votre annnonce.' );
+    
+
   }
 }

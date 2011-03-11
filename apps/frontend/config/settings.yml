@@ -6,7 +6,7 @@ prod:
 dev:
   .settings:
     error_reporting:        <?php echo (E_ALL | E_STRICT)."\n" ?>
-    web_debug:              off
+    web_debug:              on
     cache:                  off
     no_script_name:         off
     etag:                   off
@@ -14,14 +14,14 @@ dev:
 test:
   .settings:
     error_reporting:        <?php echo ((E_ALL | E_STRICT) ^ E_NOTICE)."\n" ?>
-    cache:                  off
+    cache:                  on
     web_debug:              off
     no_script_name:         off
     etag:                   off
 
 all:
   .settings:
-    enabled_modules: [default, sfGuardAuth]
+    enabled_modules: [default, sfGuardAuth, sfGuardUser, sfGuardGroup, sfGuardPermission]
     
     # Form security secret (CSRF protection)
     csrf_secret:       supernova     # Unique secret to enable CSRF protection or false to disable
@@ -70,7 +70,7 @@ all:
 #    lazy_cache_key:         off       # Delays creation of a cache key until after checking whether an action or partial is cacheable (defaults to false for backward compatibility)
 #
 #    # Logging and debugging settings
-#    web_debug:              off       # Enable the web debug toolbar
+#    web_debug:              on       # Enable the web debug toolbar
 #    error_reporting:        <?php echo (E_PARSE | E_COMPILE_ERROR | E_ERROR | E_CORE_ERROR | E_USER_ERROR)."\n" ?> # Determines which events are logged.
 #
 #    # Assets paths

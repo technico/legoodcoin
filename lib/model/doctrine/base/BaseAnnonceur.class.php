@@ -14,14 +14,17 @@ abstract class BaseAnnonceur extends sfDoctrineRecord
              'autoincrement' => true,
              'length' => '4',
              ));
+        $this->hasColumn('sf_guard_user_id', 'integer', 4, array(
+             'type' => 'integer',
+             'notnull' => true,
+             'length' => '4',
+             ));
         $this->hasColumn('mail', 'string', 100, array(
              'type' => 'string',
-             'notnull' => true,
              'length' => '100',
              ));
         $this->hasColumn('mdp', 'string', 20, array(
              'type' => 'string',
-             'notnull' => true,
              'length' => '20',
              ));
     }
@@ -29,12 +32,16 @@ abstract class BaseAnnonceur extends sfDoctrineRecord
     public function setUp()
     {
         parent::setUp();
-    $this->hasMany('Annonce', array(
+    $this->hasOne('sfGuardUser', array(
+             'local' => 'sf_guard_user_id',
+             'foreign' => 'id'));
+
+        $this->hasMany('Annonce', array(
              'local' => 'id',
              'foreign' => 'annonceur'));
 
-        $this->hasMany('Annonce as Annonce_6', array(
-             'local' => 'id',
-             'foreign' => 'annonceur'));
+        $this->hasOne('SfGuardUser', array(
+             'local' => 'sf_guard_user_id',
+             'foreign' => 'id'));
     }
 }

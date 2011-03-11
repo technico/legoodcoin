@@ -13,6 +13,7 @@ class depotActions extends sfActions
 	protected function processForm( sfWebRequest $oRequest, sfForm $oForm )
 	{
 		$oForm->bind( $oRequest->getParameter( $oForm->getName() )/*, $oRequest->getFiles( $oForm->getName() )*/ );
+//var_dump(  $oRequest->getParameter( $oForm->getName() ) );
 
 		$this->getUser()->setAttribute( $oForm->getName(), $oRequest->getParameter( $oForm->getName() )/*, $oRequest->getFiles( $oForm->getName() )*/ );
 		
@@ -24,70 +25,107 @@ class depotActions extends sfActions
 		return false;
 	}
 
-	/**
-	 * Executes index action
-	 *
-	 * @param sfRequest $request A request object
-	 */
+	protected function initForms()
+	{
+		$oSfGuardUserForm = new sfGuardUserForm();
+		$oAnnonceurForm   = new AnnonceurForm();
+		$this->oForm      = new AnnonceForm();
+		$this->oForm->mergeForm( $oAnnonceurForm );
+		$this->oForm->mergeForm( $oSfGuardUserForm );
+	}
+	
+	protected function addFakeParameters(sfWebRequest $oRequest)
+	{
+		$aAnnonce = $oRequest->getParameter( 'annonce' );
+		$aAnnonce[ 'sf_guard_user_id' ] = 2;
+		$oRequest->setParameter( 'annonce', $aAnnonce );
+	}
+	
 	public function executeIndex(sfWebRequest $request)
 	{
-		$this->oForm = new AnnonceForm();
-		$this->oFormAnnonceur = new AnnonceurForm();
-		$this->oForm->mergeForm( $this->oFormAnnonceur );
+		$this->initForms();
 	}
 
 	public function executeCreate(sfWebRequest $request)
 	{
-		$this->oForm = new AnnonceForm();
-		$this->oFormAnnonceur = new AnnonceurForm();
-		$this->oForm->mergeForm( $this->oFormAnnonceur );
+		$this->initForms();
+		$this->addFakeParameters( $request );
 		
 		$bIsFormValid = $this->processForm( $request, $this->oForm );
 		if( !$bIsFormValid ) $this->setTemplate( 'index' );
-		else $this->forward( 'depot', 'previsu' );
+		else 
+		{ 
+			$this->oForm->updateObject();
+			$this->oForm->getObject();
+			exit(0);
+			//$this->redirect( 'depot/previsu' ); 
+		}
 	}
+	
+	public function executePrevisu(sfWebRequest $request)
+	{
+		$this->aAnnonce = $this->getUser()->getAttribute( 'annonce' );
+		$this->aAnnonce[ 'region' ] = Doctrine::getTable( 'Region' )->find( $this->aAnnonce[ 'region' ] )->getNom();
+		$this->aAnnonce[ 'categorie' ] = Doctrine::getTable( 'Categorie' )->find( $this->aAnnonce[ 'categorie' ] )->getNom();
+		$a = Doctrine::getTable( 'sfGuardUser' )->findByDql( 'username = ?', $this->aAnnonce[ 'username' ] );
+		if( count($a) === 0)
+		{
+			echo '<h3>new</h3>';
+			$oGuardUser = new sfGuardUser();
+			$oGuardUser->setUsername( $this->aAnnonce[ 'username' ] );
+			$this->oUserForm = new sfGuardUserForm( $oGuardUser );
 
+		}
+		else 
+		{
+			exit( 'auth' );
+		}
+	}
+	
+	public function executeAccountCreate(sfWebRequest $request)
+	{
+		$this->aAnnonce = $this->getUser()->getAttribute( 'annonce' );
+		$this->aAnnonce = $this->getUser()->getAttribute( 'annonce' );
+		$this->aAnnonce[ 'region' ] = Doctrine::getTable( 'Region' )->find( $this->aAnnonce[ 'region' ] )->getNom();
+		$this->aAnnonce[ 'categorie' ] = Doctrine::getTable( 'Categorie' )->find( $this->aAnnonce[ 'categorie' ] )->getNom();
+		$a = Doctrine::getTable( 'sfGuardUser' )->findByDql( 'username = ?', $this->aAnnonce[ 'mail' ] );
+				
+		$oGuardUser = new sfGuardUser();
+		$oGuardUser->setUsername( $this->aAnnonce[ 'mail' ] );
+		$this->oUserForm = new sfGuardUserForm( $oGuardUser );
+		$aPar = $request->getParameter( $this->oUserForm->getName() );
+		$aPar['username'] = $this->aAnnonce[ 'mail' ];
+		$request->setParameter( $this->oUserForm->getName(), $aPar );
+		$bIsFormValid = $this->processForm( $request, $this->oUserForm );
+		if( $bIsFormValid )
+		{
+			$oAnnonceForm = new AnnonceForm();
+			$oAnnonceForm->bind( $this->getUser()->getAttribute( 'annonce' ) );
+			$oAnnonceur = new Annonceur();
+			$this->oUserForm->updateObject();
+			$oAnnonceur->setSfGuardUser( $oGuardUser );
+			//var_dump($oAnnonceur->getSfGuardUser()->getPassword());
+			$oAnnonceForm->getObject()->setAnnonceur( $oAnnonceur );
+			$oAnnonceForm->save();		
+		} else echo 'ko';
+		$this->setTemplate( 'previsu' );
+	}
+	
 	public function executeEdit(sfWebRequest $request)
 	{
 		$this->oForm = new AnnonceForm();
-		$this->oFormAnnonceur = new AnnonceurForm();
-		$this->oForm->mergeForm( $this->oFormAnnonceur );
+		//$this->oFormAnnonceur = new AnnonceurForm();
+		//$this->oForm->mergeForm( $this->oFormAnnonceur );
 		
 		$this->oForm->bind( $this->getUser()->getAttribute( $this->oForm->getName() ) );
 		
 		$this->setTemplate( 'index' );
 	}
-	
-	public function executePrevisu(sfWebRequest $request)
-	{
-		/*
-		$this->oForm = new AnnonceForm();
-		$this->oFormAnnonceur = new AnnonceurForm();
-		$this->oForm->mergeForm( $this->oFormAnnonceur );
-		
-		$this->oForm->bind( $this->getUser()->getAttribute( $this->oForm->getName() ) );
-		$this->oForm->updateObject();
-		$this->Annonce = $this->oForm->getObject();
-		$this->Annonce->setDate_control( '1970-01-01 01:01:01' );
-		$this->bPreview = true;
-		*/
-		
-		//$this->setTemplate( 'index', 'detail' );
-		$this->aAnnonce = $this->getUser()->getAttribute( 'annonce' );
-		$this->aAnnonce[ 'region' ] = Doctrine::getTable( 'Region' )->find( $this->aAnnonce[ 'region' ] )->getNom();
-		$this->aAnnonce[ 'categorie' ] = Doctrine::getTable( 'categorie' )->find( $this->aAnnonce[ 'categorie' ] )->getNom();
-		
-	}
 
 	public function executeMerci(sfWebRequest $request)
 	{
-		//Attention deux rechargements de la page produisent deux insert en base ! => A coriger
-		//Comment nettoyer la session ?
-		$this->oForm = new AnnonceForm();
-		$this->oFormAnnonceur = new AnnonceurForm();
-		$this->oForm->mergeForm( $this->oFormAnnonceur );
-		$this->oForm->bind( $this->getUser()->getAttribute( $this->oForm->getName() ) );
-		$this->oForm->save();
-		$this->getUser()->getAttributeHolder()->remove( $this->oForm->getName() );
+		$this->getUser()->getAttributeHolder()->remove( 's_mail_annonceur' );
+		$this->getUser()->getAttributeHolder()->remove( 'o_annonce' );
 	}
+
 }

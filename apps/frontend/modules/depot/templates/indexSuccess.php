@@ -11,7 +11,7 @@
 <?php echo $oForm->renderHiddenFields() ?>
 <?php $aChamps = array( 'categorie', 'type_annonce', 'titre', 
 'contenu', 'prix', 'telephone', 'region', 'departement', 
-'code_postal', 'ville', 'mail', 'mdp' ); ?>
+'code_postal', 'ville', 'username'); ?>
 <?php foreach( $aChamps as $sChampNom ): ?>
 	<div class="cell">
 		<div><?php echo $oForm[ $sChampNom ]->renderLabel() ?></div>
@@ -19,6 +19,17 @@
 		<div class="error"><?php echo $oForm[ $sChampNom ]->renderError() ?></div>
 	</div>
 <?php endforeach; ?>
+<!--
+	<div class="cell">
+		<div><label for="mail">Votre mail</label></div>
+		<div><input type="text" name="mail" id="mail" value="<?php echo isset($_POST['mail']) ? $_POST['mail']:''; ?>" /></div>	
+		<div class="error">&nbsp;</div>
+	</div>
+-->
 <input type="submit" value="valider" />
 </form>
+
+<table>
+<?php echo $oForm; ?>
+</table>
 </div>

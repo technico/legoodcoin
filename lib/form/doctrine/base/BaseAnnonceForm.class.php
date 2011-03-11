@@ -35,7 +35,7 @@ class BaseAnnonceForm extends BaseFormDoctrine
       'etat_de_validation' => new sfValidatorChoice(array('choices' => array('wait' => 'wait', 'accepted' => 'accepted', 'rejected' => 'rejected'), 'required' => false)),
       'ville'              => new sfValidatorString(array('max_length' => 30)),
       'code_postal'        => new sfValidatorString(array('max_length' => 5)),
-      'contenu'            => new sfValidatorString(array('max_length' => 1024)),
+      'contenu'            => new sfValidatorString(),
       'titre'              => new sfValidatorString(array('max_length' => 50)),
       'prix'               => new sfValidatorNumber(array('required' => false)),
       'est_abusif'         => new sfValidatorInteger(array('required' => false)),
