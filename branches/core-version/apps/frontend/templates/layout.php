@@ -19,12 +19,12 @@
 		<div id="region"><?php include_slot( 'zone_geo' ) ?></div>
 	</div>
 <div id="nav"><a href="<?php echo url_for( 'accueil/index' ) ?>">Accueil</a>
-&nbsp;|&nbsp; <a href="<?php echo url_for( 'depot/index' ) ?>"
+&nbsp;|&nbsp; <a href="<?php echo url_for( 'depotPart1/index' ) ?>"
 	rel="nofollow">Déposer une annonce</a> &nbsp;|&nbsp; <a
 	href="<?php include_slot( 'url_annonce' ) ?>">Consulter les annonces</a>
-&nbsp;|&nbsp; <?php if( !$sf_user->isAuthenticated() ):?><a
-	href="<?php echo url_for( 'mes_annonces/index' ) ?>">Se connecter</a>
-&nbsp;|&nbsp;  <?php else: ?><a
+&nbsp;|&nbsp; <a
+	href="<?php echo url_for( 'mes_annonces/index' ) ?>">Mes annonces</a>
+&nbsp;|&nbsp;  <?php if( !$sf_user->isAuthenticated() ):?><?php else: ?><a
 	href="<?php echo url_for( '@sf_guard_signout' ) ?>">Se deconnecter</a>
 &nbsp;|&nbsp; <?php if( $sf_user->hasCredential( 'controle' ) ):?><a
 	href="<?php echo url_for( 'controle/index' ) ?>">Contrôler les annonces</a><?php endif ?>

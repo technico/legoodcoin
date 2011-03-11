@@ -17,6 +17,7 @@ class listingActions extends sfActions
   */
   public function executeIndex(sfWebRequest $request)
   {
+  	      $this->backref = Backref::getBackdef( $request );
   	$this->aRegions  = Doctrine::getTable( 'Region' )->createQuery()->execute();
 
   	//Filtre de recherche 

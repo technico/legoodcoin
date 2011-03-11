@@ -48,9 +48,14 @@ h2{
 		</tr>		
 	    <tr>
 	  		<th>Mail</th>
-	  		<td><?php echo $aAnnonce[ 'mail' ]; ?></td>
+	  		<td><?php echo $aAnnonce[ 'username' ]; ?></td>
 		</tr>
  	</tbody>
  </table>
  <a href="<?php echo url_for( 'depot/edit' ); ?>">modifier</a>
  <a href="<?php echo url_for( 'depot/merci' ); ?>">confirmer</a>
+ 
+ <form method="POST" action="<?php echo url_for( 'depot/AccountCreate' ) ?>">
+ <?php echo $oUserForm ?>
+ <input type="submit" />
+ </form>

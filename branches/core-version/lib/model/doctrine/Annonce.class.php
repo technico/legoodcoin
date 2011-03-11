@@ -14,5 +14,8 @@ class Annonce extends BaseAnnonce
 		$iTime=strtotime( $this->getDate_control() );
 		return format_date( $iTime, 'H:mm');
 	}
-
+	
+	public function getFilename() {
+		return "un_nom";
+	}
 }

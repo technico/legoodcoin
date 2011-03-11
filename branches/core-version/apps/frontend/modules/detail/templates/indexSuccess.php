@@ -12,7 +12,7 @@
 <span class="fine_print">
 	<a class="nohistory" href="<?php echo url_for( '@homepage' )?>">Accueil</a>
 	&gt;	
-	<a class="nohistory" href="<?php echo url_for( 'listing/index?r='.$Annonce->getRegion()->getId() )?>"><?php echo $Annonce->getRegion() ?></a>
+	<a class="nohistory" href="<?php echo url_for( $backref.'/index?r='.$Annonce->getRegion()->getId() )?>"><?php echo $Annonce->getRegion() ?></a>
 	&gt; 
 	<!-- <a class="nohistory" href="<?php echo url_for( '@homepage' )?>">Utilitaires</a>
 	&gt; -->
