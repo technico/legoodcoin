@@ -30,8 +30,7 @@ Annonce:
       primary: true
       autoincrement: true
     etat_de_validation:
-      type: enum(8)
-      values: [wait, accepted, rejected]
+      type: string(8)
       default: wait
     ville:
       type: string(30)
@@ -52,8 +51,7 @@ Annonce:
       type: integer(4)
       default: '0'
     type_annonce:
-      type: enum(7)
-      values: [offre, demande]
+      type: string(7)
       notnull: true
     categorie:
       type: integer(4)
@@ -89,6 +87,24 @@ Annonce:
       local: annonceur
       foreign: id
       type: one
+    AnnoncePhoto:
+      local: id
+      foreign: annonce_id
+      type: many
+AnnoncePhoto:
+  tableName: annonce_photo
+  columns:
+    id:
+      type: integer(8)
+      primary: true
+      autoincrement: true
+    annonce_id: integer(4)
+    filename: string(255)
+  relations:
+    Annonce:
+      local: annonce_id
+      foreign: id
+      type: one
 Annonceur:
   tableName: annonceur
   columns:
@@ -102,7 +118,7 @@ Annonceur:
     mail: string(100)
     mdp: string(20)
   relations:
-    sfGuardUser:
+    SfGuardUser:
       local: sf_guard_user_id
       foreign: id
       type: one
@@ -125,6 +141,26 @@ Categorie:
       local: id
       foreign: categorie
       type: many
+CodePostaux:
+  tableName: code_postaux
+  columns:
+    id:
+      type: integer(20)
+      autoincrement: true
+      primary: true
+    commune:
+      type: string(50)
+      notnull: true
+    codepos:
+      type: string(5)
+      fixed: true
+      notnull: true
+    departement:
+      type: string(50)
+      notnull: true
+    insee:
+      type: string(10)
+      notnull: true
 Departement:
   tableName: departement
   columns:
@@ -198,12 +234,12 @@ SfGuardGroupPermission:
     created_at: timestamp(25)
     updated_at: timestamp(25)
   relations:
-    SfGuardGroup:
-      local: group_id
-      foreign: id
-      type: one
     SfGuardPermission:
       local: permission_id
+      foreign: id
+      type: one
+    SfGuardGroup:
+      local: group_id
       foreign: id
       type: one
 SfGuardPermission:
@@ -299,12 +335,12 @@ SfGuardUserGroup:
     created_at: timestamp(25)
     updated_at: timestamp(25)
   relations:
-    SfGuardGroup:
-      local: group_id
-      foreign: id
-      type: one
     SfGuardUser:
       local: user_id
+      foreign: id
+      type: one
+    SfGuardGroup:
+      local: group_id
       foreign: id
       type: one
 SfGuardUserPermission:
@@ -319,11 +355,11 @@ SfGuardUserPermission:
     created_at: timestamp(25)
     updated_at: timestamp(25)
   relations:
-    SfGuardPermission:
-      local: permission_id
-      foreign: id
-      type: one
     SfGuardUser:
       local: user_id
+      foreign: id
+      type: one
+    SfGuardPermission:
+      local: permission_id
       foreign: id
       type: one

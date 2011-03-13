@@ -17,6 +17,7 @@ class accueilActions extends sfActions
   */
   public function executeIndex(sfWebRequest $request)
   {
+  	$this->iNbAnnonces = count( Doctrine::getTable( 'Annonce' )->findByDql( 'etat_de_validation = ?', 'accepted' ) );
   	$this->setLayout( 'accueilLayout' );
   }
 }

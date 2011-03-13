@@ -14,14 +14,8 @@ abstract class BaseAnnonce extends sfDoctrineRecord
              'autoincrement' => true,
              'length' => '4',
              ));
-        $this->hasColumn('etat_de_validation', 'enum', 8, array(
-             'type' => 'enum',
-             'values' => 
-             array(
-              0 => 'wait',
-              1 => 'accepted',
-              2 => 'rejected',
-             ),
+        $this->hasColumn('etat_de_validation', 'string', 8, array(
+             'type' => 'string',
              'default' => 'wait',
              'length' => '8',
              ));
@@ -55,13 +49,8 @@ abstract class BaseAnnonce extends sfDoctrineRecord
              'default' => '0',
              'length' => '4',
              ));
-        $this->hasColumn('type_annonce', 'enum', 7, array(
-             'type' => 'enum',
-             'values' => 
-             array(
-              0 => 'offre',
-              1 => 'demande',
-             ),
+        $this->hasColumn('type_annonce', 'string', 7, array(
+             'type' => 'string',
              'notnull' => true,
              'length' => '7',
              ));
@@ -101,7 +90,11 @@ abstract class BaseAnnonce extends sfDoctrineRecord
     public function setUp()
     {
         parent::setUp();
-    $this->hasOne('Administrateur', array(
+    $this->hasOne('Annonceur', array(
+             'local' => 'annonceur',
+             'foreign' => 'id'));
+
+        $this->hasOne('Administrateur', array(
              'local' => 'validee_par',
              'foreign' => 'id'));
 
@@ -117,8 +110,8 @@ abstract class BaseAnnonce extends sfDoctrineRecord
              'local' => 'categorie',
              'foreign' => 'id'));
 
-        $this->hasOne('Annonceur', array(
-             'local' => 'annonceur',
-             'foreign' => 'id'));
+        $this->hasMany('AnnoncePhoto', array(
+             'local' => 'id',
+             'foreign' => 'annonce_id'));
     }
 }

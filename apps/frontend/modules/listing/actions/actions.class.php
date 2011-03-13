@@ -29,6 +29,7 @@ class listingActions extends sfActions
     $this->sTitre = $request->getParameter( 't', null );
     $this->sCategorie = $request->getParameter( 'c', 0 );
     $this->sCategorie = ( $this->sCategorie == 0 ) ? null : $this->sCategorie;
+    $this->aCategories   = Doctrine::getTable( 'Categorie' )->findALl();
     $this->sRegion = $request->getParameter( 'r', null );
     if( isset( $this->sRegion ) )
     {
