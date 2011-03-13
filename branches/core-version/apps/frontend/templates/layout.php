@@ -21,7 +21,7 @@
 <div id="nav"><a href="<?php echo url_for( 'accueil/index' ) ?>">Accueil</a>
 &nbsp;|&nbsp; <a href="<?php echo url_for( 'depotPart1/index' ) ?>"
 	rel="nofollow">Déposer une annonce</a> &nbsp;|&nbsp; <a
-	href="<?php include_slot( 'url_annonce' ) ?>">Consulter les annonces</a>
+	href="<?php if( has_slot( 'url_annonce' ) ): ?><?php include_slot( 'url_annonce' ) ?><?php else: ?><?php echo url_for( 'listing/index' ) ?><?php endif ?>">Consulter les annonces</a>
 &nbsp;|&nbsp; <!-- --> <a
 	href="<?php echo url_for( 'mes_annonces_light/index' ) ?>">Mes annonces</a>
 &nbsp;|&nbsp;   <!-- --><?php if( !$sf_user->isAuthenticated() ):?><?php else: ?><a

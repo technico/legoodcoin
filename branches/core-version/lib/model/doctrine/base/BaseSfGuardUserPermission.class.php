@@ -31,12 +31,12 @@ abstract class BaseSfGuardUserPermission extends sfDoctrineRecord
     public function setUp()
     {
         parent::setUp();
-    $this->hasOne('SfGuardPermission', array(
-             'local' => 'permission_id',
+    $this->hasOne('SfGuardUser', array(
+             'local' => 'user_id',
              'foreign' => 'id'));
 
-        $this->hasOne('SfGuardUser', array(
-             'local' => 'user_id',
+        $this->hasOne('SfGuardPermission', array(
+             'local' => 'permission_id',
              'foreign' => 'id'));
     }
 }

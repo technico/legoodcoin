@@ -64,9 +64,8 @@ h2{
  </table>
 <a href="<?php echo url_for( 'depotPart1/edit' ); ?>">modifier</a>
 <div id="depot">
-<?php if( $oForm->hasErrors() ): ?>
-<div class="global error">Attention : le formulaire comporte des erreurs.</div>
-<?php endif; ?>
+
+<p>Pour valider votre annonce, veuillez choisir un mot de passe.</p>
 <form method="POST" action="<?php echo url_for( 'depotPart2/create' ) ?>">
 <?php echo $oForm->renderHiddenFields() ?>
 <?php $aChamps = array( 'password', 'password_again' ); ?>

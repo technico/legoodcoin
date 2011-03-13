@@ -145,9 +145,9 @@ CodePostaux:
   tableName: code_postaux
   columns:
     id:
-      type: integer(20)
-      autoincrement: true
+      type: integer(4)
       primary: true
+      autoincrement: true
     commune:
       type: string(50)
       notnull: true

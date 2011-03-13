@@ -19,17 +19,16 @@ class detailActions extends sfActions
   {   
       $this->Annonce = Doctrine::getTable('Annonce')->find( $request->getParameter( 'id' ) );
       $this->backref = Backref::getBackdef( $request );
-      
   }
   
   public function executeSupprimer(sfWebRequest $request)
   {   
       $this->id  = $request->getParameter( 'id' ); //Si false faire un 404 forward
-
+	  $oAnnonce = Doctrine::getTable('Annonce')->find( $this->id );
       if($request->isMethod( 'post' ) )
       {
      	  $mdp = $request->getParameter( 'mdp' );
-	      $oAnnonce = Doctrine::getTable('Annonce')->find( $this->id );
+	      
 	      $this->bAuth = Doctrine::getTable('sfGuardUser')->find
 	      ( 
 	      	$oAnnonce->getAnnonceur()->getSfGuardUser()->getId() 
@@ -43,6 +42,7 @@ class detailActions extends sfActions
 	      	$this->redirect( 'detail/suppressionOK');
 	      }
       }
+      $this->oAnnonce = $oAnnonce;
   }
   
   public function executeSuppressionOK(sfWebRequest $request)
@@ -55,22 +55,38 @@ class detailActions extends sfActions
 		$this->id  = $request->getParameter( 'id' ); //Si false faire un 404 forward
 		$oAnnonce = Doctrine::getTable('Annonce')->find( $this->id );
 		
-		$s_mail_annonceur = Doctrine::getTable('sfGuardUser')->find
-	    ( 
-	    	$oAnnonce->getAnnonceur()->getSfGuardUser()->getId() 
-	    )
-	    ->getUsername();
-
-	    $this->getUser()->setAttribute( 'id_annonce_to_delete', $oAnnonce->getId() ) ;
-		$this->getUser()->setAttribute( 's_mail_annonceur', $s_mail_annonceur );
-		
-		$aPhotoannonces = $oAnnonce->getAnnoncePhoto();
-		if( count( $aPhotoannonces ) > 0 )
-		{
-			$this->getUser()->setAttribute( 'o_photo_1', $aPhotoannonces[0]->getFilename() );
-		}
-		$oAnnonce->setId(null);
-	    $this->getUser()->setAttribute( 'o_annonce', $oAnnonce ) ;
-		$this->forward( 'depotPart1', 'edit' );
+	    if($request->isMethod( 'post' ) )
+      	{
+     	  $mdp = $request->getParameter( 'mdp' );
+	      
+	      $this->bAuth = Doctrine::getTable('sfGuardUser')->find
+	      ( 
+	      	$oAnnonce->getAnnonceur()->getSfGuardUser()->getId() 
+	      )
+	      ->checkPassword( $mdp );
+	      
+	      if( $this->bAuth )
+	      {
+			$s_mail_annonceur = Doctrine::getTable('sfGuardUser')->find
+		    ( 
+		    	$oAnnonce->getAnnonceur()->getSfGuardUser()->getId() 
+		    )
+		    ->getUsername();
+	
+		    $this->getUser()->setAttribute( 'id_annonce_to_delete', $oAnnonce->getId() ) ;
+			$this->getUser()->setAttribute( 's_mail_annonceur', $s_mail_annonceur );
+			
+			$aPhotoannonces = $oAnnonce->getAnnoncePhoto();
+			if( count( $aPhotoannonces ) > 0 )
+			{
+				$this->getUser()->setAttribute( 'o_photo_1', $aPhotoannonces[0]->getFilename() );
+			}
+			$oAnnonce->setId(null);
+		    $this->getUser()->setAttribute( 'o_annonce', $oAnnonce ) ;
+			$this->forward( 'depotPart1', 'edit' );
+	      }
+      	}		
+		$this->oAnnonce = $oAnnonce;
+		$this->setTemplate( 'modifier' );
 	} 
 }

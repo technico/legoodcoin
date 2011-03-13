@@ -90,11 +90,7 @@ abstract class BaseAnnonce extends sfDoctrineRecord
     public function setUp()
     {
         parent::setUp();
-    $this->hasOne('Annonceur', array(
-             'local' => 'annonceur',
-             'foreign' => 'id'));
-
-        $this->hasOne('Administrateur', array(
+    $this->hasOne('Administrateur', array(
              'local' => 'validee_par',
              'foreign' => 'id'));
 
@@ -108,6 +104,10 @@ abstract class BaseAnnonce extends sfDoctrineRecord
 
         $this->hasOne('Categorie', array(
              'local' => 'categorie',
+             'foreign' => 'id'));
+
+        $this->hasOne('Annonceur', array(
+             'local' => 'annonceur',
              'foreign' => 'id'));
 
         $this->hasMany('AnnoncePhoto', array(
