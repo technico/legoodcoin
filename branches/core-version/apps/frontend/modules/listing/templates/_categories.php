@@ -1,4 +1,15 @@
-<option selected="" value="0">Toutes catégories</option>
+<option value="0">Toutes catégories</option>
+<?php foreach( $aCategories as $oCategorie ): ?>
+<option 
+<?php 
+if(
+	$sCategorie == $oCategorie->getId()
+):
+echo 'selected="selected"'; 
+endif; ?> 
+value="<?php echo $oCategorie->getId() ?>"><?php echo $oCategorie->getNom() ?></option>
+<?php endforeach ?>
+<!--
 <option value="1" class="titre_option">-- VEHICULES --</option>
 <option value="2">Voitures</option>
 <option value="3">Motos</option>
@@ -49,3 +60,4 @@
 <option value="36">Cours particuliers</option>
 <option value="37" class="titre_option">--</option>
 <option value="38">Autres</option>
+-->

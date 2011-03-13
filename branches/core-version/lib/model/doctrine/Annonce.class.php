@@ -18,4 +18,8 @@ class Annonce extends BaseAnnonce
 	public function getFilename() {
 		return "un_nom";
 	}
+	
+	public function getPhoto1() {//Aparement sfValidatorFile à besoin de se zaffaire !!!???
+		return 'jdtyjdrs';
+	}
 }

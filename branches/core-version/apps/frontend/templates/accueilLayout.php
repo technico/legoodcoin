@@ -162,7 +162,7 @@ a:hover {
 			affaire<br />
 			est au coin de la rue ! Pour passer ou chercher des<br />
 			annonces, cliquez sur la région de votre choix et<br />
-			trouvez la bonne affaire parmi <strong>14 475 785 annonces</strong>.
+			trouvez la bonne affaire parmi <strong><?php include_slot( 'nb_annonce' ) ?> annonces</strong>.
 			</td>
 		</tr>
 	</tbody>

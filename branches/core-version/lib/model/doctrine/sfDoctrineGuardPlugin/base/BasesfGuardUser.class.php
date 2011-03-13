@@ -80,10 +80,6 @@ abstract class BasesfGuardUser extends sfDoctrineRecord
              'local' => 'id',
              'foreign' => 'user_id'));
 
-        $this->hasMany('Annonceur', array(
-             'local' => 'id',
-             'foreign' => 'sf_guard_user_id'));
-
         $timestampable0 = new Doctrine_Template_Timestampable();
         $this->actAs($timestampable0);
     }

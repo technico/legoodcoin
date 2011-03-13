@@ -22,9 +22,9 @@
 &nbsp;|&nbsp; <a href="<?php echo url_for( 'depotPart1/index' ) ?>"
 	rel="nofollow">Déposer une annonce</a> &nbsp;|&nbsp; <a
 	href="<?php include_slot( 'url_annonce' ) ?>">Consulter les annonces</a>
-&nbsp;|&nbsp; <a
-	href="<?php echo url_for( 'mes_annonces/index' ) ?>">Mes annonces</a>
-&nbsp;|&nbsp;  <?php if( !$sf_user->isAuthenticated() ):?><?php else: ?><a
+&nbsp;|&nbsp; <!-- --> <a
+	href="<?php echo url_for( 'mes_annonces_light/index' ) ?>">Mes annonces</a>
+&nbsp;|&nbsp;   <!-- --><?php if( !$sf_user->isAuthenticated() ):?><?php else: ?><a
 	href="<?php echo url_for( '@sf_guard_signout' ) ?>">Se deconnecter</a>
 &nbsp;|&nbsp; <?php if( $sf_user->hasCredential( 'controle' ) ):?><a
 	href="<?php echo url_for( 'controle/index' ) ?>">Contrôler les annonces</a><?php endif ?>

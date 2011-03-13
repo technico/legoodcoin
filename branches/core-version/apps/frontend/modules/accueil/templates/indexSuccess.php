@@ -6,11 +6,12 @@
 }
 </style>
 <?php use_javascript('leboncoin_index_10735')?>
+<?php slot( 'nb_annonce', $iNbAnnonces ) ?>
 <table cellspacing="0" cellpadding="0" id="TableContentBottom">
 	<tbody>
 		<tr>
 			<td align="right">
-			<div class="Deposer"><a href="<?php echo url_for( 'depot/index' ) ?>"><img
+			<div class="Deposer"><a href="<?php echo url_for( 'depotPart1/index' ) ?>"><img
 				alt="" src="/images/deposer.png"
 				onclick="xt_med('C','23','deposer_bouton','N')"
 				onmouseout="this.src='/images/deposer.png'; return true;"

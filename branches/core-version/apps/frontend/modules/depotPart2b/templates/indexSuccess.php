@@ -54,6 +54,12 @@ h2{
 	  		<th>Mail</th>
 	  		<td><?php echo $sf_user->getAttribute( 's_mail_annonceur' ); ?></td>
 		</tr>
+		<?php if( $sf_user->getAttribute( 'o_photo_1' ) ): ?>
+	    <tr>
+	  		<th>Photo 1</th>
+	  		<td><img src="<?php echo Backref::get80( $sf_user->getAttribute( 'o_photo_1' ) )  ?>" /></td>
+		</tr>
+		<?php endif; ?>
  	</tbody>
  </table>
 <a href="<?php echo url_for( 'depotPart1/edit' ); ?>">modifier</a>

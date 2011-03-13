@@ -24,7 +24,7 @@
 
 	<div id="gauche">
 	<?php if( !isset( $bPreview ) ): ?>
-	Mis en ligne par <a href=""><?php echo ucfirst($Annonce->getAnnonceur()->getPseudo());?></a> <!-- Rentrez la valeur dans href -->
+	Mis en ligne par <a href="<?php echo url_for( 'contact/index?id='.$Annonce->getId() ) ?>"><?php echo ucfirst($Annonce->getAnnonceur()->getPseudo());?></a> <!-- Rentrez la valeur dans href -->
 	le <?php echo $Annonce->getDateMiseEnLigne(); ?> à <?php echo $Annonce->getHeureMiseEnLigne(); ?>.
 	<br /><br />
 	<?php endif; ?>
@@ -32,16 +32,37 @@
 	<span>Prix : <?php echo $Annonce->getPrix();?> &euro;</span> Ville : <?php echo $Annonce->getCodePostal();?>
 	<?php echo $Annonce->getVille();?> <br /><br />
 	<?php echo $Annonce->getContenu(); ?>
+<div>	
+<?php foreach( $Annonce->getAnnoncePhoto() as $oAnnoncePhoto): ?>
+<img src="<?php echo Backref::get80( $oAnnoncePhoto->getFilename() ) ?>" /><br />
+<img src="<?php echo Backref::get468( $oAnnoncePhoto->getFilename() ) ?>" />
+<?php endforeach ?>
+</div>
 	</div>
 	<?php if( !isset( $bPreview ) ): ?>
 	<div class="droit">
 		<div class="droit-titre">Contacter l'annonceur</div>
-		<!-- <a href="">Envoyer un email</a> --> <!-- Entrer dans href la page d'ecriture de mail -->
 		<div style="margin: 3px">
-			<!-- <img src="/images/adview_phone.gif" />  -->
+            	<img alt="Envoyer un email" style="vertical-align: middle; border:none;" src="/images/adview_mail.gif">
+            	<a href="<?php echo url_for( 'contact/index?id='.$Annonce->getId() ) ?>" rel="nofollow">Envoyer un email</a>
+        </div>
+		<div style="margin: 3px">
+			<img alt="Telephoner" style="vertical-align: middle; border:none;" src="/images/adview_phone.gif">
 			<?php echo $Annonce->getAnnonceur()->getPseudo();?> : <?php echo $Annonce->getTelephone();?>
 		</div>
 	</div>
+	
+	<div class="droit">
+        <div class="droit-titre">Gérer votre annonce</div>                
+        	<div style="margin: 3px">
+            	<img alt="Modifier" style="vertical-align: middle; border:none;" src="/images/adview_modify.gif">
+                <a href="<?php echo url_for(  'detail/modifier?id='.$Annonce->getId()  ) ?>" rel="nofollow">Modifier</a>
+            </div> 
+            <div style="margin: 3px">
+            	<img alt="Supprimer" style="vertical-align: middle; border:none;" src="/images/adview_delete.gif">
+                <a href="<?php echo url_for(  'detail/supprimer?id='.$Annonce->getId()  ) ?>" rel="nofollow">Supprimer</a>
+           </div>        
+    </div>
 	<?php endif; ?>
 	<?php if( isset( $sHtmlControle ) ): ?>
 	<div class="droit">
