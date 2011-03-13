@@ -13,10 +13,13 @@ class sfGuardUserForm extends PluginsfGuardUserForm
   {
 
 	$this->widgetSchema['password'] = new sfWidgetFormInputPassword();
+	$this->widgetSchema['password']->setLabel( 'Mot de passe' );
 	$this->validatorSchema['password']->setOption( 'required', true );
-	
+	$this->validatorSchema['password']->setMessage( 'required', 'Veuillez indiquer un mot de passe.' );
+
 	//
   	$this->widgetSchema['password_again'] = new sfWidgetFormInputPassword();
+  	$this->widgetSchema['password_again']->setLabel( 'Saisir à nouveau le mot de passe' );
 	$this->validatorSchema['password_again'] =  clone $this->validatorSchema['password'];
 	//
     

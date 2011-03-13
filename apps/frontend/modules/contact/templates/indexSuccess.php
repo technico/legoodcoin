@@ -9,3 +9,4 @@
     </tr>
   </table>
 </form>
+Attention les saut de ligne font planter le formulaire

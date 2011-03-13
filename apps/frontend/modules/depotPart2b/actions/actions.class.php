@@ -40,6 +40,7 @@ class depotPart2bActions extends sfActions
 		endif;  	
 
 //Si ça marche c'est un petit pas pour l'humanité mais un grand pas pour moi !
+$oAnnonce->setId(null);
 $oAnnonce->save();
 
 if( $this->getUser()->hasAttribute( 'id_annonce_to_delete' ) )

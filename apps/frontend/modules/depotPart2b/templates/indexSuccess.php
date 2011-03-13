@@ -7,7 +7,7 @@ h2{
 	padding:0px;
 }
 </style>
-<h2 style="margin-top:10px; margin-bottom:20px;">Authentification</h2>
+<h2 style="margin-top:10px; margin-bottom:20px;">Prévisualisation de votre annonce</h2>
 <table>
     <tbody>
 		<tr>
@@ -64,14 +64,12 @@ h2{
  </table>
 <a href="<?php echo url_for( 'depotPart1/edit' ); ?>">modifier</a>
 <div id="depot">
-<?php if( isset( $bHasErrors ) && $bHasErrors ): ?>
-<div class="global error">Mot de passe invalide</div>
-<?php endif; ?>
 <form method="POST" action="<?php echo url_for( 'depotPart2b/auth' ) ?>">
 <div class="cell">
-	<div><label for="auth_password">Mot de passe</label></div>
-	<div><input type="password" name="auth_password" id="auth_password" /></div>	
+	<div><label style="width:200px" for="auth_password">Entrer votre mot de passe : </label></div>
+	<div><input size="25" type="password" name="auth_password" id="auth_password" /> <input type="submit" value="valider" /></div>	
+	<div class="error"><?php if( isset( $bHasErrors ) && $bHasErrors ): ?>Mot de passe invalide<?php endif; ?></div>
 </div>
-<input type="submit" />
+
 </form>
 </div>

@@ -37,7 +37,7 @@ class depotPart1Actions extends sfActions
 			$this->oForm->getName().'_Fileparams', 
 			$aFiles
 		);
-		$this->oForm->bind( $aAnnonceParameter, $aFiles );
+$this->oForm->bind( $aAnnonceParameter, $aFiles ); //nécessaire pour la validation aprtielle
 //On valide d'abord la photo
     if( false === $this->oForm[ 'photo_1' ]->hasError() )
     {
@@ -82,12 +82,9 @@ echo '</pre>';*/
   	{
   		$aAnnonceParameter =  $this->getUser()->getAttribute( $this->oForm->getName(), array() );
   		$aFiles = $this->getUser()->getAttribute( $this->oForm->getName().'_Fileparams', array() );
+  		$this->oForm->bind( $aAnnonceParameter, $aFiles );
   	}
-  	
-    
 
-	
-    
     if( $this->oForm->isValid() )
     {
     	//Mettre l'objet Annonce (il faut l'extraire de l'objet AnnonceForm, précédé d'un updateObject)

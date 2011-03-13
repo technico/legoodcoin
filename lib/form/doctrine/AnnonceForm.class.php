@@ -67,20 +67,21 @@ class AnnonceForm extends BaseAnnonceForm
   		
 	$this->validatorSchema['ville']->setMessage( 'required', 'Veuillez renseigner une ville.' );
 
-	/*$this->validatorSchema['code_postal'] =
-    	new sfValidatorRegex
-    	( 
-    		array
-    		(
-    			'required' => false,
-    			'pattern'  => "!^0[1-9][0-9]{8}$!",
-    		), 
-    		array
-    		(
-    			'invalid' => '%value% n\'est pas un numéro de téléphone valide.'
-    		) 
-    	);
-  */
+	$this->validatorSchema['code_postal'] = 
+		new sfValidatorDoctrineChoice
+		(
+			array
+			(
+				'model'  => 'CodePostaux',
+				'column' => 'Codepos',
+			), 
+			array
+			(
+				'required'  => 'Veuillez renseigner un code postal.',
+				'invalid'  => '%value% n\'est pas un code postal valide.',
+			)
+		);
+
     $this->validatorSchema['code_postal']->setMessage( 'required', 'Veuillez renseigner un code postal.' );
 
     $this->validatorSchema['contenu']->setMessage( 'required', 'Veuillez rediger un texte d\'annonce.' );

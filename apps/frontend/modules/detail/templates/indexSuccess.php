@@ -22,7 +22,7 @@
 <div id="detail">
 	<h1 style="margin-top:10px; margin-bottom:20px;"><?php echo $Annonce->getTitre();?></h1>
 
-	<div id="gauche">
+	<div id="gauche" style="height:100%">
 	<?php if( !isset( $bPreview ) ): ?>
 	Mis en ligne par <a href="<?php echo url_for( 'contact/index?id='.$Annonce->getId() ) ?>"><?php echo ucfirst($Annonce->getAnnonceur()->getPseudo());?></a> <!-- Rentrez la valeur dans href -->
 	le <?php echo $Annonce->getDateMiseEnLigne(); ?> à <?php echo $Annonce->getHeureMiseEnLigne(); ?>.
