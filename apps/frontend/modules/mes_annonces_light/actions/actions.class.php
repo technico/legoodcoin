@@ -34,11 +34,11 @@ class mes_annonces_lightActions extends sfActions
   // $mailContext = array('name' => 'John Doe');
   // $message->attach(new Swift_Message_Part($this->getPartial('mail/mailHtmlBody', $mailContext), 'text/html'));
   // $message->attach(new Swift_Message_Part($this->getPartial('mail/mailTextBody', $mailContext), 'text/plain'));
-  		
+ exit('settter le mot de passe de switf mailer : '.__FILE__);
 	//Create the Transport
 	$transport = Swift_SmtpTransport::newInstance('smtps.upmc.fr', 465)
-	  ->setUsername('3003920')
-	  ->setPassword('01121986')
+	  ->setUsername('*')
+	  ->setPassword('*')
 	  ->setEncryption('ssl');
 	  
 	//Create the Mailer using your created Transport

@@ -39,11 +39,11 @@ class ContactForm extends sfForm
 
   	$sTo      = $oAnnonce->getAnnonceur()->getSfGuardUser()->getUsername();
 	$sReplyTo = $this->getValue( 'email' );
-		
+ exit('settter le mot de passe de switf mailer : '.__FILE__);		
 	//Create the Transport
 	$transport = Swift_SmtpTransport::newInstance('smtps.upmc.fr', 465)
-	  ->setUsername('3003920')
-	  ->setPassword('01121986')
+	  ->setUsername('*')
+	  ->setPassword('*')
 	  ->setEncryption('ssl');
 	  
 	//Create the Mailer using your created Transport
