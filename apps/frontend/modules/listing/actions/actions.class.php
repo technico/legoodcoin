@@ -1,5 +1,4 @@
 <?php
-
 /**
  * listing actions.
  *
@@ -10,67 +9,82 @@
  */
 class listingActions extends sfActions
 {
- /**
-  * Executes index action
-  *
-  * @param sfRequest $request A request object
-  */
-  public function executeIndex(sfWebRequest $request)
-  {
-  	      $this->backref = Backref::getBackdef( $request );
-  	$this->aRegions  = Doctrine::getTable( 'Region' )->createQuery()->execute();
+	public function getZoneGeoNom( $mZoneGeoId )
+	{
+		$oZoneGeo = new stdClass();
+		$oZoneGeo->nom = 'Toute la France';
+	
+		if( $mZoneGeoId )
+		{
+			$oZoneGeo = Doctrine::getTable( 'Region' )->find( $mZoneGeoId );
+			if( !$oZoneGeo )
+			{
+				$oZoneGeo = Doctrine::getTable( 'Departement' )->find( $mZoneGeoId );
+			}
+		}
+		
+	    return $oZoneGeo;
+	}
 
-  	//Filtre de recherche 
-  	$oFilters = new AnnonceFormFilter();	
-
-    //Pagination
-    $this->oPager = new sfDoctrinePager( 'Annonce', 5 );
-    
-    $this->sTitre = $request->getParameter( 't', null );
-    $this->sCategorie = $request->getParameter( 'c', 0 );
-    $this->sCategorie = ( $this->sCategorie == 0 ) ? null : $this->sCategorie;
-    $this->aCategories   = Doctrine::getTable( 'Categorie' )->findALl();
-    $this->sRegion = $request->getParameter( 'r', null );
-    if( isset( $this->sRegion ) )
+	public function getAutresZonesGeo( $oZoneGeo, $mZoneGeoId )
+	{
+		if( $oZoneGeo instanceof Region )
+		{
+			$aRegions = Doctrine::getTable( 'Departement' )->findByDql( 'region = ?', $mZoneGeoId );	
+		}
+		else if( $oZoneGeo instanceof Departement )
+		{
+			$aRegions = Doctrine::getTable( 'Departement' )->findByDql( 'region = ?', $oZoneGeo->getRegion()->getId() );	
+		}
+	    else 
+	    {
+	    	$aRegions = Doctrine::getTable( 'Region' )->findAll();
+	    }
+	    
+	    return $aRegions;
+	}
+	
+	protected function getIndexInputParams( $oRequest )
+	{
+		$oCategorieTable = Doctrine::getTable( 'Categorie' );
+		$this->sTitre      = $oRequest->getParameter( ListingParameters::TITRE    , null );
+		$this->sCategorie  = $oRequest->getParameter( ListingParameters::CATEGORIE, null );
+		$this->mZoneGeoId  = $oRequest->getParameter( ListingParameters::REGION   , false );
+		$this->iPage       = $oRequest->getParameter( ListingParameters::PAGE, 1 );
+	    //?
+	    $this->sCategorie  = ( $this->sCategorie == 0 ) ? null : $this->sCategorie;
+	    	   
+	    //Recupération de toutes les catégories
+	    $this->aCategories = $oCategorieTable->findALL();
+	
+	}
+	
+	public function executeIndex(sfWebRequest $oRequest)
     {
-    	$this->sRegion = ($this->sRegion <= '0') ? null : $this->sRegion;
-    	
-    	if( $this->sRegion !== null ) {
-    		$this->sNomRegion = Doctrine::getTable( 'Region' )->find( $this->sRegion );
-    		
-    		if( $this->sNomRegion ) 
-    		{
-    			$this->sNomRegion = Doctrine::getTable( 'Region' )->find( $this->sRegion )->getNom();
-    		}
-    		else
-    		{
-    			$this->sNomRegion = Doctrine::getTable( 'Departement' )->find( $this->sRegion )->getNom();
-    		}
-    		
-    		//HACK departement
-    		$this->aRegions   = Doctrine::getTable( 'Departement' )->findALl();	
-    	}
-    }
- //var_dump( $this->sNomRegion, $this->sRegion );
-    $oQuery = $oFilters->buildQuery( 
-    		array ( 'titre' => array ( 'text' => $this->sTitre, ), 
-    		        'categorie' => $this->sCategorie, 
-    		        'etat_de_validation' => 'accepted',
-    		        /*'region'    => $this->sRegion*/) ) ;
-    		if($this->sRegion)
-	$oQuery = $oQuery->addWhere( '(region = ? OR departement = ?)', array( $this->sRegion, $this->sRegion ) );   
-    		
-    $oQuery->addOrderBy( 'date_control DESC' );
-    
-    $this->oPager->setQuery( $oQuery );
-    $this->oPager->setPage( $request->getParameter( 'p', 1 ) );
-    $this->oPager->init();
-    $this->aAnnonces = $this->oPager->getResults();
-  }
-  
-  public function executeFilter(sfWebRequest $request)
-  {
-  	//$this->getUser()->setAttribute('annonce.filters', $request->getParameter( 'annonce', array() ));
-  	$this->redirect( 'listing/index' );
-  }
+    	//?
+	  	$this->backref   = Backref::getBackdef( $oRequest );
+	  	  	
+	  	$this->getIndexInputParams( $oRequest );
+
+		//DEBUT SEMI-PROPRE
+		$oZoneGeo          = $this->getZoneGeoNom( $this->mZoneGeoId );
+		$this->sZoneGeoNom = $oZoneGeo->nom;
+		$this->aRegions    = $this->getAutresZonesGeo( $oZoneGeo, $this->mZoneGeoId );
+		//FIN
+			  	
+	    $oListingRecherche = new ListingRecherche( $this );
+	    
+	    $this->oPager      = $oListingRecherche->buildPaginatedQuery( $this->iPage );
+	    
+	    //Recupération du listing d'annonces
+	    $this->aAnnonces = $this->oPager->getResults();
+  	}
+}
+
+class ListingParameters
+{
+	const REGION    = 'r';
+	const TITRE     = 't';
+	const CATEGORIE = 'c';
+	const PAGE      = 'p';
 }

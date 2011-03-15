@@ -4,5 +4,15 @@
  */
 class DepartementTable extends Doctrine_Table
 {
-
+	public function getRecordAsArray($regionId)
+	{
+		$array = array();
+		$dpts = $this->findByDql('region = ?', $regionId);
+		foreach($dpts as $dpt)
+		{
+			$array[$dpt->getCode_dep()] = $dpt->getNom(); 
+		}
+		
+		return $array;
+	}
 }
