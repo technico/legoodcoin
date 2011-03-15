@@ -1,15 +1,15 @@
-<?php $url = "listing/index?t=$sTitre&r=$sRegion&c=$sCategorie" ?>
+<?php $url = "listing/index?t=$sTitre&r=$mZoneGeoId&c=$sCategorie" ?>
 <?php use_stylesheet ('listing.css')?>
 <?php use_helper('Date'); ?>
-<?php slot( 'zone_geo', $sRegion === NULL ? 'Toute la France' : $sNomRegion ) ?>
-<?php slot( 'url_annonce', url_for( 'listing/index?r='.( $sRegion === NULL ? '0' : $sRegion ) ) ) ?>
+<?php slot( 'zone_geo', $sZoneGeoNom ) ?>
+<?php slot( 'url_annonce', url_for( 'listing/index?r='.( $mZoneGeoId === NULL ? '0' : $mZoneGeoId ) ) ) ?>
 <div id="listing">
 
 	<form method="GET" action="<?php echo url_for( 'listing/index' ); ?>">
         <div id="search" style="margin-top:14px">
             <span>
                 <input type="text" maxlength="30" size="30" name="t" value="<?php echo $sTitre; ?>" />
-                <select name="r"><?php include_partial( 'regions', array( 'aRegions' => $aRegions, 'sRegion' => $sRegion, 'sNomRegion' => $sNomRegion ) ) ?></select>
+                <select name="r"><?php include_partial( 'regions', array( 'aRegions' => $aRegions, 'mZoneGeoId' => $mZoneGeoId, 'sZoneGeoNom' => $sZoneGeoNom ) ) ?></select>
                 <select name="c"><?php include_partial( 'categories', array( 'aCategories' => $aCategories, 'sCategorie' => $sCategorie ) ) ?></select>
                 <input type="submit" value="Chercher" />
             </span>

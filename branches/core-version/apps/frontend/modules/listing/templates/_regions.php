@@ -2,18 +2,18 @@
 if(
 	( !( $aRegions[0]->getRawValue() instanceof Region ) ) 
 ): 
-echo '<option value="',$sRegion, '">', $sNomRegion;
+echo '<option value="',$mZoneGeoId, '">', $sZoneGeoNom;
 endif;
 ?>
-<option <?php if( $sRegion <= 0 ): echo 'selected="selected"'; endif;?> value="0">Toute la France</option>
+<option <?php if( $mZoneGeoId <= 0 ): echo 'selected="selected"'; endif;?> value="0">Toute la France</option>
 <option value="-1" class="titre_option"><?php if( $aRegions[0]->getRawValue() instanceof Region ): ?>-- REGION --<?php else: ?>-- DEPT --<?php endif ?></option>
 <?php foreach( $aRegions as $oRegion ): ?>
-<?php if( $sNomRegion == $oRegion->getNom() ) continue;?>
+<?php if( $sZoneGeoNom == $oRegion->getNom() ) continue;?>
 <option 
 <?php 
 if(
-	( ( $oRegion->getRawValue() instanceof Region ) && $sRegion == $oRegion->getId() ) ||
-	( ( $oRegion->getRawValue() instanceof Departement ) && $sRegion == $oRegion->getCode_dep() ) 
+	( ( $oRegion->getRawValue() instanceof Region ) && $mZoneGeoId == $oRegion->getId() ) ||
+	( ( $oRegion->getRawValue() instanceof Departement ) && $mZoneGeoId == $oRegion->getCode_dep() ) 
 ):
 echo 'selected="selected"'; 
 endif; ?> 
