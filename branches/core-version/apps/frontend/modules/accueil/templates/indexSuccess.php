@@ -1,4 +1,8 @@
-<style>
+<?php 
+//Setting up i18N
+$language = $sf_request->getPreferredCulture(array('en', 'fr'));
+$sf_user->setCulture($language);
+?><style>
 .Map {
 	background: url(/images/map.png) no-repeat;
 	width: 410px;
