@@ -27,9 +27,5 @@ abstract class BaseCategorie extends sfDoctrineRecord
     $this->hasMany('Annonce', array(
              'local' => 'id',
              'foreign' => 'categorie'));
-
-        $this->hasMany('Annonce as Annonce_10', array(
-             'local' => 'id',
-             'foreign' => 'categorie'));
     }
 }

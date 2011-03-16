@@ -10,60 +10,122 @@
  */
 class depotActions extends sfActions
 {
-	/**
-	 * Executes index action
-	 *
-	 * @param sfRequest $request A request object
-	 */
+	protected function processForm( sfWebRequest $oRequest, sfForm $oForm )
+	{
+		$oForm->bind( $oRequest->getParameter( $oForm->getName() )/*, $oRequest->getFiles( $oForm->getName() )*/ );
+//var_dump(  $oRequest->getParameter( $oForm->getName() ) );
+
+		$this->getUser()->setAttribute( $oForm->getName(), $oRequest->getParameter( $oForm->getName() )/*, $oRequest->getFiles( $oForm->getName() )*/ );
+		
+		if( $oForm->isValid() )
+		{
+			return true;
+		}
+		
+		return false;
+	}
+
+	protected function initForms()
+	{
+		$oSfGuardUserForm = new sfGuardUserForm();
+		$oAnnonceurForm   = new AnnonceurForm();
+		$this->oForm      = new AnnonceForm();
+		$this->oForm->mergeForm( $oAnnonceurForm );
+		$this->oForm->mergeForm( $oSfGuardUserForm );
+	}
+	
+	protected function addFakeParameters(sfWebRequest $oRequest)
+	{
+		$aAnnonce = $oRequest->getParameter( 'annonce' );
+		$aAnnonce[ 'sf_guard_user_id' ] = 2;
+		$oRequest->setParameter( 'annonce', $aAnnonce );
+	}
+	
 	public function executeIndex(sfWebRequest $request)
 	{
-		$this->oForm = new AnnonceForm();
-		$this->oFormAnnonceur = new AnnonceurForm();
-		$this->oForm->mergeForm( $this->oFormAnnonceur );
-		
-		if($request->isMethod('post'))
-	    {
-	      $this->oForm->bind($request->getParameter('annonce'));
-	      echo var_export( $request->getParameter('annonce'), true );
-	      if($this->oForm->isValid())
-	      {
-	      	$aAnnonces = $request->getParameter('annonce');
-			$this->sTypeAnnonce = $aAnnonces['type_annonce'];
-			$this->sTitre       = $aAnnonces['titre'];
-			$this->sContenu     = $aAnnonces['contenu'];
-			$this->sVille       = $aAnnonces['ville'];
-			$this->sCodePostal  = $aAnnonces['code_postal'];
-			$this->sPrix        = $aAnnonces['prix'];
-			$this->sTel         = $aAnnonces['telephone'];
+		$this->initForms();
+	}
 
-	        $this->getUser()->setAttribute('annonce', $aAnnonces);
-	        $this->setTemplate('previsu');
-	      }
-	    }
+	public function executeCreate(sfWebRequest $request)
+	{
+		$this->initForms();
+		$this->addFakeParameters( $request );
+		
+		$bIsFormValid = $this->processForm( $request, $this->oForm );
+		if( !$bIsFormValid ) $this->setTemplate( 'index' );
+		else 
+		{ 
+			$this->oForm->updateObject();
+			$this->oForm->getObject();
+			exit(0);
+			//$this->redirect( 'depot/previsu' ); 
+		}
 	}
 	
 	public function executePrevisu(sfWebRequest $request)
 	{
-		$this->sTypeAnnonce = $request->getParameter('type_annonce');
-		$this->sTitre       = $request->getParameter('titre');
-		$this->sContenu     = $request->getParameter('contenu');
-		$this->sVille       = $request->getParameter('ville');
-		$this->sCodePostal  = $request->getParameter('code_postal');
-		$this->sPrix        = $request->getParameter('prix');
-		$this->sTel         = $request->getParameter('telephone');
+		$this->aAnnonce = $this->getUser()->getAttribute( 'annonce' );
+		$this->aAnnonce[ 'region' ] = Doctrine::getTable( 'Region' )->find( $this->aAnnonce[ 'region' ] )->getNom();
+		$this->aAnnonce[ 'categorie' ] = Doctrine::getTable( 'Categorie' )->find( $this->aAnnonce[ 'categorie' ] )->getNom();
+		$a = Doctrine::getTable( 'sfGuardUser' )->findByDql( 'username = ?', $this->aAnnonce[ 'username' ] );
+		if( count($a) === 0)
+		{
+			echo '<h3>new</h3>';
+			$oGuardUser = new sfGuardUser();
+			$oGuardUser->setUsername( $this->aAnnonce[ 'username' ] );
+			$this->oUserForm = new sfGuardUserForm( $oGuardUser );
+
+		}
+		else 
+		{
+			exit( 'auth' );
+		}
 	}
 	
+	public function executeAccountCreate(sfWebRequest $request)
+	{
+		$this->aAnnonce = $this->getUser()->getAttribute( 'annonce' );
+		$this->aAnnonce = $this->getUser()->getAttribute( 'annonce' );
+		$this->aAnnonce[ 'region' ] = Doctrine::getTable( 'Region' )->find( $this->aAnnonce[ 'region' ] )->getNom();
+		$this->aAnnonce[ 'categorie' ] = Doctrine::getTable( 'Categorie' )->find( $this->aAnnonce[ 'categorie' ] )->getNom();
+		$a = Doctrine::getTable( 'sfGuardUser' )->findByDql( 'username = ?', $this->aAnnonce[ 'mail' ] );
+				
+		$oGuardUser = new sfGuardUser();
+		$oGuardUser->setUsername( $this->aAnnonce[ 'mail' ] );
+		$this->oUserForm = new sfGuardUserForm( $oGuardUser );
+		$aPar = $request->getParameter( $this->oUserForm->getName() );
+		$aPar['username'] = $this->aAnnonce[ 'mail' ];
+		$request->setParameter( $this->oUserForm->getName(), $aPar );
+		$bIsFormValid = $this->processForm( $request, $this->oUserForm );
+		if( $bIsFormValid )
+		{
+			$oAnnonceForm = new AnnonceForm();
+			$oAnnonceForm->bind( $this->getUser()->getAttribute( 'annonce' ) );
+			$oAnnonceur = new Annonceur();
+			$this->oUserForm->updateObject();
+			$oAnnonceur->setSfGuardUser( $oGuardUser );
+			//var_dump($oAnnonceur->getSfGuardUser()->getPassword());
+			$oAnnonceForm->getObject()->setAnnonceur( $oAnnonceur );
+			$oAnnonceForm->save();		
+		} else echo 'ko';
+		$this->setTemplate( 'previsu' );
+	}
+	
+	public function executeEdit(sfWebRequest $request)
+	{
+		$this->oForm = new AnnonceForm();
+		//$this->oFormAnnonceur = new AnnonceurForm();
+		//$this->oForm->mergeForm( $this->oFormAnnonceur );
+		
+		$this->oForm->bind( $this->getUser()->getAttribute( $this->oForm->getName() ) );
+		
+		$this->setTemplate( 'index' );
+	}
+
 	public function executeMerci(sfWebRequest $request)
 	{
-		$this->oForm          = new AnnonceForm();
-		$this->oFormAnnonceur = new AnnonceurForm();
-		$this->oForm->mergeForm( $this->oFormAnnonceur );
-		
-		$this->oForm->bind( $this->getUser()->getAttribute( 'annonce' ) );
-		
-		if( $this->oForm->isValid() )
-	    {
-	    	$this->oForm->save();
-	    }
+		$this->getUser()->getAttributeHolder()->remove( 's_mail_annonceur' );
+		$this->getUser()->getAttributeHolder()->remove( 'o_annonce' );
 	}
+
 }

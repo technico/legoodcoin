@@ -1,8 +1,45 @@
 body {
+	position: static;
     background-color: #FFFFE8;
     font-family: verdana;
     font-size: 12px;
     line-height: 1.4;
-    width: 800px;
+    width: 978px;
     padding: 5px;
+}
+
+#logo{
+	float: left;
+}
+
+#region{
+	font-size: 16px;
+	font-weight: normal;
+	margin-left: 212px;
+	padding-top: 11px;
+}
+
+#nav {
+	clear: both;
+	color: #999999;
+	margin: 13px 0 4px;
+}
+
+a:link, a:visited {
+    color: #336699;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#nav a:link, #nav a:visited {
+    font-size: 13px;
+}
+
+.headerline {
+	border-bottom: 2px solid #FF6600;
+	clear: both;
+	font-size: 0;
+	height: 6px;
+	width: 978px;
+	margin-bottom: 3px;
 }

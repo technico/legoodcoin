@@ -1,12 +1,29 @@
-<option selected="" value="1">Ile-de-France</option>
-<option value="2">Régions voisines</option>
-<option value="3">Toute la France</option>
-<option value="0" class="titre_option">DEPARTEMENT --</option>
-<option value="175">Paris</option>
-<option value="177">Seine-et-Marne</option>
-<option value="178">Yvelines</option>
-<option value="191">Essonne</option>
-<option value="192">Hauts-de-Seine</option>
-<option value="193">Seine-Saint-Denis</option>
-<option value="194">Val-de-Marne</option>
-<option value="195">Val-d'Oise</option>
+<?php
+if(
+	( !( $aRegions[0]->getRawValue() instanceof Region ) ) 
+): 
+echo '<option value="',$mZoneGeoId, '">', $sZoneGeoNom;
+endif;
+?>
+<option <?php if( $mZoneGeoId <= 0 ): echo 'selected="selected"'; endif;?> value="0">Toute la France</option>
+<option value="-1" class="titre_option"><?php if( $aRegions[0]->getRawValue() instanceof Region ): ?>-- REGION --<?php else: ?>-- DEPT --<?php endif ?></option>
+<?php foreach( $aRegions as $oRegion ): ?>
+<?php if( $sZoneGeoNom == $oRegion->getNom() ) continue;?>
+<option 
+<?php 
+if(
+	( ( $oRegion->getRawValue() instanceof Region ) && $mZoneGeoId == $oRegion->getId() ) ||
+	( ( $oRegion->getRawValue() instanceof Departement ) && $mZoneGeoId == $oRegion->getCode_dep() ) 
+):
+echo 'selected="selected"'; 
+endif; ?> 
+value="<?php
+if(
+	( ( $oRegion->getRawValue() instanceof Region ) ) 
+):
+echo $oRegion->getId();
+else: 
+echo $oRegion->getCode_dep();
+endif;
+?>"><?php echo $oRegion->getNom(); ?></option>
+<?php endforeach ?>

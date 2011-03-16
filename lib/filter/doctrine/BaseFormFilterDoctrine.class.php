@@ -11,5 +11,6 @@ abstract class BaseFormFilterDoctrine extends sfFormFilterDoctrine
 {
   public function setup()
   {
+  	sfWidgetFormSchema::setDefaultFormFormatterName('list');
   }
 }

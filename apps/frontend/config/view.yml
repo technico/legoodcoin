@@ -8,8 +8,8 @@ default:
     #keywords:     symfony, project
     #language:     fr
     #robots:       index, follow
-
-  stylesheets:    [main.css, redmond/jquery-ui-1.8.9.custom.css, detail.css, listing.css, abusif.css]
+#main.css, sredmond/jquery-ui-1.8.9.custom.css, detail.css, listing.css, abusif.css
+  stylesheets:    [reset.css, main.css]
 
   javascripts:    [jquery-1.5.min.js, jquery-ui-1.8.9.custom.min.js, detail.js]
 
