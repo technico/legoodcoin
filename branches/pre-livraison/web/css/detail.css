@@ -1,0 +1,62 @@
+.fine_print {
+    font-size: 9px;
+}
+
+#detail {
+	position: static;
+	height: 479px;
+}
+#detail h1{
+	font-size: 2em;
+    font-weight: bold;
+	margin:0px;
+	padding:0px;
+}
+
+#detail #gauche{
+	float:left;
+	width:550px;
+}
+
+#detail #gauche span{
+	margin-right: 100px;
+}
+
+#detail .droit{
+	float:right;
+	width:238px;
+	border:1px solid #B8B8B8;
+	margin-bottom: 10px;
+}
+
+#detail #droit-haut{
+	
+	margin-bottom:5px;
+}
+
+#detail #droit-bas{
+	border:1px solid #000000;
+}
+
+#detail .droit-titre{
+	padding: 3px;
+	font-weight: bold;
+	background-color: #DCDCC3;
+}
+
+#detail #bas{
+	clear: both;
+}
+
+#detail .bas{
+	margin-right:20px;
+}
+
+#detail #conseil{
+	display:none;
+}
+
+#detail .champs{
+	font-weight: normal;
+	margin-bottom: 1px;
+}

@@ -1,0 +1,34 @@
+strong {
+	font-weight: bold;
+}
+
+#depot {
+	margin-top: 14px;
+	width: 845px;
+}
+
+#depot .cell {
+	margin-bottom: 10px;
+}
+
+#depot .error {
+	font-weight: bold;
+	color: red;
+}
+
+#depot .global {
+	border: solid 1px red;
+	padding:3px;
+	margin: 14px 0 14px 0;
+	text-align:center;
+}
+
+#depot label {
+	display:inline-block;
+	width:150px;
+	font-weight: bold;
+}
+
+#depot .maintext {
+	margin-bottom: 14px;
+}
