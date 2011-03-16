@@ -1,4 +1,4 @@
-<!--
+<?php use_javascript('switch') ?><!--
 <form method="POST" enctype="multipart/form-data" action="<?php echo url_for( 'depotPart1/create' ) ?>">
 <table>
 <?php echo $oForm ?>
