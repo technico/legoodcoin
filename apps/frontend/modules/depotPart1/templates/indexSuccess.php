@@ -11,7 +11,11 @@
 <?php use_stylesheet( 'depot' )?>
 <div id="depot">
 <div class="maintext">
+<?php if($sf_request->getParameter('action')==='edit'): ?>
+	<strong>Modifier votre annonce</strong>
+<?php else: ?>
 	<strong>Déposer une annonce sur Le<s>bon</s>goodcoin.fr est GRATUIT. Votre annonce sera validée par notre équipe éditoriale avant mise en ligne. Elle restera sur le site pendant 60 jours. Pendant cette période, vous pourrez la supprimer à tout moment.</strong>
+<?php endif ?>
 </div>
 <?php if( $oForm->hasErrors() ): ?>
 <div class="global error">Attention : le formulaire comporte des erreurs.</div>

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * listing actions.
  *
@@ -9,82 +10,99 @@
  */
 class listingActions extends sfActions
 {
-	public function getZoneGeoNom( $mZoneGeoId )
-	{
-		$oZoneGeo = new stdClass();
-		$oZoneGeo->nom = 'Toute la France';
-	
-		if( $mZoneGeoId )
-		{
-			$oZoneGeo = Doctrine::getTable( 'Region' )->find( $mZoneGeoId );
-			if( !$oZoneGeo )
-			{
-				$oZoneGeo = Doctrine::getTable( 'Departement' )->find( $mZoneGeoId );
-			}
-		}
-		
-	    return $oZoneGeo;
-	}
-
-	public function getAutresZonesGeo( $oZoneGeo, $mZoneGeoId )
-	{
-		if( $oZoneGeo instanceof Region )
-		{
-			$aRegions = Doctrine::getTable( 'Departement' )->findByDql( 'region = ?', $mZoneGeoId );	
-		}
-		else if( $oZoneGeo instanceof Departement )
-		{
-			$aRegions = Doctrine::getTable( 'Departement' )->findByDql( 'region = ?', $oZoneGeo->getRegion()->getId() );	
-		}
-	    else 
-	    {
-	    	$aRegions = Doctrine::getTable( 'Region' )->findAll();
-	    }
-	    
-	    return $aRegions;
-	}
-	
-	protected function getIndexInputParams( $oRequest )
-	{
-		$oCategorieTable = Doctrine::getTable( 'Categorie' );
-		$this->sTitre      = $oRequest->getParameter( ListingParameters::TITRE    , null );
-		$this->sCategorie  = $oRequest->getParameter( ListingParameters::CATEGORIE, null );
-		$this->mZoneGeoId  = $oRequest->getParameter( ListingParameters::REGION   , false );
-		$this->iPage       = $oRequest->getParameter( ListingParameters::PAGE, 1 );
-	    //?
-	    $this->sCategorie  = ( $this->sCategorie == 0 ) ? null : $this->sCategorie;
-	    	   
-	    //Recupération de toutes les catégories
-	    $this->aCategories = $oCategorieTable->findALL();
-	
-	}
-	
-	public function executeIndex(sfWebRequest $oRequest)
+  public function preExecute()
+  {
+  	if( $this->getRequest()->isMethod('post') )
     {
-    	//?
-	  	$this->backref   = Backref::getBackdef( $oRequest );
-	  	  	
-	  	$this->getIndexInputParams( $oRequest );
+	  $this->getUser()->setAttribute( 'annonce_filters', $this->getRequest()->getParameter( 'annonce_filters' ) );
+    }
 
-		//DEBUT SEMI-PROPRE
-		$oZoneGeo          = $this->getZoneGeoNom( $this->mZoneGeoId );
-		$this->sZoneGeoNom = $oZoneGeo->nom;
-		$this->aRegions    = $this->getAutresZonesGeo( $oZoneGeo, $this->mZoneGeoId );
-		//FIN
-			  	
-	    $oListingRecherche = new ListingRecherche( $this );
-	    
-	    $this->oPager      = $oListingRecherche->buildPaginatedQuery( $this->iPage );
-	    
-	    //Recupération du listing d'annonces
-	    $this->aAnnonces = $this->oPager->getResults();
-  	}
-}
+    $this->form_submit_url = $this->getRequest()->getParameter('module').'/'.$this->getRequest()->getParameter('action');
+    
+    switch( $this->getRequest()->getParameter('action') )
+    {
+    	case 'demandes':
+    		$type_annonce = 'demande';
+    		break;
+    	case 'offres':
+    		$type_annonce = 'offre';
+    		break;
+    	default:
+    		$type_annonce = '';
+    }
+    
+  	$geo_zone_value = $this->getUser()->getAttribute('annonce_filters[geo_zone]', '0' );
+    $only_title     = $this->getUser()->getAttribute('annonce_filters[only_title]', '0' );
+    $this->is_only_title_checked = $only_title != '0' ? true : false;
+  	$this->filter = new AnnonceFormFilter( $geo_zone_value, $only_title );
 
-class ListingParameters
-{
-	const REGION    = 'r';
-	const TITRE     = 't';
-	const CATEGORIE = 'c';
-	const PAGE      = 'p';
+  	if( $this->getRequest()->hasParameter('c') )
+    {
+		$tmp_attributes = $this->getUser()->getAttribute( $this->filter->getName() );
+		$tmp_attributes['categorie'] = $this->getRequest()->getParameter('c');
+		$this->getUser()->setAttribute( $this->filter->getName(),$tmp_attributes );
+    }
+    
+  	$attributes = $this->getUser()->getAttribute( $this->filter->getName() );
+
+  	//Force la valeur "etat_de_validation" à "accepted"
+  	$attributes['etat_de_validation'] = 'accepted';
+  	
+    //Pour compter le nombre d'annonces (offre+demande) tout en conservant les criteres de recherche.
+    $attributes['type_annonce']       = '';
+    $this->filter->bind( $attributes );
+    $this->nb_tout     = $this->filter->isValid()===true?count($this->filter->getQuery()->execute()):'';
+    
+    //Pour compter le nombre d'annonces (offre) tout en conservant les criteres de recherche.
+    $attributes['type_annonce']       = 'offre';
+    $this->filter->bind( $attributes );
+    $this->nb_offres   = $this->filter->isValid()===true?count($this->filter->getQuery()->execute()):'';
+    
+    //Pour compter le nombre d'annonces (demande) tout en conservant les criteres de recherche.
+    $attributes['type_annonce']       = 'demande';
+    $this->filter->bind( $attributes );
+    $this->nb_demandes = $this->filter->isValid()===true?count($this->filter->getQuery()->execute()):'';  
+    //
+    
+    //last
+    $attributes['type_annonce']       = $type_annonce;
+    $this->type_annonce               = $type_annonce;
+    
+    $this->filter->bind( $attributes );
+    $this->annonces = array();
+    //if($this->filter->isValid())
+    //{
+    	$this->pager    = $this->paginateQuery( $this->filter->getQuery(), $this->getRequest()->getParameter('p', 1));
+    	$this->annonces = $this->pager->getResults();
+    //}
+  }	
+
+  //Pagination
+  public function paginateQuery( $query, $iPage )
+  {
+	  $oPager = new sfDoctrinePager( 'Annonce', 5 );
+	  $oPager->setQuery( $query );
+	  $oPager->setPage( $iPage );
+	  $oPager->init();
+	  return $oPager;		
+  }
+	
+ /**
+  * Executes index action
+  *
+  * @param sfRequest $request A request object
+  */
+  public function executeIndex(sfWebRequest $request)
+  {
+  }
+  
+  public function executeDemandes()
+  {
+    $this->setTemplate('index');	
+  }
+
+  public function executeOffres()
+  {
+    $this->setTemplate('index');	
+  }
 }
