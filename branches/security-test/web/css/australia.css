@@ -1,0 +1,253 @@
+body {
+	background: #ffffeb url(/images/australia/base_left.png) repeat-y;
+	margin: 0;
+	padding: 0;
+	font-family: verdana; 
+
+}
+
+strong {
+	font-weight: bold;
+}
+
+a {
+	color: #336699;
+	text-decoration: none;  
+	font-weight: bold;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #336699;
+}
+
+a.thin_link {
+	font-weight: normal;
+}
+
+a.thin_link_footer {
+	font-weight: normal;
+	text-decoration: none;
+	padding-right: 5px;
+	color: #336699;
+}
+
+
+a.nohistory,
+.nohistory a {
+	color: #336699;
+}
+
+a.underlined_link,
+.underlined_links a {
+	text-decoration: underline;
+}
+
+.index {
+	margin-bottom: 15px;
+}
+
+.index .index_top_bar {
+	width: 100%;
+	height: 13px;
+	background: transparent url(/images/australia/base_top.png) repeat-x;
+}
+
+.index .index_main {
+	padding: 15px 0 0 30px;	
+	width: 930px;
+}
+
+.index .index_top {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+.index .index_main .index_top .logo {
+	width: 407px;
+	height: 80px;
+	background: transparent url(/images/australia/index_dinkos_logo.png) no-repeat;
+	text-indent: -1000px;
+	margin: 0;
+	padding: 0;
+}
+
+.index .top_texts {
+	float: right;
+	text-align: right;
+}
+
+.index .top_texts .payoff {
+	font-size: 28px;
+	margin-bottom: 18px;
+}
+
+.index .index_left {
+	float: left;
+	margin-top: 9px;
+}
+
+.index .index_post_ad {
+	width: 234px;
+	height: 47px;
+	background: transparent url(/images/australia/index_post_ad.png) no-repeat;
+	cursor: pointer;
+}
+
+.index .index_plate {
+	width: 212px;
+	height: 287px;
+	margin: 10px 0 0 -9px;
+	padding: 5px 9px 0 21px;
+	background: transparent url(/images/australia/index_plate.png) no-repeat;
+	float: left;
+	line-height: 140%;
+}	
+
+.index .index_plate .index_plate_text {
+	color: #353535;
+	font-size: 13px;
+}
+
+.index .index_plate .polaroid {
+	padding: 4px 0 4px 0;
+}
+
+.index .index_middle {
+	position: relative;
+	float: left;
+}
+
+.index .index_map {
+	position: absolute;
+	width: 491px;
+	height: 450px;
+	top: 10px;
+	left: 30px;
+	background: transparent url(/images/australia/index_dinkos_map.png) no-repeat;
+	z-index: 10;
+}	
+
+.index .index_map .index_overlay, 
+.index .index_map .index_hotspot {
+	width: 491px;
+	height: 450px;
+	position: absolute;
+}
+
+.index .index_map .region_1 { background: transparent url(/images/australia/region_1.png) 0 39px no-repeat;  }
+.index .index_map .region_2 { background: transparent url(/images/australia/region_2.png) 188px 2px no-repeat;  }
+.index .index_map .region_3 { background: transparent url(/images/australia/region_3.png) 201px 6px no-repeat;  }
+.index .index_map .region_4 { background: transparent url(/images/australia/region_4.png) 301px -1px no-repeat;  }
+.index .index_map .region_5 { background: transparent url(/images/australia/region_5.png) 332px 245px no-repeat;  }
+.index .index_map .region_6 { background: transparent url(/images/australia/region_6.png) 328px 313px no-repeat;  }
+.index .index_map .region_7 { background: transparent url(/images/australia/region_7.png) 193px 203px no-repeat;  }
+.index .index_map .region_8 { background: transparent url(/images/australia/region_8.png) 428px 313px no-repeat;  }
+.index .index_map .region_9 { background: transparent url(/images/australia/region_9.png) 412px 329px no-repeat;  }
+.index .index_map .region_10 { background: transparent url(/images/australia/region_10.png) 358px 361px no-repeat;  }
+.index .index_map .region_11 { background: transparent url(/images/australia/region_11.png) 364px 410px no-repeat;  }
+.index .index_map .region_12 { background: transparent url(/images/australia/region_12.png) 380px 430px no-repeat;  }
+.index .index_map .region_13 { background: transparent url(/images/australia/region_13.png) 469px 228px no-repeat;  }
+.index .index_map .region_14 { background: transparent url(/images/australia/region_14.png) 39px 286px no-repeat;  }
+.index .index_map .region_15 { background: transparent url(/images/australia/region_15.png) 284px 316px no-repeat;  }
+
+.index .index_regions {
+	position: relative;
+	z-index: 2;
+	float: right;
+	text-align: right;
+	width: 230px; 
+	line-height: 166%;
+	margin-top: 5px;
+}
+
+.index .index_regions .region, 
+.index .index_regions .region_small {
+	display: block;
+}
+
+.index .index_regions .region { 
+	font-size: 14px;
+}
+
+.index .index_regions .region_small { 
+	font-size: 12px;
+}
+
+.index .index_regions .region_space { 
+	height: 20px;
+	width: 1px;
+}
+
+.index .index_footer {
+	padding-top: 37px;
+	clear: left;
+	font-size: 11px;
+	position: relative;
+	z-index: 20;
+	width:550px;
+}
+
+.index .index_footer .countries {
+	width: 440px;
+	color: #646464;
+}
+
+.index .index_footer a.country {
+	color: #646464;	
+	font-weight: normal;
+}
+
+.index .index_footer .footer {
+	padding-top: 15px;
+}
+
+.index .index_footer .footer_icon {
+	vertical-align: -2px;
+	padding: 0 4px 0 10px;
+}
+
+.icon_about {
+    width: 19px;
+    height: 18px;
+    background: transparent url(/images/australia/index_sprite.png) -508px -412px no-repeat;
+    margin-bottom: -7px;    
+}
+.icon_help {
+    width: 19px;
+    height: 18px;
+    background: transparent url(/images/australia/index_sprite.png) -529px -412px no-repeat;
+    margin-bottom: -7px;
+}
+.icon_rules {
+    width: 15px;
+    height: 18px;
+    background: transparent url(/images/australia/index_sprite.png) -547px -412px no-repeat;
+    margin-bottom: -7px;
+}
+.icon_security {
+    width: 15px;
+    height: 18px;
+    background: transparent url(/images/australia/index_sprite.png) -561px -414px no-repeat;
+    margin-bottom: -7px;
+}
+.icon_marketing {
+    width: 18px;
+    height: 18px;
+    background: transparent url(/images/australia/index_sprite.png) -580px -414px no-repeat;
+    margin-bottom: -7px;
+}
+.icon_cs {
+    width: 20px;
+    height: 18px;
+    background: transparent url(/images/australia/index_sprite.png) -602px -414px no-repeat;
+    margin-bottom: -7px;
+}
+.icon_insert {
+    width: 16px;
+    height: 18px;
+    background: transparent url(/images/australia/index_sprite.png) -627px -414px no-repeat;

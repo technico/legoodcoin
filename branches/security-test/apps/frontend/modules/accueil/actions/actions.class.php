@@ -17,7 +17,28 @@ class accueilActions extends sfActions
   */
   public function executeIndex(sfWebRequest $request)
   {
+  if (!$request->getParameter('sf_culture'))
+  {
+      if ($this->getUser()->isFirstRequest())
+      {
+        $culture = $request->getPreferredCulture(array('en', 'fr'));    
+        $this->getUser()->setCulture($culture);
+        $this->getUser()->isFirstRequest(false);
+      }
+      else
+      {
+        $culture = $this->getUser()->getCulture();
+      }
+      //$this->redirect('@localized_homepage');
+    }
   	$this->iNbAnnonces = count( Doctrine::getTable( 'Annonce' )->findByDql( 'etat_de_validation = ?', 'accepted' ) );
-  	$this->setLayout( 'accueilLayout' );
+  	if($culture=='en')
+  	{
+  		$this->setLayout( 'australiaLayout' );
+  	}
+  	else
+  	{
+  		$this->setLayout( 'accueilLayout' );
+  	}
   }
 }
