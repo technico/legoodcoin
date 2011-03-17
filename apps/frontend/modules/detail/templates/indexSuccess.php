@@ -28,7 +28,7 @@
 </span>
 <?php endif; ?>
 <div id="detail">
-  <?php include_partial('detailAnnonce', array('Annonce'=>$Annonce)) ?>
+  <?php include_partial('detail/detailAnnonce', array('Annonce'=>$Annonce)) ?>
 	<div class="droit">
 		<div class="droit-titre"><?php echo __('Contact the advertiser') ?></div>
 		<div style="margin: 3px">
@@ -55,9 +55,9 @@
 
 	<?php if( isset( $sHtmlControle ) ): ?>
 	<div class="droit">
-		  <div class="droit-titre" style="background-color:#00FF00;">Contrôle de l'annonce</div>
-		  <div style="margin: 3px"><a href="<?php echo url_for( 'controle/accept?id='.$Annonce->getId() ) ?>">Accepter</a></div>
-		  <div style="margin: 3px"><a href="<?php echo url_for( 'controle/reject?id='.$Annonce->getId() ) ?>">Rejeter</a></div>
+		  <div class="droit-titre" style="background-color:#00FF00;"><?php echo __('Ad control') ?></div>
+		  <div style="margin: 3px"><a href="<?php echo url_for( 'controle/accept?id='.$Annonce->getId() ) ?>"><?php echo __('Accept') ?></a></div>
+		  <div style="margin: 3px"><a href="<?php echo url_for( 'controle/reject?id='.$Annonce->getId() ) ?>"><?php echo __('Reject') ?></a></div>
 	</div>
 	<?php endif; ?>
 </div>
