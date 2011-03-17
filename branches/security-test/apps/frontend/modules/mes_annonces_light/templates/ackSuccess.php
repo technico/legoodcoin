@@ -1,0 +1,1 @@
+Vos annonces activent ont été envoyées à votre adresse email.

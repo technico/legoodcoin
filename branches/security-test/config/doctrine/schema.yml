@@ -1,0 +1,365 @@
+Administrateur:
+  tableName: administrateur
+  columns:
+    id:
+      type: integer(4)
+      primary: true
+      autoincrement: true
+    nom:
+      type: string(50)
+      notnull: true
+    prenom:
+      type: string(20)
+      notnull: true
+    mail:
+      type: string(100)
+      notnull: true
+    mdp:
+      type: string(20)
+      notnull: true
+  relations:
+    Annonce:
+      local: id
+      foreign: validee_par
+      type: many
+Annonce:
+  tableName: annonce
+  columns:
+    id:
+      type: integer(4)
+      primary: true
+      autoincrement: true
+    etat_de_validation:
+      type: string(8)
+      default: wait
+    ville:
+      type: string(30)
+      notnull: true
+    code_postal:
+      type: string(5)
+      notnull: true
+    contenu:
+      type: string()
+      notnull: true
+    titre:
+      type: string(50)
+      notnull: true
+    prix:
+      type: decimal(65)
+      scale: false
+    est_abusif:
+      type: integer(4)
+      default: '0'
+    type_annonce:
+      type: string(7)
+      notnull: true
+    categorie:
+      type: integer(4)
+      notnull: true
+    region:
+      type: integer(4)
+      notnull: true
+    departement:
+      type: integer(4)
+      notnull: true
+    telephone: string(10)
+    annonceur: integer(4)
+    validee_par: integer(4)
+    date_control: timestamp(25)
+  relations:
+    Administrateur:
+      local: validee_par
+      foreign: id
+      type: one
+    Region:
+      local: region
+      foreign: id
+      type: one
+    Departement:
+      local: departement
+      foreign: code_dep
+      type: one
+    Categorie:
+      local: categorie
+      foreign: id
+      type: one
+    Annonceur:
+      local: annonceur
+      foreign: id
+      type: one
+    AnnoncePhoto:
+      local: id
+      foreign: annonce_id
+      type: many
+AnnoncePhoto:
+  tableName: annonce_photo
+  columns:
+    id:
+      type: integer(8)
+      primary: true
+      autoincrement: true
+    annonce_id: integer(4)
+    filename: string(255)
+  relations:
+    Annonce:
+      local: annonce_id
+      foreign: id
+      type: one
+Annonceur:
+  tableName: annonceur
+  columns:
+    id:
+      type: integer(4)
+      primary: true
+      autoincrement: true
+    sf_guard_user_id:
+      type: integer(4)
+      notnull: true
+    mail: string(100)
+    mdp: string(20)
+  relations:
+    SfGuardUser:
+      local: sf_guard_user_id
+      foreign: id
+      type: one
+    Annonce:
+      local: id
+      foreign: annonceur
+      type: many
+Categorie:
+  tableName: categorie
+  columns:
+    id:
+      type: integer(4)
+      primary: true
+      autoincrement: true
+    nom:
+      type: string(200)
+      notnull: true
+  relations:
+    Annonce:
+      local: id
+      foreign: categorie
+      type: many
+CodePostaux:
+  tableName: code_postaux
+  columns:
+    id:
+      type: integer(4)
+      primary: true
+      autoincrement: true
+    commune:
+      type: string(50)
+      notnull: true
+    codepos:
+      type: string(5)
+      fixed: true
+      notnull: true
+    departement:
+      type: string(50)
+      notnull: true
+    insee:
+      type: string(10)
+      notnull: true
+Departement:
+  tableName: departement
+  columns:
+    code_dep:
+      type: integer(4)
+      primary: true
+    nom:
+      type: string(255)
+      notnull: true
+    region:
+      type: integer(4)
+      default: '0'
+      notnull: true
+  relations:
+    Region:
+      local: region
+      foreign: id
+      type: one
+    Annonce:
+      local: code_dep
+      foreign: departement
+      type: many
+Region:
+  tableName: region
+  columns:
+    id:
+      type: integer(4)
+      primary: true
+      autoincrement: true
+    nom:
+      type: string(100)
+      notnull: true
+  relations:
+    Annonce:
+      local: id
+      foreign: region
+      type: many
+    Departement:
+      local: id
+      foreign: region
+      type: many
+SfGuardGroup:
+  tableName: sf_guard_group
+  columns:
+    id:
+      type: integer(4)
+      primary: true
+      autoincrement: true
+    name: string(255)
+    description: string()
+    created_at: timestamp(25)
+    updated_at: timestamp(25)
+  relations:
+    SfGuardGroupPermission:
+      local: id
+      foreign: group_id
+      type: many
+    SfGuardUserGroup:
+      local: id
+      foreign: group_id
+      type: many
+SfGuardGroupPermission:
+  tableName: sf_guard_group_permission
+  columns:
+    group_id:
+      type: integer(4)
+      primary: true
+    permission_id:
+      type: integer(4)
+      primary: true
+    created_at: timestamp(25)
+    updated_at: timestamp(25)
+  relations:
+    SfGuardPermission:
+      local: permission_id
+      foreign: id
+      type: one
+    SfGuardGroup:
+      local: group_id
+      foreign: id
+      type: one
+SfGuardPermission:
+  tableName: sf_guard_permission
+  columns:
+    id:
+      type: integer(4)
+      primary: true
+      autoincrement: true
+    name: string(255)
+    description: string()
+    created_at: timestamp(25)
+    updated_at: timestamp(25)
+  relations:
+    SfGuardGroupPermission:
+      local: id
+      foreign: permission_id
+      type: many
+    SfGuardUserPermission:
+      local: id
+      foreign: permission_id
+      type: many
+SfGuardRememberKey:
+  tableName: sf_guard_remember_key
+  columns:
+    id:
+      type: integer(4)
+      primary: true
+      autoincrement: true
+    ip_address:
+      type: string(50)
+      primary: true
+    user_id: integer(4)
+    remember_key: string(32)
+    created_at: timestamp(25)
+    updated_at: timestamp(25)
+  relations:
+    SfGuardUser:
+      local: user_id
+      foreign: id
+      type: one
+SfGuardUser:
+  tableName: sf_guard_user
+  columns:
+    id:
+      type: integer(4)
+      primary: true
+      autoincrement: true
+    username:
+      type: string(128)
+      notnull: true
+    algorithm:
+      type: string(128)
+      default: sha1
+      notnull: true
+    is_active:
+      type: integer(1)
+      default: '1'
+    is_super_admin:
+      type: integer(1)
+      default: '0'
+    salt: string(128)
+    password: string(128)
+    last_login: timestamp(25)
+    created_at: timestamp(25)
+    updated_at: timestamp(25)
+  relations:
+    Annonceur:
+      local: id
+      foreign: sf_guard_user_id
+      type: many
+    SfGuardRememberKey:
+      local: id
+      foreign: user_id
+      type: many
+    SfGuardUserGroup:
+      local: id
+      foreign: user_id
+      type: many
+    SfGuardUserPermission:
+      local: id
+      foreign: user_id
+      type: many
+SfGuardUserGroup:
+  tableName: sf_guard_user_group
+  columns:
+    user_id:
+      type: integer(4)
+      primary: true
+    group_id:
+      type: integer(4)
+      primary: true
+    created_at: timestamp(25)
+    updated_at: timestamp(25)
+  relations:
+    SfGuardUser:
+      local: user_id
+      foreign: id
+      type: one
+    SfGuardGroup:
+      local: group_id
+      foreign: id
+      type: one
+SfGuardUserPermission:
+  tableName: sf_guard_user_permission
+  columns:
+    user_id:
+      type: integer(4)
+      primary: true
+    permission_id:
+      type: integer(4)
+      primary: true
+    created_at: timestamp(25)
+    updated_at: timestamp(25)
+  relations:
+    SfGuardUser:
+      local: user_id
+      foreign: id
+      type: one
+    SfGuardPermission:
+      local: permission_id
+      foreign: id
+      type: one
