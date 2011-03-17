@@ -13,7 +13,11 @@
 	<div>
 		<div id="logo">
 			<a href="<?php url_for( 'listing/index?r=0' ) ?>">
+			<?php if($sf_user->getCulture()==='en'): ?>
+				<img border="0" id="header_logo" alt="Dinkos.com.au" src="/images/australia/dinko_logo_general.png" />			
+			<?php else: ?>
 				<img border="0" id="header_logo" alt="Petites annonces gratuites d'occasion - legoodcoin.fr" src="/images/legoodcoin.gif" />
+			<?php endif;?>
 			</a>
 		</div>
 		<div id="region"><?php include_slot( 'zone_geo' ) ?></div>
