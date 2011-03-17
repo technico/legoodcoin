@@ -82,6 +82,223 @@
         <source>Search</source>
         <target>Rechercher</target>
       </trans-unit>  
+      <trans-unit id="21">
+        <source>Title</source>
+        <target>Titre</target>
+      </trans-unit> 
+      <trans-unit id="22">
+        <source>Category</source>
+        <target>Categorie</target>
+      </trans-unit>
+      <trans-unit id="23">
+        <source>Please choose a category.</source>
+        <target>Veuillez selectionner une catégorie.</target>
+      </trans-unit>
+      <trans-unit id="24">
+        <source>Ad type</source>
+        <target>Type d'annonce</target>
+      </trans-unit>
+      <trans-unit id="25">
+        <source>Ad text</source>
+        <target>Texte de l'annonce</target>
+      </trans-unit>
+      <trans-unit id="26">
+        <source>Please enter an ad text.</source>
+        <target>Veuillez préciser le texte de l'annonce.</target>
+      </trans-unit>
+      <trans-unit id="27">
+        <source>%value% is not a valid ad type.</source>
+        <target>%value% n'est pas un type d'annonce valide.</target>
+      </trans-unit>
+      <trans-unit id="28">
+        <source>Please enter a title for your ad.</source>
+        <target>Veuillez indiquer un titre pour votre annonce.</target>
+      </trans-unit>
+      <trans-unit id="29">
+        <source>Price</source>
+        <target>Prix</target>
+      </trans-unit>
+      <trans-unit id="30">
+        <source>%value% is not a valid price.</source>
+        <target>%value% n'est pas un prix valide.</target>
+      </trans-unit>
+      <trans-unit id="31">
+        <source>Phone number</source>
+        <target>Téléphone</target>
+      </trans-unit>
+      <trans-unit id="32">
+        <source>%value% is not a valid phone number.</source>
+        <target>%value% n'est pas un numéro de téléphone valide.</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Please choose a region.</source>
+        <target>Veuillez sélectionner une région.</target>
+      </trans-unit>
+      <trans-unit id="34">
+        <source>%value% is not a valid region.</source>
+        <target>%value% n'est pas une région valide.</target>
+      </trans-unit>
+      <trans-unit id="35">
+        <source>Please choose a sub-region.</source>
+        <target>Veuillez sélectionner un département.</target>
+      </trans-unit>
+      <trans-unit id="36">
+        <source>%value% is not a valid sub-region.</source>
+        <target>%value% n'est pas un département valide.</target>
+      </trans-unit>
+      <trans-unit id="37">
+        <source>Please enter a zip code.</source>
+        <target>Veuillez indiquer un code postal.</target>
+      </trans-unit>
+      <trans-unit id="38">
+        <source>%value% is not a valid zip code.</source>
+        <target>%value% n'est pas un code postal valide.</target>
+      </trans-unit>
+      <trans-unit id="39">
+        <source>Please enter a city name.</source>
+        <target>Veuillez indiquer une ville.</target>
+      </trans-unit>      
+      <trans-unit id="40">
+        <source>%value% is not a valid city name.</source>
+        <target>%value% n'est pas un nom de ville valide.</target>
+      </trans-unit>
+      <trans-unit id="41">
+        <source>Please enter your email.</source>
+        <target>Veuillez indiquer votre email.</target>
+      </trans-unit>
+      <trans-unit id="42">
+        <source>%value% is not a valid email address.</source>
+        <target>%value% n'est pas une adresse email valide.</target>
+      </trans-unit>
+      <trans-unit id="43">
+        <source>The file uploaded is not a valid image.</source>
+        <target>Le fichier uploadé n'est pas une image valide.</target>
+      </trans-unit>
+      <trans-unit id="44">
+        <source>File is too large (maximum is %max_size% bytes).</source>
+        <target>Le fichier est trop grand (la taille maximum est %max_size% bits).</target>
+      </trans-unit>
+      
+      <trans-unit id="45">
+        <source>Sub-region</source>
+        <target>Département</target>
+      </trans-unit>
+      <trans-unit id="46">
+        <source>Zip code</source>
+        <target>Code postal</target>
+      </trans-unit>
+      <trans-unit id="47">
+        <source>City</source>
+        <target>Ville</target>
+      </trans-unit>
+      <trans-unit id="48">
+        <source>Picture 1</source>
+        <target>Photo 1</target>
+      </trans-unit>        
+      <trans-unit id="49">
+        <source>Posting an ad on</source>
+        <target>Déposer une annonce sur</target>
+      </trans-unit> 
+      <trans-unit id="50">
+        <source>is FREE</source>
+        <target>est GRATUIT</target>
+      </trans-unit>
+      <trans-unit id="51">
+        <source>Your ad will be reviewed by our team. After approval, it will be published for a period of 60 days. During this period, you can delete your ad at any time.</source>
+        <target>Votre annonce sera validée par notre équipe éditoriale avant mise en ligne. Elle restera sur le site pendant 60 jours. Pendant cette période, vous pourrez la supprimer à tout moment.</target>
+      </trans-unit> 
+      <trans-unit id="52">
+        <source>Warning : the form have some errors.</source>
+        <target>Attention : le formulaire comporte des erreurs.</target>
+      </trans-unit> 
+      <trans-unit id="53">
+        <source>Edit you ad</source>
+        <target>Modifier votre annonce</target>
+      </trans-unit>
+      <trans-unit id="54">
+        <source>Post an ad</source>
+        <target>Déposer une annonce</target>
+      </trans-unit>
+      <trans-unit id="55">
+        <source>Preview of your ad</source>
+        <target>Prévisualisation de votre annonce</target>
+      </trans-unit>
+      <trans-unit id="56">
+        <source>edit</source>
+        <target>modifier</target>
+      </trans-unit>
+      <trans-unit id="57">
+        <source>Ad preview</source>
+        <target>Prévisualisation de votre annonce</target>
+      </trans-unit>
+      <trans-unit id="58">
+        <source>Thank you for submitting your ad.</source>
+        <target>Nous vous remercions pour le dépôt de votre annonce.</target>
+      </trans-unit>
+      <trans-unit id="59">
+        <source>You're ad will be reviewed by our team before publication.</source>
+        <target>Votre annonce sera validée par notre équipe avant publication.</target>
+      </trans-unit>
+      <trans-unit id="60">
+        <source>Home</source>
+        <target>Accueil</target>
+      </trans-unit>
+      <trans-unit id="62">
+        <source>Ad details</source>
+        <target>Détails de l'annonce</target>
+      </trans-unit>
+      <trans-unit id="62">
+        <source>Posted by</source>
+        <target>Mis en ligne par</target>
+      </trans-unit>
+      <trans-unit id="63">
+        <source>Send an email</source>
+        <target>Envoyer un email</target>
+      </trans-unit>
+      <trans-unit id="64">
+        <source>Edit</source>
+        <target>Modifier</target>
+      </trans-unit>
+      <trans-unit id="65">
+        <source>Delete</source>
+        <target>Supprimer</target>
+      </trans-unit>    
+      <trans-unit id="66">
+        <source>Contact the advertiser</source>
+        <target>Contacter l'annonceur</target>
+      </trans-unit>
+      <trans-unit id="67">
+        <source>Manage your ad</source>
+        <target>Gérer votre annonce</target>
+      </trans-unit>
+      <trans-unit id="68">
+        <source>My active ads</source>
+        <target>Mes annonces en ligne</target>
+      </trans-unit>
+      <trans-unit id="69">
+        <source>To receive your active ads by mail, enter below the email address used when filing your ad. If you used multiple email addresses for different ads, you must apply for each address.</source>
+        <target>Pour recevoir vos annonces actives par mail, remplissez ci-dessous votre adresse email renseignée lors de votre dépôt d'annonce. Si vous avez utilisé plusieurs adresses email pour des annonces différentes, vous devez faire la demande pour chaque adresse.</target>
+      </trans-unit>
+      <trans-unit id="70">
+        <source>Your email address</source>
+        <target>Votre adresse email</target>
+      </trans-unit>
+      <trans-unit id="71">
+        <source>Please enter the email address used when filing your ad.</source>
+        <target>Veuillez indiquer l'adresse email renseignée lors du dépôt d'annonce.</target>
+      </trans-unit>
+      <trans-unit id="72">
+        <source>No active ads on the site for this email.</source>
+        <target>L'adresse email ne comporte aucune annonce active sur le site.</target>
+      </trans-unit>
+      <trans-unit id="73">
+        <source>Your name</source>
+        <target>Votre nom</target>
+      </trans-unit>
+      <trans-unit id="74">
+        <source>Text</source>
+        <target>Texte</target>
+      </trans-unit>  
     </body>
   </file>
 </xliff>

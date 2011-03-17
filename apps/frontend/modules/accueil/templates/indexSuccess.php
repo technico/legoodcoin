@@ -1,15 +1,5 @@
-<?php 
-//Setting up i18N
-/*
-$language = $sf_request->getPreferredCulture(array('en', 'fr'));
-$sf_user->setCulture($language);*/
-?><style>
-.Map {
-	background: url(/images/map.png) no-repeat;
-	width: 410px;
-	height: 480px;
-}
-</style>
+<?php use_helper('i18n') ?>
+<?php slot('title', __('Home')) ?>
 <?php use_javascript('leboncoin_index_10735')?>
 <?php slot( 'nb_annonce', $iNbAnnonces ) ?>
 <table cellspacing="0" cellpadding="0" id="TableContentBottom">

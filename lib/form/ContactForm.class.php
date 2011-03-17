@@ -8,16 +8,16 @@ class ContactForm extends sfForm
   public function configure()
   {
     $this->setWidgets(array(
-      'name'    => new sfWidgetFormInput( array( 'label' => 'Votre nom' ) ),
-      'email'   => new sfWidgetFormInput( array( 'label' => 'Votre adresse email' ) ),
-      'message' => new sfWidgetFormTextarea( array( 'label' => 'Texte' ) ),
+      'name'    => new sfWidgetFormInput( array( 'label' => 'Your name' ) ),
+      'email'   => new sfWidgetFormInput( array( 'label' => 'Your email address' ) ),
+      'message' => new sfWidgetFormTextarea( array( 'label' => 'Message' ) ),
     ));
     $this->widgetSchema->setNameFormat('contact[%s]');
  
     $this->setValidators(array(
     
-      'name'    => new sfValidatorString(array('required' => true)),
-      'email'   => new sfValidatorEmail(array(), array('invalid' => 'Email address is invalid.')),
+      'name'    => new sfValidatorString(array('required' => true), array('required' => 'Please enter your name.')),
+      'email'   => new sfValidatorEmail(array(), array('required' => 'Please enter your email address.', 'invalid' => 'Your email address is invalid.')),
     
       'message' => new sfValidatorString
       (

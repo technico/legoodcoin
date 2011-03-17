@@ -4,7 +4,7 @@ class MesAnnoncesForm extends sfForm
 	public function configure()
 	{
 		$this->setWidget( 'email', new sfWidgetFormInput( ) );
-		$this->widgetSchema->setLabel( 'email', 'Votre adresse email : ' );
+		$this->widgetSchema->setLabel( 'email', 'Your email address' );
 		
 		$this->setValidator
 		( 
@@ -14,8 +14,8 @@ class MesAnnoncesForm extends sfForm
 				array( 'required' => true, 'column' => 'username', 'model' => 'sfGuardUser' ), 
 				array
 				( 
-					'required' => 'Veuillez indiquer l\'adresse email renseignée lors de votre dépôt d\'annonce',
-				    'invalid'  => 'L\'adresse email ne comporte aucune annonce active sur le site.'
+					'required' => "Please enter the email address used when filing your ad.",
+				    'invalid'  => "No active ads on the site for this email."
 				)
 			)
 		);

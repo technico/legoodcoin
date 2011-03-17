@@ -1,4 +1,5 @@
-<?php use_stylesheet( 'merci' ) ?>
+<?php use_helper('i18n') ?>
+<?php slot('title', __('Thank you for submitting your ad.')) ?>
 <?php slot( 'url_annonce', url_for( 'listing/index?r=0' ) ) ?>
-<div id="merci">Nous vous remercions pour le dépôt de votre annonce.<br />
-Votre annonce sera validée par notre équipe avant publication.</div>
+<div id="merci"><?php echo __('Thank you for submitting your ad.') ?><br />
+<?php echo __("You're ad will be reviewed by our team before publication.") ?></div>
