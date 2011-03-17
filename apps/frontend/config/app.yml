@@ -1,2 +1,4 @@
 # default values
-#all:
+all:
+  sf_guard_plugin_success:
+    signout_url: @homepage

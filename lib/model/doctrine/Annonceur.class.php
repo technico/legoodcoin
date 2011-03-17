@@ -6,11 +6,11 @@
 class Annonceur extends BaseAnnonceur
 {
 	public function getPseudo() {
-		$aAnnonceur=explode('@',$this->getMail());
+		$aAnnonceur=explode('@',$this->getSfGuardUser()->getUsername());
 		return $aAnnonceur[0];
 	}
 		
 	public function __toString(){
-		return $this->getMail();
+		return $this->getSfGuardUser()->getUsername();
 	}
 }

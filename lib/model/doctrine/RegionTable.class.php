@@ -4,5 +4,15 @@
  */
 class RegionTable extends Doctrine_Table
 {
-
+	public function getRecordAsArray()
+	{
+		$array = array();
+		$regions = $this->findAll();
+		foreach($regions as $region)
+		{
+			$array[$region->getId()] = $region->getNom(); 
+		}
+		
+		return $array;
+	}
 }

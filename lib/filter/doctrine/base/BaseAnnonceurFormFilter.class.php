@@ -14,13 +14,15 @@ class BaseAnnonceurFormFilter extends BaseFormFilterDoctrine
   public function setup()
   {
     $this->setWidgets(array(
-      'mail' => new sfWidgetFormFilterInput(),
-      'mdp'  => new sfWidgetFormFilterInput(),
+      'sf_guard_user_id' => new sfWidgetFormDoctrineChoice(array('model' => 'sfGuardUser', 'add_empty' => true)),
+      'mail'             => new sfWidgetFormFilterInput(),
+      'mdp'              => new sfWidgetFormFilterInput(),
     ));
 
     $this->setValidators(array(
-      'mail' => new sfValidatorPass(array('required' => false)),
-      'mdp'  => new sfValidatorPass(array('required' => false)),
+      'sf_guard_user_id' => new sfValidatorDoctrineChoice(array('required' => false, 'model' => 'sfGuardUser', 'column' => 'id')),
+      'mail'             => new sfValidatorPass(array('required' => false)),
+      'mdp'              => new sfValidatorPass(array('required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('annonceur_filters[%s]');
@@ -38,9 +40,10 @@ class BaseAnnonceurFormFilter extends BaseFormFilterDoctrine
   public function getFields()
   {
     return array(
-      'id'   => 'Number',
-      'mail' => 'Text',
-      'mdp'  => 'Text',
+      'id'               => 'Number',
+      'sf_guard_user_id' => 'ForeignKey',
+      'mail'             => 'Text',
+      'mdp'              => 'Text',
     );
   }
 }

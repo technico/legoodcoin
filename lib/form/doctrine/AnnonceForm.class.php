@@ -11,49 +11,98 @@ class AnnonceForm extends BaseAnnonceForm
 {
   public function configure()
   {
+  	$this->setWidget( 'photo_1', new sfWidgetFormInputFile() );
+  	$this->setValidator
+  	( 
+  		'photo_1', 
+  		new sfValidatorFile
+  		( 
+  			array
+  			( 
+  				'required'   => false, 
+  				'mime_types' => 'web_images',
+  			    'max_size'   => 1*8*1024*1024
+  			) 
+  		) 
+  	);
+  	
+  	$this->setWidget( 'mail', new sfWidgetFormInput() );
+	$this->setValidator( 'mail', new sfValidatorEmail() );
   	unset( 
   		$this['date_control'],
   		$this['validee_par'],
   		$this['annonceur'],
   		$this['est_abusif'],
-  		//$this['contenu'],
-  		//$this['telephone'],
-  		//$this['prix'],
+//$this['contenu'],//unset after test ib upload image
+//$this['telephone'],
+//$this['prix'],
   		$this['etat_de_validation']//,
-  		//$this['ville'],
-  		//$this['code_postal'],
-  		//$this['type_annonce'],
-  		//$this['categorie'],
-  		//$this['region'],
-  		//$this['departement']
+//$this['ville'],
+//$this['code_postal'],
+//$this['type_annonce'],
+//$this['categorie'],
+//$this['region'],
+//$this['departement'],
+//$this['titre']
   	);
+	///*
+  	$this->widgetSchema['categorie']->setOption( 'add_empty', true );
+  	$this->validatorSchema['categorie']->setMessage( 'required', 'Veuillez selectionner une catégorie.' );
+  	 	
+  	$this->widgetSchema['departement']->setOption( 'add_empty', true );
+  	$this->validatorSchema['departement']->setMessage( 'required', 'Veuillez selectionner un département.' );
   	
-    $this->validatorSchema['ville'] = new sfValidatorString(
-      array('required' => true),
-      array('required' => 'Veuillez renseigner une ville.')
-    );
+  	$this->widgetSchema['region']->setOption( 'add_empty', true );
+  	$this->validatorSchema['region']->setMessage( 'required', 'Veuillez selectionner une région.' );
+  	
+  	$this->validatorSchema['ville'] = 
+  		new sfValidatorString
+  		( 
+  			array
+  			( 
+  				'min_length' => 1, 
+  				'max_length' => 50 //http://www.culture-generale.fr/geographie/29-nom-de-ville-francaise-le-plus-long-et-le-plus-court
+  			)
+  		);
+  		
+	$this->validatorSchema['ville']->setMessage( 'required', 'Veuillez renseigner une ville.' );
 
-    $this->validatorSchema['code_postal'] = new sfValidatorString(
-      array('required' => true),
-      array('required' => 'Veuillez renseigner un code postal.')
-    );
+	$this->validatorSchema['code_postal'] = 
+		new sfValidatorDoctrineChoice
+		(
+			array
+			(
+				'model'  => 'CodePostaux',
+				'column' => 'Codepos',
+			), 
+			array
+			(
+				'required'  => 'Veuillez renseigner un code postal.',
+				'invalid'  => '%value% n\'est pas un code postal valide.',
+			)
+		);
 
-    $this->validatorSchema['contenu'] = new sfValidatorString(
-      array('required' => true),
-      array('required' => 'Veuillez rediger un texte d\'annonce.')
-    );
+    $this->validatorSchema['code_postal']->setMessage( 'required', 'Veuillez renseigner un code postal.' );
 
-    $this->validatorSchema['titre'] = new sfValidatorString(
-      array('required' => true),
-      array('required' => 'Veuillez donner un titre à votre annnonce.')
-    );
+    $this->validatorSchema['contenu']->setMessage( 'required', 'Veuillez rediger un texte d\'annonce.' );
     
-    $this->validatorSchema['telephone'] = new sfValidatorString(
-      array('required' => false)
-    );
+    $this->validatorSchema['titre']->setMessage( 'required', 'Veuillez donner un titre à votre annnonce.' );
     
-    $this->validatorSchema['prix'] = new sfValidatorString(
-      array('required' => false)
-    );  
+    $this->validatorSchema['prix']->setMessage( 'invalid', '%value% n\'est pas un prix valide.' );
+    
+    $this->validatorSchema['telephone'] = 
+    	new sfValidatorRegex
+    	( 
+    		array
+    		(
+    			'required' => false,
+    			'pattern'  => "!^0[1-9][0-9]{8}$!",
+    		), 
+    		array
+    		(
+    			'invalid' => '%value% n\'est pas un numéro de téléphone valide.'
+    		) 
+    	);
+    //*/
   }
 }

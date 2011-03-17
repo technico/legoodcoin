@@ -1,0 +1,87 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+  <file original="global" source-language="en_US" datatype="plaintext">
+    <body>
+      <trans-unit id="1">
+        <source>Welcome to our website.</source>
+        <target>Bienvenue sur notre site web.</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>Today's date is </source>
+        <target>La date d'aujourd'hui est </target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>offers</source>
+        <target>offres</target>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>demands</source>
+        <target>demandes</target>
+      </trans-unit>
+      <trans-unit id="5">
+        <source>Search only in title</source>
+        <target>Recherche dans le titre uniquement</target>
+      </trans-unit>
+      <trans-unit id="6">
+        <source>All the country</source>
+        <target>Tout le pays</target>
+      </trans-unit>
+      <trans-unit id="7">
+        <source>Regions</source>
+        <target>Régions</target>
+      </trans-unit>
+      <trans-unit id="8">
+        <source>Sub-Regions</source>
+        <target>Départements</target>
+      </trans-unit>        
+      <trans-unit id="9">
+        <source>Display only offers</source>
+        <target>Afficher uniquement les offres</target>
+      </trans-unit>
+      <trans-unit id="10">
+        <source>Display only demands</source>
+        <target>Afficher uniquement les demandes</target>
+      </trans-unit> 
+      <trans-unit id="11">
+        <source>Previous page</source>
+        <target>Page précédente</target>
+      </trans-unit> 
+      <trans-unit id="12">
+        <source>Next page</source>
+        <target>Page suivante</target>
+      </trans-unit> 
+      <trans-unit id="13">
+        <source>Last page</source>
+        <target>Dernière page</target>
+      </trans-unit> 
+      <trans-unit id="14">
+        <source>Home</source>
+        <target>Accueil</target>
+      </trans-unit> 
+      <trans-unit id="15">
+        <source>Show ads</source>
+        <target>Consulter les annonces</target>
+      </trans-unit> 
+      <trans-unit id="16">
+        <source>Post ad</source>
+        <target>Déposer une annonce</target>
+      </trans-unit>
+      <trans-unit id="17">
+        <source>My ads</source>
+        <target>Mes annonces</target>
+      </trans-unit>
+      <trans-unit id="18">
+        <source>All</source>
+        <target>Tout</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Display all ads</source>
+        <target>Afficher toutes les annonces</target>
+      </trans-unit>        
+      <trans-unit id="20">
+        <source>Search</source>
+        <target>Rechercher</target>
+      </trans-unit>  
+    </body>
+  </file>
+</xliff>

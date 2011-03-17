@@ -1,11 +1,7 @@
-depot_create:
-  url:   /
-  param: { module: default, action: index }
-
 # default rules
 homepage:
   url:   /
-  param: { module: default, action: index }
+  param: { module: accueil, action: index }
 
 default_index:
   url:   /:module

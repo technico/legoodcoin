@@ -28,15 +28,7 @@ abstract class BaseRegion extends sfDoctrineRecord
              'local' => 'id',
              'foreign' => 'region'));
 
-        $this->hasMany('Annonce as Annonce_8', array(
-             'local' => 'id',
-             'foreign' => 'region'));
-
         $this->hasMany('Departement', array(
-             'local' => 'id',
-             'foreign' => 'region'));
-
-        $this->hasMany('Departement as Departement_2', array(
              'local' => 'id',
              'foreign' => 'region'));
     }
