@@ -1,3 +1,23 @@
+h2{
+	font-size: 1.5em;
+    font-weight: bold;
+	margin:0px;
+	padding:0px;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+th {
+	text-align:right;
+	padding-right:3px;
+	font-weight: bold;
+}
+
 strong {
 	font-weight: bold;
 }

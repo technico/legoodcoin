@@ -32,6 +32,7 @@ class contactActions extends sfActions
         $this->redirect('contact/thankyou?'.http_build_query($this->form->getValues()));
       }
     }
+    $this->Annonce = $oAnnonce;
   }
  
 	public function executeThankyou()

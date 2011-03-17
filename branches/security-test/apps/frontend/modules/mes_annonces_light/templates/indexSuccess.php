@@ -1,12 +1,11 @@
 <?php use_stylesheet( 'depot' ) ?>
+<?php use_helper('i18n') ?>
+<?php slot('title', __('My active ads'))?>
 <style>#depot label { display:inline }</style>
 <div id="depot">
 	<div>
-	<strong>Mes annonces en ligne :</strong> <br />
-	Pour recevoir vos annonces actives par mail, remplissez ci-dessous votre
-	adresse email renseignée lors de votre dépôt d'annonce. Si vous avez
-	utilisé plusieurs adresses email pour des annonces différentes, vous
-	devez faire la demande pour chaque adresse.
+	<strong><?php echo __('My active ads')?> :</strong> <br />
+	<?php echo __('To receive your active ads by mail, enter below the email address used when filing your ad. If you used multiple email addresses for different ads, you must apply for each address.') ?>
 	</div><br />
 	<div>
 	
