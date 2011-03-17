@@ -298,7 +298,19 @@
       <trans-unit id="74">
         <source>Text</source>
         <target>Texte</target>
+      </trans-unit>
+      <trans-unit id="75">
+        <source>Accept</source>
+        <target>Accepter</target>
       </trans-unit>  
+      <trans-unit id="76">
+        <source>Reject</source>
+        <target>Rejeter</target>
+      </trans-unit>  
+      <trans-unit id="77">
+        <source>Ad control</source>
+        <target>Contrôle de l'annonce</target>
+      </trans-unit>      
     </body>
   </file>
 </xliff>

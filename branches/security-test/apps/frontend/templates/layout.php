@@ -30,9 +30,10 @@
 	href="<?php echo url_for( 'mes_annonces_light/index' ) ?>"><?php echo __('My ads') ?></a>
 &nbsp;|&nbsp;   <!-- --><?php if( !$sf_user->isAuthenticated() ):?><?php else: ?><a
 	href="<?php echo url_for( '@sf_guard_signout' ) ?>">Se deconnecter</a>
-&nbsp;|&nbsp; <?php if( $sf_user->hasCredential( 'controle' ) ):?><a
-	href="<?php echo url_for( 'controle/index' ) ?>">Contrôler les annonces</a><?php endif ?>
-<?php endif ?>
+&nbsp;|&nbsp; <?php /*if( $sf_user->hasCredential( 'controle' ) ):*/?><a
+	href="<?php echo url_for( 'controle/index' ) ?>">mlkjhfgds</a><?php /*endif*/?>
+<?php endif ?><a
+	href="<?php echo url_for( 'controle/index' ) ?>">&nbsp;</a>
 </div>
 <div class="headerline"></div>
 <?php echo $sf_content ?>
