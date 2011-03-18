@@ -118,7 +118,7 @@ Annonceur:
     mail: string(100)
     mdp: string(20)
   relations:
-    SfGuardUser:
+    sfGuardUser:
       local: sf_guard_user_id
       foreign: id
       type: one
@@ -127,6 +127,9 @@ Annonceur:
       foreign: annonceur
       type: many
 Categorie:
+  actAs:
+    I18n:
+      fields: [nom]
   tableName: categorie
   columns:
     id:
@@ -202,7 +205,7 @@ Region:
       local: id
       foreign: region
       type: many
-SfGuardGroup:
+sfGuardGroup:
   tableName: sf_guard_group
   columns:
     id:
@@ -214,15 +217,15 @@ SfGuardGroup:
     created_at: timestamp(25)
     updated_at: timestamp(25)
   relations:
-    SfGuardGroupPermission:
+    sfGuardGroupPermission:
       local: id
       foreign: group_id
       type: many
-    SfGuardUserGroup:
+    sfGuardUserGroup:
       local: id
       foreign: group_id
       type: many
-SfGuardGroupPermission:
+sfGuardGroupPermission:
   tableName: sf_guard_group_permission
   columns:
     group_id:
@@ -234,15 +237,15 @@ SfGuardGroupPermission:
     created_at: timestamp(25)
     updated_at: timestamp(25)
   relations:
-    SfGuardPermission:
+    sfGuardPermission:
       local: permission_id
       foreign: id
       type: one
-    SfGuardGroup:
+    sfGuardGroup:
       local: group_id
       foreign: id
       type: one
-SfGuardPermission:
+sfGuardPermission:
   tableName: sf_guard_permission
   columns:
     id:
@@ -254,15 +257,15 @@ SfGuardPermission:
     created_at: timestamp(25)
     updated_at: timestamp(25)
   relations:
-    SfGuardGroupPermission:
+    sfGuardGroupPermission:
       local: id
       foreign: permission_id
       type: many
-    SfGuardUserPermission:
+    sfGuardUserPermission:
       local: id
       foreign: permission_id
       type: many
-SfGuardRememberKey:
+sfGuardRememberKey:
   tableName: sf_guard_remember_key
   columns:
     id:
@@ -277,11 +280,11 @@ SfGuardRememberKey:
     created_at: timestamp(25)
     updated_at: timestamp(25)
   relations:
-    SfGuardUser:
+    sfGuardUser:
       local: user_id
       foreign: id
       type: one
-SfGuardUser:
+sfGuardUser:
   tableName: sf_guard_user
   columns:
     id:
@@ -311,19 +314,19 @@ SfGuardUser:
       local: id
       foreign: sf_guard_user_id
       type: many
-    SfGuardRememberKey:
+    sfGuardRememberKey:
       local: id
       foreign: user_id
       type: many
-    SfGuardUserGroup:
+    sfGuardUserGroup:
       local: id
       foreign: user_id
       type: many
-    SfGuardUserPermission:
+    sfGuardUserPermission:
       local: id
       foreign: user_id
       type: many
-SfGuardUserGroup:
+sfGuardUserGroup:
   tableName: sf_guard_user_group
   columns:
     user_id:
@@ -335,15 +338,15 @@ SfGuardUserGroup:
     created_at: timestamp(25)
     updated_at: timestamp(25)
   relations:
-    SfGuardUser:
+    sfGuardUser:
       local: user_id
       foreign: id
       type: one
-    SfGuardGroup:
+    sfGuardGroup:
       local: group_id
       foreign: id
       type: one
-SfGuardUserPermission:
+sfGuardUserPermission:
   tableName: sf_guard_user_permission
   columns:
     user_id:
@@ -355,11 +358,11 @@ SfGuardUserPermission:
     created_at: timestamp(25)
     updated_at: timestamp(25)
   relations:
-    SfGuardUser:
+    sfGuardUser:
       local: user_id
       foreign: id
       type: one
-    SfGuardPermission:
+    sfGuardPermission:
       local: permission_id
       foreign: id
       type: one
