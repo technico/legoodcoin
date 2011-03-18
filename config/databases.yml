@@ -1,7 +1,21 @@
-all:
-  doctrine:
-    class: sfDoctrineDatabase
+dev:
+  propel:
     param:
-      dsn: 'mysql:host=localhost;dbname=petite_annonce'
-      username: root
-      password: null
+      classname:  DebugPDO
+
+test:
+  propel:
+    param:
+      classname:  DebugPDO
+
+all:
+  propel:
+    class:        sfPropelDatabase
+    param:
+      classname:  PropelPDO
+      dsn:        mysql:dbname=test-plugin;host=localhost
+      username:   root
+      password:   
+      encoding:   utf8
+      persistent: true
+      pooling:    true
