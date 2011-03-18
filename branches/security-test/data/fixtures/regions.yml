@@ -1,0 +1,10 @@
+Region:
+  Region_1:
+    nom: 'Ile de France'
+    pays: FR
+  Region_2:
+    nom: 'Provence-Alpes-Côte d Azur'
+    pays: FR
+  Region_3:
+    nom: 'Northern Territory'
+    pays: AU

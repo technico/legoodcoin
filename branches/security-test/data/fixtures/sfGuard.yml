@@ -1,0 +1,125 @@
+sfGuardGroup:
+  sfGuardGroup_1:
+    name: admin
+    description: 'Administrator group'
+    created_at: '2011-03-19 19:04:19'
+    updated_at: '2011-03-19 19:04:19'
+sfGuardGroupPermission:
+  sfGuardGroupPermission_1_1:
+    sfGuardGroup: sfGuardGroup_1
+    sfGuardPermission: sfGuardPermission_1
+    created_at: '2011-03-19 19:04:22'
+    updated_at: '2011-03-19 19:04:22'
+sfGuardPermission:
+  sfGuardPermission_1:
+    name: admin
+    description: 'Administrator permission'
+    created_at: '2011-03-19 19:04:19'
+    updated_at: '2011-03-19 19:04:19'
+sfGuardUser:
+  sfGuardUser_1:
+    username: admin
+    algorithm: sha1
+    salt: 607b09ac282d85b430ee4133c154763e
+    password: 344c2792d9ddf5add2ef6ee8d8671e66142262f2
+    is_active: true
+    is_super_admin: true
+    last_login: null
+    created_at: '2011-03-19 19:04:18'
+    updated_at: '2011-03-19 19:04:18'
+  sfGuardUser_2:
+    username: olivier
+    algorithm: sha1
+    salt: 3f7108c8844b7420003170dea4315c1f
+    password: c26aa62c3ed8c9d17e8c2e8fc128cfdfd62835ab
+    is_active: true
+    is_super_admin: true
+    last_login: null
+    created_at: '2011-03-19 19:04:18'
+    updated_at: '2011-03-19 19:14:35'
+  sfGuardUser_3:
+    username: max
+    algorithm: sha1
+    salt: d216da3ec794c2feb3ad480c98a8460e
+    password: eed7a008d6ac396eee81397ed7fc4f2dcad93ac5
+    is_active: true
+    is_super_admin: false
+    last_login: null
+    created_at: '2011-03-19 19:04:19'
+    updated_at: null
+  sfGuardUser_4:
+    username: estelle
+    algorithm: sha1
+    salt: 7ce71264c5a88cbe276a269d0ba525d6
+    password: e8bf100ad542ae8b8d5b60db9188e849a392bc47
+    is_active: true
+    is_super_admin: false
+    last_login: null
+    created_at: '2011-03-19 19:04:19'
+    updated_at: null
+  sfGuardUser_5:
+    username: obarbier@me.com
+    algorithm: sha1
+    salt: 035d805967a3b3df2e58314e4bed18ab
+    password: a2cce7be3baa876204cd4476bf96271c8767a4d8
+    is_active: true
+    is_super_admin: false
+    last_login: null
+    created_at: '2011-03-19 19:04:19'
+    updated_at: null
+  sfGuardUser_6:
+    username: pouet@pouet.com
+    algorithm: sha1
+    salt: da531863ce658207b60d91c8714ed3e1
+    password: a9d1c8fdde3186748a849a93586bb99b8b58806e
+    is_active: true
+    is_super_admin: false
+    last_login: null
+    created_at: '2011-03-19 19:04:19'
+    updated_at: null
+  sfGuardUser_7:
+    username: az@az.com
+    algorithm: sha1
+    salt: d9a665edad534341909523bed651bd92
+    password: 3c082f33f584be9aa29d141e20e06f2c4ae47a2e
+    is_active: true
+    is_super_admin: false
+    last_login: null
+    created_at: '2011-03-19 19:04:19'
+    updated_at: null
+  sfGuardUser_8:
+    username: a@a.com
+    algorithm: sha1
+    salt: 9d47073352f3a4e0fc9eea29cdc724fc
+    password: 6b29046de7e2a1b8bca944432bf83edcb1873678
+    is_active: true
+    is_super_admin: false
+    last_login: null
+    created_at: '2011-03-19 19:04:19'
+    updated_at: null
+  sfGuardUser_9:
+    username: ES@HOTMAIL.COM
+    algorithm: sha1
+    salt: 5ff86b640d89907b82b4fd8e79cd17a9
+    password: 7e438618316a0682cf9fbd60827377e58f4014ba
+    is_active: true
+    is_super_admin: false
+    last_login: null
+    created_at: '2011-03-19 19:04:19'
+    updated_at: null
+  sfGuardUser_10:
+    username: az@euohvg.com
+    algorithm: sha1
+    salt: 693fb513bd167c46a5305fd6b4855320
+    password: e2b1f871301b7422d18c882c9d2a68aa6e1f6f41
+    is_active: true
+    is_super_admin: false
+    last_login: null
+    created_at: '2011-03-19 19:09:31'
+    updated_at: null
+sfGuardUserGroup:
+  sfGuardUserGroup_1_1:
+    sfGuardUser: sfGuardUser_1
+    sfGuardGroup: sfGuardGroup_1
+    created_at: '2011-03-19 19:04:22'
+    updated_at: '2011-03-19 19:04:22'
