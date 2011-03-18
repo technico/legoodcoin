@@ -11,7 +11,6 @@ class BaseSfGuardUserForm extends BaseFormDoctrine
 {
   public function setup()
   {
-  	  	exit('hello');
     $this->setWidgets(array(
       'id'             => new sfWidgetFormInputHidden(),
       'username'       => new sfWidgetFormInput(),

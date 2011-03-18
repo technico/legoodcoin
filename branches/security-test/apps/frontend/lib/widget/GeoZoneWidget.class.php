@@ -10,6 +10,7 @@ class GeoZoneWidget extends sfWidgetFormChoice
   protected function configure($options = array(), $attributes = array())
   {
     $this->addRequiredOption('geo_zone');
+    $this->addRequiredOption('country');
     parent::configure($options, $attributes);
   }
   
@@ -18,7 +19,7 @@ class GeoZoneWidget extends sfWidgetFormChoice
   	$this->geo_zone_value = $this->getOption('geo_zone');
   	
   	$choices = array();
-	if( $region = $this->isRegion( $this->getOption('geo_zone') ) )
+	if( $region = $this->isRegion( $this->getOption('geo_zone'), $this->getOption('country') ) )
   	{ 	 
   	  $choices = array
   	  ( 
@@ -28,7 +29,7 @@ class GeoZoneWidget extends sfWidgetFormChoice
   	                               ->getRecordAsArray($this->geo_zone_value),
   	  );  	
   	}
-    else if( $subregion = $this->isSubRegion( $this->getOption('geo_zone') ) )
+    else if( $subregion = $this->isSubRegion( $this->getOption('geo_zone'), $this->getOption('country') ) )
   	{
       $choices = array
   	  ( 
@@ -43,20 +44,20 @@ class GeoZoneWidget extends sfWidgetFormChoice
       $choices = array
   	  ( 
   	               0  => __('All the country'),
-  	    __('Regions') => Doctrine::getTable('Region')->getRecordAsArray(),
+  	    __('Regions') => Doctrine::getTable('Region')->getRecordAsArray($this->getOption('country')),
   	  ); 
   	}
 	
   	return $choices;
   }
   
-  public function isRegion( $geo_zone )
+  public function isRegion( $geo_zone, $country_code )
   {
-  	return Doctrine::getTable('Region')->find($this->getOption('geo_zone'));
+  	return Doctrine::getTable('Region')->createQuery('r')->where('r.id = ? and r.pays = ?', array($geo_zone, $country_code))->fetchOne();
   }
 
-  public function isSubRegion( $geo_zone )
+  public function isSubRegion( $geo_zone, $country_code )
   {
-  	return Doctrine::getTable('Departement')->find($this->getOption('geo_zone'));
+  	return Doctrine::getTable('Departement')->createQuery('r')->where('r.code_dep = ? and r.pays = ?', array($geo_zone, $country_code))->fetchOne();
   }  
 }

@@ -4,10 +4,10 @@
  */
 class RegionTable extends Doctrine_Table
 {
-	public function getRecordAsArray()
+	public function getRecordAsArray($country)
 	{
 		$array = array();
-		$regions = $this->findAll();
+		$regions = $this->createQuery('r')->where('r.pays = ? ', $country)->execute();
 		foreach($regions as $region)
 		{
 			$array[$region->getId()] = $region->getNom(); 

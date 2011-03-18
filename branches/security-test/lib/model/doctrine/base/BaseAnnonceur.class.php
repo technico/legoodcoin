@@ -32,7 +32,7 @@ abstract class BaseAnnonceur extends sfDoctrineRecord
     public function setUp()
     {
         parent::setUp();
-    $this->hasOne('SfGuardUser', array(
+    $this->hasOne('sfGuardUser', array(
              'local' => 'sf_guard_user_id',
              'foreign' => 'id'));
 

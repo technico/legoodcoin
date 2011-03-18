@@ -33,4 +33,46 @@ class myUser extends sfGuardSecurityUser
       $this->setAttribute('first_request', $boolean);
     }
   }
+  
+  public function getCountry()
+  {
+  	$language_country = $this->getCulture();//ex: fr_FR ou en_US ou fr ou en, etc.
+  	if(false !== strstr($language_country, '_'))
+  	{
+  	  $pos = strpos($language_country, '_')+1;
+  	  if($pos < strlen($language_country))
+  	  {
+  	    return strtoupper(substr($language_country, strpos($language_country, '_')+1));
+  	  }
+  	  else
+  	  {
+  	  	return 'FR'; //Pays par défaut
+  	  }
+  	}
+  	else
+  	{
+  		return 'FR'; //Pays par défaut
+  	}
+  }
+  
+  public function getLang()
+  {
+  	$language_country = $this->getCulture();//ex: fr_FR ou en_US ou fr ou en, etc.
+  	if(false !== strstr($language_country, '_'))
+  	{
+  	  $pos = strpos($language_country, '_')+1;
+  	  if($pos < strlen($language_country))
+  	  {
+  	    return strtolower(substr($language_country, 0, strpos($language_country, '_')));
+  	  }
+  	  else
+  	  {
+  	  	return 'fr'; //Langue par défaut
+  	  } 
+  	}
+  	else
+  	{
+  		return 'fr'; //Langue par défaut
+  	}
+  }
 }

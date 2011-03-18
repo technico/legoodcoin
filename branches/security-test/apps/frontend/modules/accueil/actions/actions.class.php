@@ -17,11 +17,11 @@ class accueilActions extends sfActions
   */
   public function executeIndex(sfWebRequest $request)
   {
-  if (!$request->getParameter('sf_culture'))
-  {
-      if ($this->getUser()->isFirstRequest())
+    if (!$request->getParameter('sf_culture'))
+    {
+      if (true || $this->getUser()->isFirstRequest())
       {
-        $culture = $request->getPreferredCulture(array('en', 'fr'));    
+        $culture = $request->getPreferredCulture(array( 'fr_FR', 'fr', 'en_AU', 'en',));    
         $this->getUser()->setCulture($culture);
         $this->getUser()->isFirstRequest(false);
       }
@@ -31,14 +31,10 @@ class accueilActions extends sfActions
       }
       //$this->redirect('@localized_homepage');
     }
+//echo '<br />', 'Pays : ', $this->getUser()->getCountry();
+//echo '<br />', 'Lang : ', $this->getUser()->getLang();
   	$this->iNbAnnonces = count( Doctrine::getTable( 'Annonce' )->findByDql( 'etat_de_validation = ?', 'accepted' ) );
-  	if($culture=='en')
-  	{
-  		$this->setLayout( 'australiaLayout' );
-  	}
-  	else
-  	{
-  		$this->setLayout( 'accueilLayout' );
-  	}
+  	
+  	$this->setLayout( 'layout_'.$this->getUser()->getCountry() );
   }
 }

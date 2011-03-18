@@ -34,7 +34,7 @@ class listingActions extends sfActions
   	$geo_zone_value = $this->getUser()->getAttribute('annonce_filters[geo_zone]', '0' );
     $only_title     = $this->getUser()->getAttribute('annonce_filters[only_title]', '0' );
     $this->is_only_title_checked = $only_title != '0' ? true : false;
-  	$this->filter = new AnnonceFormFilter( $geo_zone_value, $only_title );
+  	$this->filter = new AnnonceFormFilter( $geo_zone_value, $only_title, $this->getUser()->getCountry() );
 
   	if( $this->getRequest()->hasParameter('c') )
     {
@@ -47,6 +47,7 @@ class listingActions extends sfActions
 
   	//Force la valeur "etat_de_validation" à "accepted"
   	$attributes['etat_de_validation'] = 'accepted';
+  	$attributes['pays'] = $this->getUser()->getCountry();
   	
     //Pour compter le nombre d'annonces (offre+demande) tout en conservant les criteres de recherche.
     $attributes['type_annonce']       = '';

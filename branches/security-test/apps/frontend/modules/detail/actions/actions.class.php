@@ -17,7 +17,13 @@ class detailActions extends sfActions
   */
   public function executeIndex(sfWebRequest $request)
   {   
-      $this->Annonce = Doctrine::getTable('Annonce')->find( $request->getParameter( 'id' ) );
+      $this->Annonce = 
+      Doctrine::getTable('Annonce')
+        ->createQuery('a')
+        ->innerJoin('a.Categorie c')
+        ->innerJoin('c.Translation t WITH t.lang = ?', 'en')
+        ->where('a.id = ?', $request->getParameter( 'id' ))->fetchOne();
+        
       $this->backref = Backref::getBackdef( $request );
   }
   

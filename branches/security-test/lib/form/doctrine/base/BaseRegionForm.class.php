@@ -12,13 +12,15 @@ class BaseRegionForm extends BaseFormDoctrine
   public function setup()
   {
     $this->setWidgets(array(
-      'id'  => new sfWidgetFormInputHidden(),
-      'nom' => new sfWidgetFormInput(),
+      'id'   => new sfWidgetFormInputHidden(),
+      'nom'  => new sfWidgetFormInput(),
+      'pays' => new sfWidgetFormInput(),
     ));
 
     $this->setValidators(array(
-      'id'  => new sfValidatorDoctrineChoice(array('model' => 'Region', 'column' => 'id', 'required' => false)),
-      'nom' => new sfValidatorString(array('max_length' => 100)),
+      'id'   => new sfValidatorDoctrineChoice(array('model' => 'Region', 'column' => 'id', 'required' => false)),
+      'nom'  => new sfValidatorString(array('max_length' => 100)),
+      'pays' => new sfValidatorString(array('max_length' => 2, 'required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('region[%s]');

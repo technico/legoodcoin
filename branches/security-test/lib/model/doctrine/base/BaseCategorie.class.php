@@ -27,5 +27,13 @@ abstract class BaseCategorie extends sfDoctrineRecord
     $this->hasMany('Annonce', array(
              'local' => 'id',
              'foreign' => 'categorie'));
+
+        $i18n0 = new Doctrine_Template_I18n(array(
+             'fields' => 
+             array(
+              0 => 'nom',
+             ),
+             ));
+        $this->actAs($i18n0);
     }
 }

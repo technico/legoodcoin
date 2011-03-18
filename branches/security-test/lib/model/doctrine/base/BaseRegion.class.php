@@ -19,6 +19,11 @@ abstract class BaseRegion extends sfDoctrineRecord
              'notnull' => true,
              'length' => '100',
              ));
+        $this->hasColumn('pays', 'string', 2, array(
+             'type' => 'string',
+             'fixed' => 1,
+             'length' => '2',
+             ));
     }
 
     public function setUp()
