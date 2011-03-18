@@ -67,7 +67,9 @@ Annonce:
     annonceur: integer(4)
     validee_par: integer(4)
     date_control: timestamp(25)
-    pays: char(2)
+    pays: 
+      type: string(2)
+      fixed: true
   relations:
     Administrateur:
       local: validee_par

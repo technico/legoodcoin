@@ -20,8 +20,12 @@ test:
     etag:                   off
 
 all:
+  sf_guard_plugin:
+    profile_class:      Annonceur
+    profile_field_name: sf_guard_user_id
+    
   .settings:
-    enabled_modules: [default, sfGuardAuth, sfGuardUser]
+    enabled_modules: [default, sfGuardAuth, sfGuardGroup,sfGuardPermission, sfGuardUser]
     
     # Form security secret (CSRF protection)
     csrf_secret:       false     # Unique secret to enable CSRF protection or false to disable
