@@ -42,6 +42,7 @@ class depotPart2Actions extends sfActions
     	//
     	
     	//Si ça marche c'est un petit pas pour l'humanité mais un grand pas pour moi !
+$oAnnonce->setPays($this->getUser()->getCountry());
 $oAnnonce->save();
 //var_dump( 'yep' );
     	//Mettre l'objet Annonce (il faut l'extraire de l'objet AnnonceForm, précédé d'un updateObject)

@@ -48,7 +48,7 @@ class BaseAnnonceForm extends BaseFormDoctrine
       'annonceur'          => new sfValidatorDoctrineChoice(array('model' => 'Annonceur', 'required' => false)),
       'validee_par'        => new sfValidatorDoctrineChoice(array('model' => 'Administrateur', 'required' => false)),
       'date_control'       => new sfValidatorDateTime(array('required' => false)),
-      'pays'               => new sfValidatorPass(array('required' => false)),
+      'pays'               => new sfValidatorString(array('max_length' => 2, 'required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('annonce[%s]');

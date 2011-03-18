@@ -89,8 +89,9 @@ abstract class BaseAnnonce extends sfDoctrineRecord
              'type' => 'timestamp',
              'length' => '25',
              ));
-        $this->hasColumn('pays', 'char', 2, array(
-             'type' => 'char',
+        $this->hasColumn('pays', 'string', 2, array(
+             'type' => 'string',
+             'fixed' => 1,
              'length' => '2',
              ));
     }

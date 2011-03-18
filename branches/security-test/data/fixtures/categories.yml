@@ -1,13 +1,20 @@
 Categorie:
-  Categorie_1:
-    Translation:
-      en:
-        nom: computers
-      fr:
-        nom: informatique
-  Categorie_2:
-    Translation:
-      en:
-        nom: cars
-      fr:
-        nom: voitures
+  Categorie_1: {  }
+  Categorie_2: {  }
+CategorieTranslation:
+  CategorieTranslation_1_en:
+    Categorie: Categorie_1
+    nom: computers
+    lang: en
+  CategorieTranslation_1_fr:
+    Categorie: Categorie_1
+    nom: informatique
+    lang: fr
+  CategorieTranslation_2_en:
+    Categorie: Categorie_2
+    nom: cars
+    lang: en
+  CategorieTranslation_2_fr:
+    Categorie: Categorie_2
+    nom: voitures
+    lang: fr

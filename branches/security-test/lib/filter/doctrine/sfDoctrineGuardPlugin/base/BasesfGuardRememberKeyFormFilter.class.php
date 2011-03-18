@@ -43,9 +43,9 @@ class BasesfGuardRememberKeyFormFilter extends BaseFormFilterDoctrine
   {
     return array(
       'id'           => 'Number',
-      'ip_address'   => 'Text',
       'user_id'      => 'ForeignKey',
       'remember_key' => 'Text',
+      'ip_address'   => 'Text',
       'created_at'   => 'Date',
       'updated_at'   => 'Date',
     );
