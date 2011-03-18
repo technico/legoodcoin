@@ -1,0 +1,31 @@
+Departement:
+  Departement_75:
+    code_dep: 75
+    nom: Paris
+    Region: Region_1
+    pays: FR
+  Departement_83:
+    code_dep: 83
+    nom: Var
+    Region: Region_2
+    pays: FR
+  Departement_84:
+    code_dep: 84
+    nom: Vaucluse
+    Region: Region_2
+    pays: FR
+  Departement_92:
+    code_dep: 92
+    nom: 'Hauts de Seine'
+    Region: Region_1
+    pays: FR
+  Departement_94:
+    code_dep: 94
+    nom: 'Val de Marne'
+    Region: Region_1
+    pays: FR
+  Departement_102:
+    code_dep: 102
+    nom: 'Alice Spring'
+    Region: Region_3
+    pays: AU
