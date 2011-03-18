@@ -82,7 +82,21 @@ class AnnonceForm extends BaseAnnonceForm
   {
   	$this->widgetSchema['categorie']->setOption( 'add_empty', true );
   	$this->widgetSchema['departement']->setOption( 'add_empty', true );
-  	$this->widgetSchema['region']->setOption( 'add_empty', true );  	
+  	$this->widgetSchema['region']->setOption( 'add_empty', true );
+
+  	//on doit pouvoir mettre cette requête dans le coeur de doctrine ...
+  	$region_query = Doctrine::getTable('Region')
+  	                  ->createQuery('r')
+  	                  ->where('r.pays = ?', sfContext::getInstance()->getUser()->getCountry());
+  	                  
+  	$this->widgetSchema['region']->setOption( 'query', $region_query );      
+
+  	//on doit pouvoir mettre cette requête dans le coeur de doctrine ...
+  	$departement_query = Doctrine::getTable('Departement')
+  	                  ->createQuery('r')
+  	                  ->where('r.pays = ?', sfContext::getInstance()->getUser()->getCountry());
+  	                  
+  	$this->widgetSchema['departement']->setOption( 'query', $departement_query ); 
   }
   
   protected function configureValidator()
@@ -97,12 +111,12 @@ class AnnonceForm extends BaseAnnonceForm
   	);
 
 	$this->validatorSchema['code_postal'] = 
-	  new sfValidatorDoctrineChoice(
-	    array(
-		  'model'  => 'CodePostaux',
-		  'column' => 'Codepos',
-		)
-	);
+      new sfValidatorRegex( 
+        array(
+    	  'required' => true,
+    	  'pattern'  => "!^[0-9]{5}$!",
+    	)
+      );
     
     $this->validatorSchema['telephone'] = 
       new sfValidatorRegex( 
@@ -110,7 +124,7 @@ class AnnonceForm extends BaseAnnonceForm
     	  'required' => false,
     	  'pattern'  => "!^0[1-9][0-9]{8}$!",
     	)
-    );  	
+      );  	
   }
   
   protected function configureValidatorRequiredMessage()

@@ -16,11 +16,13 @@ class BaseDepartementFormFilter extends BaseFormFilterDoctrine
     $this->setWidgets(array(
       'nom'      => new sfWidgetFormFilterInput(),
       'region'   => new sfWidgetFormDoctrineChoice(array('model' => 'Region', 'add_empty' => true)),
+      'pays'     => new sfWidgetFormFilterInput(),
     ));
 
     $this->setValidators(array(
       'nom'      => new sfValidatorPass(array('required' => false)),
       'region'   => new sfValidatorDoctrineChoice(array('required' => false, 'model' => 'Region', 'column' => 'id')),
+      'pays'     => new sfValidatorPass(array('required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('departement_filters[%s]');
@@ -41,6 +43,7 @@ class BaseDepartementFormFilter extends BaseFormFilterDoctrine
       'code_dep' => 'Number',
       'nom'      => 'Text',
       'region'   => 'ForeignKey',
+      'pays'     => 'Text',
     );
   }
 }

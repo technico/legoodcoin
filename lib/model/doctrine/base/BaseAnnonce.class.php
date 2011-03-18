@@ -49,10 +49,14 @@ abstract class BaseAnnonce extends sfDoctrineRecord
              'default' => '0',
              'length' => '4',
              ));
-        $this->hasColumn('type_annonce', 'string', 7, array(
-             'type' => 'string',
+        $this->hasColumn('type_annonce', 'enum', null, array(
+             'type' => 'enum',
+             'values' => 
+             array(
+              0 => 'offre',
+              1 => 'demande',
+             ),
              'notnull' => true,
-             'length' => '7',
              ));
         $this->hasColumn('categorie', 'integer', 4, array(
              'type' => 'integer',
@@ -84,6 +88,10 @@ abstract class BaseAnnonce extends sfDoctrineRecord
         $this->hasColumn('date_control', 'timestamp', 25, array(
              'type' => 'timestamp',
              'length' => '25',
+             ));
+        $this->hasColumn('pays', 'char', 2, array(
+             'type' => 'char',
+             'length' => '2',
              ));
     }
 

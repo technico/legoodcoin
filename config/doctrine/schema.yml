@@ -51,7 +51,8 @@ Annonce:
       type: integer(4)
       default: '0'
     type_annonce:
-      type: string(7)
+      type: enum
+      values: [offre, demande]
       notnull: true
     categorie:
       type: integer(4)
@@ -66,6 +67,7 @@ Annonce:
     annonceur: integer(4)
     validee_par: integer(4)
     date_control: timestamp(25)
+    pays: char(2)
   relations:
     Administrateur:
       local: validee_par
@@ -177,6 +179,9 @@ Departement:
       type: integer(4)
       default: '0'
       notnull: true
+    pays:
+      type: string(2)
+      fixed: true
   relations:
     Region:
       local: region
@@ -196,6 +201,9 @@ Region:
     nom:
       type: string(100)
       notnull: true
+    pays:
+      type: string(2)
+      fixed: true
   relations:
     Annonce:
       local: id
@@ -205,164 +213,3 @@ Region:
       local: id
       foreign: region
       type: many
-sfGuardGroup:
-  tableName: sf_guard_group
-  columns:
-    id:
-      type: integer(4)
-      primary: true
-      autoincrement: true
-    name: string(255)
-    description: string()
-    created_at: timestamp(25)
-    updated_at: timestamp(25)
-  relations:
-    sfGuardGroupPermission:
-      local: id
-      foreign: group_id
-      type: many
-    sfGuardUserGroup:
-      local: id
-      foreign: group_id
-      type: many
-sfGuardGroupPermission:
-  tableName: sf_guard_group_permission
-  columns:
-    group_id:
-      type: integer(4)
-      primary: true
-    permission_id:
-      type: integer(4)
-      primary: true
-    created_at: timestamp(25)
-    updated_at: timestamp(25)
-  relations:
-    sfGuardPermission:
-      local: permission_id
-      foreign: id
-      type: one
-    sfGuardGroup:
-      local: group_id
-      foreign: id
-      type: one
-sfGuardPermission:
-  tableName: sf_guard_permission
-  columns:
-    id:
-      type: integer(4)
-      primary: true
-      autoincrement: true
-    name: string(255)
-    description: string()
-    created_at: timestamp(25)
-    updated_at: timestamp(25)
-  relations:
-    sfGuardGroupPermission:
-      local: id
-      foreign: permission_id
-      type: many
-    sfGuardUserPermission:
-      local: id
-      foreign: permission_id
-      type: many
-sfGuardRememberKey:
-  tableName: sf_guard_remember_key
-  columns:
-    id:
-      type: integer(4)
-      primary: true
-      autoincrement: true
-    ip_address:
-      type: string(50)
-      primary: true
-    user_id: integer(4)
-    remember_key: string(32)
-    created_at: timestamp(25)
-    updated_at: timestamp(25)
-  relations:
-    sfGuardUser:
-      local: user_id
-      foreign: id
-      type: one
-sfGuardUser:
-  tableName: sf_guard_user
-  columns:
-    id:
-      type: integer(4)
-      primary: true
-      autoincrement: true
-    username:
-      type: string(128)
-      notnull: true
-    algorithm:
-      type: string(128)
-      default: sha1
-      notnull: true
-    is_active:
-      type: integer(1)
-      default: '1'
-    is_super_admin:
-      type: integer(1)
-      default: '0'
-    salt: string(128)
-    password: string(128)
-    last_login: timestamp(25)
-    created_at: timestamp(25)
-    updated_at: timestamp(25)
-  relations:
-    Annonceur:
-      local: id
-      foreign: sf_guard_user_id
-      type: many
-    sfGuardRememberKey:
-      local: id
-      foreign: user_id
-      type: many
-    sfGuardUserGroup:
-      local: id
-      foreign: user_id
-      type: many
-    sfGuardUserPermission:
-      local: id
-      foreign: user_id
-      type: many
-sfGuardUserGroup:
-  tableName: sf_guard_user_group
-  columns:
-    user_id:
-      type: integer(4)
-      primary: true
-    group_id:
-      type: integer(4)
-      primary: true
-    created_at: timestamp(25)
-    updated_at: timestamp(25)
-  relations:
-    sfGuardUser:
-      local: user_id
-      foreign: id
-      type: one
-    sfGuardGroup:
-      local: group_id
-      foreign: id
-      type: one
-sfGuardUserPermission:
-  tableName: sf_guard_user_permission
-  columns:
-    user_id:
-      type: integer(4)
-      primary: true
-    permission_id:
-      type: integer(4)
-      primary: true
-    created_at: timestamp(25)
-    updated_at: timestamp(25)
-  relations:
-    sfGuardUser:
-      local: user_id
-      foreign: id
-      type: one
-    sfGuardPermission:
-      local: permission_id
-      foreign: id
-      type: one

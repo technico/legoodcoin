@@ -13,7 +13,7 @@ class BaseAnnonceForm extends BaseFormDoctrine
   {
     $this->setWidgets(array(
       'id'                 => new sfWidgetFormInputHidden(),
-      'etat_de_validation' => new sfWidgetFormChoice(array('choices' => array('wait' => 'wait', 'accepted' => 'accepted', 'rejected' => 'rejected'))),
+      'etat_de_validation' => new sfWidgetFormInput(),
       'ville'              => new sfWidgetFormInput(),
       'code_postal'        => new sfWidgetFormInput(),
       'contenu'            => new sfWidgetFormTextarea(),
@@ -28,11 +28,12 @@ class BaseAnnonceForm extends BaseFormDoctrine
       'annonceur'          => new sfWidgetFormDoctrineChoice(array('model' => 'Annonceur', 'add_empty' => true)),
       'validee_par'        => new sfWidgetFormDoctrineChoice(array('model' => 'Administrateur', 'add_empty' => true)),
       'date_control'       => new sfWidgetFormDateTime(),
+      'pays'               => new sfWidgetFormInput(),
     ));
 
     $this->setValidators(array(
       'id'                 => new sfValidatorDoctrineChoice(array('model' => 'Annonce', 'column' => 'id', 'required' => false)),
-      'etat_de_validation' => new sfValidatorChoice(array('choices' => array('wait' => 'wait', 'accepted' => 'accepted', 'rejected' => 'rejected'), 'required' => false)),
+      'etat_de_validation' => new sfValidatorString(array('max_length' => 8, 'required' => false)),
       'ville'              => new sfValidatorString(array('max_length' => 30)),
       'code_postal'        => new sfValidatorString(array('max_length' => 5)),
       'contenu'            => new sfValidatorString(),
@@ -47,6 +48,7 @@ class BaseAnnonceForm extends BaseFormDoctrine
       'annonceur'          => new sfValidatorDoctrineChoice(array('model' => 'Annonceur', 'required' => false)),
       'validee_par'        => new sfValidatorDoctrineChoice(array('model' => 'Administrateur', 'required' => false)),
       'date_control'       => new sfValidatorDateTime(array('required' => false)),
+      'pays'               => new sfValidatorPass(array('required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('annonce[%s]');

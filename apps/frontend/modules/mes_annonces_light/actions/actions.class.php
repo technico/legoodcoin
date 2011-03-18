@@ -17,6 +17,9 @@ class mes_annonces_lightActions extends sfActions
   */
   public function executeIndex(sfWebRequest $request)
   {
+exit("Code qui  peut partir en quenouille à cause de l'ajout
+  		du i18n sur categorie, la grappe d'objet remonté risque d'être trop grosse en memoire !
+  		=> a checker !");  	
   	$this->oForm = new MesAnnoncesForm();
   }
   public function executeCreate(sfWebRequest $request)

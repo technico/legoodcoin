@@ -1,0 +1,6 @@
+UPDATE annonce SET pays =
+(SELECT p FROM (SELECT 'FR' p FROM DUAL UNION SELECT 'AU' p FROM DUAL ) v ORDER BY rand() LIMIT 1)
+
+UPDATE annonce A SET A.departement = (SELECT code_dep FROM departement WHERE pays = A.pays ORDER BY rand() LIMIT 1)
+
+UPDATE annonce A SET A.region = (SELECT region FROM departement WHERE departement = A.departement ORDER BY rand() LIMIT 1)

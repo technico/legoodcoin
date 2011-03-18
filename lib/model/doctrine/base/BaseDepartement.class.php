@@ -24,6 +24,11 @@ abstract class BaseDepartement extends sfDoctrineRecord
              'notnull' => true,
              'length' => '4',
              ));
+        $this->hasColumn('pays', 'string', 2, array(
+             'type' => 'string',
+             'fixed' => 1,
+             'length' => '2',
+             ));
     }
 
     public function setUp()

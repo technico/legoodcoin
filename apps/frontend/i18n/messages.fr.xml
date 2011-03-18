@@ -311,6 +311,14 @@
         <source>Ad control</source>
         <target>Contrôle de l'annonce</target>
       </trans-unit>      
+      <trans-unit id="78">
+        <source>offer</source>
+        <target>offre</target>
+      </trans-unit>
+      <trans-unit id="79">
+        <source>demand</source>
+        <target>demande</target>
+      </trans-unit>      
     </body>
   </file>
 </xliff>

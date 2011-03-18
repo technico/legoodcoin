@@ -15,12 +15,14 @@ class BaseDepartementForm extends BaseFormDoctrine
       'code_dep' => new sfWidgetFormInputHidden(),
       'nom'      => new sfWidgetFormInput(),
       'region'   => new sfWidgetFormDoctrineChoice(array('model' => 'Region', 'add_empty' => false)),
+      'pays'     => new sfWidgetFormInput(),
     ));
 
     $this->setValidators(array(
       'code_dep' => new sfValidatorDoctrineChoice(array('model' => 'Departement', 'column' => 'code_dep', 'required' => false)),
       'nom'      => new sfValidatorString(array('max_length' => 255)),
       'region'   => new sfValidatorDoctrineChoice(array('model' => 'Region')),
+      'pays'     => new sfValidatorString(array('max_length' => 2, 'required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('departement[%s]');
