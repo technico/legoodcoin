@@ -1,0 +1,14 @@
+Pour faire le lien entre sfGuardUser et la table Annonceur.
+
+Dans le fichier /lib/model/doctrine/sfDoctrineGuardPlugin/base/BasesfGuardUser.class.php :
+
+public function setup()
+{
+  ...
+  
+  $this->hasOne('Annonceur as Profile', array(
+    'local' => 'id',
+    'foreign' => 'sf_guard_user_id'));
+    
+  ...
+}

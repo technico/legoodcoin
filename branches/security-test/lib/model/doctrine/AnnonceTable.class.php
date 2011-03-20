@@ -18,4 +18,13 @@ class AnnonceTable extends Doctrine_Table
 		
 		return $oAnnonce;
 	}
+	/*
+	public function find($id)
+	{
+      return Doctrine::getTable('Annonce')
+        ->createQuery('a')
+        ->innerJoin('a.Categorie c')
+        ->innerJoin('c.Translation t WITH t.lang = ?', 'en')
+        ->where('a.id = ?', $id)->fetchOne();		
+	}*/
 }

@@ -1,0 +1,60 @@
+en_thankyou_ad:
+  url:   /ad/thankyou
+  param: { module: postAd, action: thankyou }
+  requirements:
+    sf_method: [get]
+  
+fr_thankyou_ad:
+  url:   /merci-pour-le-depot
+  param: { module: postAd, action: thankyou }
+  requirements:
+    sf_method: [get]
+    
+en_edit_ad:
+  url:   /ad/edit
+  param: { module: postAd, action: new }
+  requirements:
+    sf_method: [get]
+  
+fr_edit_ad:
+  url:   /modifier-une-annonce
+  param: { module: postAd, action: new }
+  requirements:
+    sf_method: [get]
+  
+en_review_ad:
+  url:   /ad/review
+  param: { module: postAd, action: review }
+  
+fr_review_ad:
+  url:   /deposer-une-annonce/verifier
+  param: { module: postAd, action: new }
+  
+en_post_ad:
+  url:   /ad/post
+  param: { module: postAd, action: new }
+
+fr_post_ad:
+  url:   /deposer-une-annonce
+  param: { module: postAd, action: new }
+    
+en_post_ad_create:
+  url:   /ad/post
+  param: { module: postAd, action: new }
+  
+fr_post_ad_create:
+  url:   /deposer-une-annonce
+  param: { module: postAd, action: new }
+
+
+# default rules
+homepage:
+  url:   /
+  param: { module: default, action: index }
+
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

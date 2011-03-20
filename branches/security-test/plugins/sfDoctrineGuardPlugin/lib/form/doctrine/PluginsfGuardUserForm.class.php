@@ -11,5 +11,6 @@ abstract class PluginsfGuardUserForm extends BasesfGuardUserForm
 {
   public function configure()
   {
+
   }
 }
