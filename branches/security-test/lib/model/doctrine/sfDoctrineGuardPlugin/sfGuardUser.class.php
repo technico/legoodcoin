@@ -5,10 +5,10 @@
  */
 class sfGuardUser extends PluginsfGuardUser
 {
-	    public function setUp()
-    {
-        parent::setUp();
-    $this->hasMany('Annonceur', array(
+  public function setUp()
+  {
+    parent::setUp();
+    $this->hasOne('Annonceur as Profile', array(
              'local' => 'id',
              'foreign' => 'sf_guard_user_id'));
     }

@@ -32,6 +32,7 @@ Annonce:
     etat_de_validation:
       type: string(8)
       default: wait
+    nom_annonceur: string(20)
     ville:
       type: string(30)
       notnull: true
@@ -119,9 +120,7 @@ Annonceur:
     sf_guard_user_id:
       type: integer(4)
       notnull: true
-    mail: string(100)
-    mdp: string(20)
-    name: string(20)
+    type_annonceur: string(12) #individual or professional
   relations:
     sfGuardUser:
       local: sf_guard_user_id

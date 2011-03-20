@@ -80,7 +80,7 @@ abstract class BasesfGuardUser extends sfDoctrineRecord
              'local' => 'id',
              'foreign' => 'user_id'));
 
-        $this->hasOne('Annonceur as Profile', array(
+        $this->hasOne('Annonceur', array(
              'local' => 'id',
              'foreign' => 'sf_guard_user_id'));
 
