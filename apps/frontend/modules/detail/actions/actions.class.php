@@ -18,11 +18,7 @@ class detailActions extends sfActions
   public function executeIndex(sfWebRequest $request)
   {   
       $this->Annonce = 
-      Doctrine::getTable('Annonce')
-        ->createQuery('a')
-        ->innerJoin('a.Categorie c')
-        ->innerJoin('c.Translation t WITH t.lang = ?', 'en')
-        ->where('a.id = ?', $request->getParameter( 'id' ))->fetchOne();
+      Doctrine::getTable('Annonce')->find($request->getParameter( 'id' ));
         
       $this->backref = Backref::getBackdef( $request );
   }
@@ -31,6 +27,7 @@ class detailActions extends sfActions
   {   
       $this->id  = $request->getParameter( 'id' ); //Si false faire un 404 forward
 	  $oAnnonce = Doctrine::getTable('Annonce')->find( $this->id );
+
       if($request->isMethod( 'post' ) )
       {
      	  $mdp = $request->getParameter( 'mdp' );

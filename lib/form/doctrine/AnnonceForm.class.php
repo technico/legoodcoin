@@ -12,13 +12,16 @@ class AnnonceForm extends BaseAnnonceForm
   public function configure()
   {
 	$this->unsetUnusedFields();
-    $this->setupWidgetForVirtualFields();
+	$this->setupWidgetForVirtualFields();
     $this->setupValidatorForVirtualFields();
-    $this->configureWidgetsLabel();
-    $this->configureWidgetsOptions();
-    $this->configureValidator();
-    $this->configureValidatorRequiredMessage();
-    $this->configureValidatorInvalidMessage();
+// do not forget to uncomment the lines below after your test
+/*
+$this->configureWidgetsLabel();
+$this->configureWidgetsOptions();
+$this->configureValidator();
+$this->configureValidatorRequiredMessage();
+$this->configureValidatorInvalidMessage();
+*/
   }
   
   protected function unsetUnusedFields()
@@ -28,17 +31,18 @@ class AnnonceForm extends BaseAnnonceForm
   		$this['validee_par'],
   		$this['annonceur'],
   		$this['est_abusif'],
-		//$this['contenu'],//unset after test ib upload image
-		//$this['telephone'],
-		//$this['prix'],
-  		$this['etat_de_validation']//,
-		//$this['ville'],
-		//$this['code_postal'],
-		//$this['type_annonce'],
-		//$this['categorie'],
-		//$this['region'],
-		//$this['departement'],
-		//$this['titre']
+  		$this['etat_de_validation'],
+// do not forget to comment the lines below after your test
+$this['contenu'],
+$this['telephone'],
+$this['prix'],
+$this['ville'],
+$this['code_postal'],
+$this['type_annonce'],
+$this['categorie'],
+$this['region'],
+$this['departement'],
+$this['titre']
   	);  	
   }
   
