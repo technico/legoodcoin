@@ -38,7 +38,7 @@ all:
     i18n:                   on
 
     # i18n
-    default_culture:        fr        # Default user culture
+    default_culture:        en        # Default user culture
 
     # Activated modules from plugins or from the symfony core
     enabled_modules:        [default]

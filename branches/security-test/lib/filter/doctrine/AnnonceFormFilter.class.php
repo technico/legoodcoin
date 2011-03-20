@@ -13,18 +13,20 @@ class AnnonceFormFilter extends BaseAnnonceFormFilter
     $geo_zone_value,
   	$only_title,
   	$country;
-  	
+  
   public function __construct( $geo_zone_value = 0, $only_title = 0, $country )
   {
     $this->geo_zone_value = $geo_zone_value;
     $this->only_title = $only_title;  
     $this->country = $country;
+    
     parent::__construct();
   }
   
   public function configure()
   {
   	unset( 
+  	 // $this['_csrf_token'],
   		$this['date_control'],
   		$this['validee_par'],
   		$this['annonceur'],

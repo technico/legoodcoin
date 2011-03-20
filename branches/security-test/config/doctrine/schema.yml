@@ -23,6 +23,10 @@ Administrateur:
       foreign: validee_par
       type: many
 Annonce:
+  actAs:
+    Sluggable:
+      fields: [titre, id]
+      unique: true
   tableName: annonce
   columns:
     id:
