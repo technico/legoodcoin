@@ -19,17 +19,9 @@ abstract class BaseAnnonceur extends sfDoctrineRecord
              'notnull' => true,
              'length' => '4',
              ));
-        $this->hasColumn('mail', 'string', 100, array(
+        $this->hasColumn('type_annonceur', 'string', 12, array(
              'type' => 'string',
-             'length' => '100',
-             ));
-        $this->hasColumn('mdp', 'string', 20, array(
-             'type' => 'string',
-             'length' => '20',
-             ));
-        $this->hasColumn('name', 'string', 20, array(
-             'type' => 'string',
-             'length' => '20',
+             'length' => '12',
              ));
     }
 

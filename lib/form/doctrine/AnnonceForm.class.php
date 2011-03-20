@@ -14,14 +14,12 @@ class AnnonceForm extends BaseAnnonceForm
 	$this->unsetUnusedFields();
 	$this->setupWidgetForVirtualFields();
     $this->setupValidatorForVirtualFields();
-// do not forget to uncomment the lines below after your test
-/*
-$this->configureWidgetsLabel();
-$this->configureWidgetsOptions();
-$this->configureValidator();
-$this->configureValidatorRequiredMessage();
-$this->configureValidatorInvalidMessage();
-*/
+    $this->configureWidgetsLabel();
+    $this->configureWidgetsOptions();
+    $this->configureValidator();
+    $this->configureValidatorRequiredMessage();
+    $this->configureValidatorInvalidMessage();
+    $this->configureFieldsOrder();
   }
   
   protected function unsetUnusedFields()
@@ -31,32 +29,32 @@ $this->configureValidatorInvalidMessage();
   		$this['validee_par'],
   		$this['annonceur'],
   		$this['est_abusif'],
-  		$this['etat_de_validation'],
-// do not forget to comment the lines below after your test
-$this['contenu'],
-$this['telephone'],
-$this['prix'],
-$this['ville'],
-$this['code_postal'],
-$this['type_annonce'],
-$this['categorie'],
-$this['region'],
-$this['departement'],
-$this['titre']
+  		$this['etat_de_validation']//,
+        /*
+        $this['contenu'],
+        $this['telephone'],
+        $this['prix'],
+        $this['ville'],
+        $this['code_postal'],
+        $this['type_annonce'],
+        $this['categorie'],
+        $this['region'],
+        $this['departement'],
+        $this['titre']
+        */
   	);  	
   }
   
   protected function setupWidgetForVirtualFields()
   {
   	$this->setWidget( 'photo_1', new sfWidgetFormInputFile() );
-  	$this->setWidget( 'mail', new sfWidgetFormInput() );
-  	$this->setWidget( 'name', new sfWidgetFormInput() );
+  	$this->setWidget( 'mail', new sfWidgetFormInput(array('label'=>'Your email')) );
   }
   
   protected function setupValidatorForVirtualFields()
   {
   	$this->setValidator(
-  	  'photo_1', new sfValidatorFile(
+  	  'photo_1', new ValidatorFile(
   	     array( 
   		   'required'   => false, 
   		   'mime_types' => 'web_images',
@@ -65,20 +63,12 @@ $this['titre']
   	  ) 
   	);
   	
-  	$this->setValidator( 'mail', new sfValidatorEmail()); 
-  	
-  	//utiliser plutot un callable avec filter is alpha only ou un ctype
-  	$this->setValidator( 'name', new sfValidatorRegex( 
-        array(
-    	  'required' => true,
-    	  'pattern'  => "!^[a-zA-Z\- ]+$!",
-    	)
-      ));
+  	$this->setValidator( 'mail', new sfValidatorEmail());
   }
   
   protected function configureWidgetsLabel()
   {
-  	$this->widgetSchema['type_annonce']->setLabel('Ad type');
+    $this->widgetSchema['nom_annonceur']->setLabel('Your name');
   	$this->widgetSchema['titre']->setLabel('Title');
   	$this->widgetSchema['contenu']->setLabel('Ad text');
   	$this->widgetSchema['telephone']->setLabel('Phone number');
@@ -88,11 +78,13 @@ $this['titre']
   	$this->widgetSchema['prix']->setLabel('Price');
   	$this->widgetSchema['photo_1']->setLabel('Picture 1');
   	$this->widgetSchema['categorie']->setLabel('Category'); 
-  	$this->widgetSchema['code_postal']->setLabel('Zip code');   	  	  	  	  	  	  	  	
+  	$this->widgetSchema['code_postal']->setLabel('Zip code');
+  	$this->widgetSchema['pays']->setLabel('Country');   	  	  	  	  	  	  	
   }
   
   protected function configureWidgetsOptions()
   {
+    $this->widgetSchema['type_annonce'] = new sfWidgetFormChoice(array('label'=>'Ad type', 'choices' => array('offre' => 'offer', 'demande' => 'demand')));    
   	$this->widgetSchema['categorie']->setOption( 'add_empty', true );
   	$this->widgetSchema['departement']->setOption( 'add_empty', true );
   	$this->widgetSchema['region']->setOption( 'add_empty', true );
@@ -114,6 +106,8 @@ $this['titre']
   
   protected function configureValidator()
   {
+    $this->validatorSchema['type_annonce'] = new sfValidatorChoice(array('choices' => array('offre', 'demande')));
+    
     $this->validatorSchema['ville'] = 
   	  new sfValidatorString( 
   	    array( 
@@ -162,5 +156,24 @@ $this['titre']
   	$this->validatorSchema['type_annonce']->setMessage('invalid', '%value% is not a valid ad type.');
   	$this->validatorSchema['mail']->setMessage('invalid', '%value% is not a valid email address.');
   	$this->validatorSchema['photo_1']->setMessage('mime_types', 'The file uploaded is not a valid image.');
+  }
+  
+  public function configureFieldsOrder()
+  {
+    $this->getWidgetSchema()->moveField('pays', sfWidgetFormSchema::FIRST);
+    $this->getWidgetSchema()->moveField('region', sfWidgetFormSchema::AFTER, 'pays');
+    $this->getWidgetSchema()->moveField('departement', sfWidgetFormSchema::AFTER, 'region');
+    $this->getWidgetSchema()->moveField('code_postal', sfWidgetFormSchema::AFTER, 'departement');
+    $this->getWidgetSchema()->moveField('ville', sfWidgetFormSchema::AFTER, 'code_postal');
+    $this->getWidgetSchema()->moveField('categorie', sfWidgetFormSchema::AFTER, 'ville');
+    
+    $this->getWidgetSchema()->moveField('type_annonce', sfWidgetFormSchema::AFTER, 'categorie');
+    $this->getWidgetSchema()->moveField('nom_annonceur', sfWidgetFormSchema::AFTER, 'type_annonce');
+    $this->getWidgetSchema()->moveField('mail', sfWidgetFormSchema::AFTER, 'nom_annonceur');
+    $this->getWidgetSchema()->moveField('telephone', sfWidgetFormSchema::AFTER, 'mail');
+    $this->getWidgetSchema()->moveField('titre', sfWidgetFormSchema::AFTER, 'telephone');
+    $this->getWidgetSchema()->moveField('contenu', sfWidgetFormSchema::AFTER, 'titre');
+    $this->getWidgetSchema()->moveField('prix', sfWidgetFormSchema::AFTER, 'contenu');
+    $this->getWidgetSchema()->moveField('photo_1', sfWidgetFormSchema::AFTER, 'prix');
   }
 }

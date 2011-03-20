@@ -14,13 +14,14 @@ class BaseAnnonceForm extends BaseFormDoctrine
     $this->setWidgets(array(
       'id'                 => new sfWidgetFormInputHidden(),
       'etat_de_validation' => new sfWidgetFormInput(),
+      'nom_annonceur'      => new sfWidgetFormInput(),
       'ville'              => new sfWidgetFormInput(),
       'code_postal'        => new sfWidgetFormInput(),
       'contenu'            => new sfWidgetFormTextarea(),
       'titre'              => new sfWidgetFormInput(),
       'prix'               => new sfWidgetFormInput(),
       'est_abusif'         => new sfWidgetFormInput(),
-      'type_annonce'       => new sfWidgetFormChoice(array('choices' => array('offre' => 'offre', 'demande' => 'demande'))),
+      'type_annonce'       => new sfWidgetFormChoice(array('choices' => array('offre' => 'offer', 'demande' => 'demand'))),
       'categorie'          => new sfWidgetFormDoctrineChoice(array('model' => 'Categorie', 'add_empty' => false)),
       'region'             => new sfWidgetFormDoctrineChoice(array('model' => 'Region', 'add_empty' => false)),
       'departement'        => new sfWidgetFormDoctrineChoice(array('model' => 'Departement', 'add_empty' => false)),
@@ -34,6 +35,7 @@ class BaseAnnonceForm extends BaseFormDoctrine
     $this->setValidators(array(
       'id'                 => new sfValidatorDoctrineChoice(array('model' => 'Annonce', 'column' => 'id', 'required' => false)),
       'etat_de_validation' => new sfValidatorString(array('max_length' => 8, 'required' => false)),
+      'nom_annonceur'      => new sfValidatorString(array('max_length' => 20, 'required' => false)),
       'ville'              => new sfValidatorString(array('max_length' => 30)),
       'code_postal'        => new sfValidatorString(array('max_length' => 5)),
       'contenu'            => new sfValidatorString(),

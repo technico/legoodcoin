@@ -19,6 +19,10 @@ abstract class BaseAnnonce extends sfDoctrineRecord
              'default' => 'wait',
              'length' => '8',
              ));
+        $this->hasColumn('nom_annonceur', 'string', 20, array(
+             'type' => 'string',
+             'length' => '20',
+             ));
         $this->hasColumn('ville', 'string', 30, array(
              'type' => 'string',
              'notnull' => true,

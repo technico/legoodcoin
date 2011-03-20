@@ -1,3 +1,15 @@
+en_delete_picture:
+  url:   /ad/delete-picture
+  param: { module: postAd, action: deletePicture }
+  requirements:
+    sf_method: [get]
+    
+fr_delete_picture:
+  url:   /supprimer-une-photo
+  param: { module: postAd, action: deletePicture }
+  requirements:
+    sf_method: [get]
+    
 en_thankyou_ad:
   url:   /ad/thankyou
   param: { module: postAd, action: thankyou }
@@ -28,7 +40,7 @@ en_review_ad:
   
 fr_review_ad:
   url:   /deposer-une-annonce/verifier
-  param: { module: postAd, action: new }
+  param: { module: postAd, action: review }
   
 en_post_ad:
   url:   /ad/post
