@@ -121,11 +121,13 @@ Annonceur:
       notnull: true
     mail: string(100)
     mdp: string(20)
+    name: string(20)
   relations:
     sfGuardUser:
       local: sf_guard_user_id
       foreign: id
-      type: one
+      foreignType: one
+      onDelete: cascade
     Annonce:
       local: id
       foreign: annonceur

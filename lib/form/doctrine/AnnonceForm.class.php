@@ -50,6 +50,7 @@ $this['titre']
   {
   	$this->setWidget( 'photo_1', new sfWidgetFormInputFile() );
   	$this->setWidget( 'mail', new sfWidgetFormInput() );
+  	$this->setWidget( 'name', new sfWidgetFormInput() );
   }
   
   protected function setupValidatorForVirtualFields()
@@ -64,7 +65,15 @@ $this['titre']
   	  ) 
   	);
   	
-  	$this->setValidator( 'mail', new sfValidatorEmail() ); 
+  	$this->setValidator( 'mail', new sfValidatorEmail()); 
+  	
+  	//utiliser plutot un callable avec filter is alpha only ou un ctype
+  	$this->setValidator( 'name', new sfValidatorRegex( 
+        array(
+    	  'required' => true,
+    	  'pattern'  => "!^[a-zA-Z\- ]+$!",
+    	)
+      ));
   }
   
   protected function configureWidgetsLabel()

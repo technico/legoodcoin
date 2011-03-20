@@ -1,7 +1,7 @@
 CREATE TABLE administrateur (id INT AUTO_INCREMENT, nom VARCHAR(50) NOT NULL, prenom VARCHAR(20) NOT NULL, mail VARCHAR(100) NOT NULL, mdp VARCHAR(20) NOT NULL, PRIMARY KEY(id)) ENGINE = INNODB;
 CREATE TABLE annonce (id INT AUTO_INCREMENT, etat_de_validation VARCHAR(8) DEFAULT 'wait', ville VARCHAR(30) NOT NULL, code_postal VARCHAR(5) NOT NULL, contenu TEXT NOT NULL, titre VARCHAR(50) NOT NULL, prix DECIMAL(65,2), est_abusif INT DEFAULT '0', type_annonce VARCHAR(255) NOT NULL, categorie INT NOT NULL, region INT NOT NULL, departement INT NOT NULL, telephone VARCHAR(10), annonceur INT, validee_par INT, date_control DATETIME, pays CHAR(2), INDEX validee_par_idx (validee_par), INDEX region_idx (region), INDEX departement_idx (departement), INDEX categorie_idx (categorie), INDEX annonceur_idx (annonceur), PRIMARY KEY(id)) ENGINE = INNODB;
 CREATE TABLE annonce_photo (id BIGINT AUTO_INCREMENT, annonce_id INT, filename VARCHAR(255), INDEX annonce_id_idx (annonce_id), PRIMARY KEY(id)) ENGINE = INNODB;
-CREATE TABLE annonceur (id INT AUTO_INCREMENT, sf_guard_user_id INT NOT NULL, mail VARCHAR(100), mdp VARCHAR(20), INDEX sf_guard_user_id_idx (sf_guard_user_id), PRIMARY KEY(id)) ENGINE = INNODB;
+CREATE TABLE annonceur (id INT AUTO_INCREMENT, sf_guard_user_id INT NOT NULL, mail VARCHAR(100), mdp VARCHAR(20), name VARCHAR(20), INDEX sf_guard_user_id_idx (sf_guard_user_id), PRIMARY KEY(id)) ENGINE = INNODB;
 CREATE TABLE categorie_translation (id INT, nom VARCHAR(200) NOT NULL, lang CHAR(2), PRIMARY KEY(id, lang)) ENGINE = INNODB;
 CREATE TABLE categorie (id INT AUTO_INCREMENT, PRIMARY KEY(id)) ENGINE = INNODB;
 CREATE TABLE code_postaux (id INT AUTO_INCREMENT, commune VARCHAR(50) NOT NULL, codepos CHAR(5) NOT NULL, departement VARCHAR(50) NOT NULL, insee VARCHAR(10) NOT NULL, PRIMARY KEY(id)) ENGINE = INNODB;
@@ -20,7 +20,7 @@ ALTER TABLE annonce ADD FOREIGN KEY (departement) REFERENCES departement(code_de
 ALTER TABLE annonce ADD FOREIGN KEY (categorie) REFERENCES categorie(id);
 ALTER TABLE annonce ADD FOREIGN KEY (annonceur) REFERENCES annonceur(id);
 ALTER TABLE annonce_photo ADD FOREIGN KEY (annonce_id) REFERENCES annonce(id);
-ALTER TABLE annonceur ADD FOREIGN KEY (sf_guard_user_id) REFERENCES sf_guard_user(id);
+ALTER TABLE annonceur ADD FOREIGN KEY (sf_guard_user_id) REFERENCES sf_guard_user(id) ON DELETE CASCADE;
 ALTER TABLE categorie_translation ADD FOREIGN KEY (id) REFERENCES categorie(id) ON UPDATE CASCADE ON DELETE CASCADE;
 ALTER TABLE departement ADD FOREIGN KEY (region) REFERENCES region(id);
 ALTER TABLE sf_guard_group_permission ADD FOREIGN KEY (permission_id) REFERENCES sf_guard_permission(id) ON DELETE CASCADE;
