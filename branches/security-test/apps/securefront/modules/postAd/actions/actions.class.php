@@ -28,6 +28,7 @@ class postAdActions extends sfActions
       
       $this->form = new AnnonceForm($this->getUser()->getAttribute('ad'));
       $this->form->setDefault('mail', $this->getUser()->getAttribute('mail'));
+      $this->form->setDefault('name', $this->getUser()->getAttribute('name'));
     }
     else
     {
@@ -50,6 +51,8 @@ class postAdActions extends sfActions
         
         // puts the user email into  the user session
         $this->getUser()->setAttribute('mail', $this->form->getValue('mail'));
+        
+        $this->getUser()->setAttribute('name', $this->form->getValue('name'));
         
         // saves uploaded pictures
         
@@ -118,6 +121,9 @@ class postAdActions extends sfActions
           $this->authForm->updateObject();
           $sfGuardUser = $this->authForm->getObject();
           $sfGuardUser->setUsername($this->getUser()->getAttribute('mail'));
+          $annonceur = new Annonceur();
+          $annonceur->setName($this->getUser()->getAttribute('name'));
+          $sfGuardUser->setProfile($annonceur);
           $sfGuardUser->save();
           
           echo 'ok open an account';

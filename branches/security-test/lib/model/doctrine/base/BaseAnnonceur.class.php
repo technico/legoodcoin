@@ -27,6 +27,10 @@ abstract class BaseAnnonceur extends sfDoctrineRecord
              'type' => 'string',
              'length' => '20',
              ));
+        $this->hasColumn('name', 'string', 20, array(
+             'type' => 'string',
+             'length' => '20',
+             ));
     }
 
     public function setUp()
@@ -34,7 +38,8 @@ abstract class BaseAnnonceur extends sfDoctrineRecord
         parent::setUp();
     $this->hasOne('sfGuardUser', array(
              'local' => 'sf_guard_user_id',
-             'foreign' => 'id'));
+             'foreign' => 'id',
+             'onDelete' => 'cascade'));
 
         $this->hasMany('Annonce', array(
              'local' => 'id',
