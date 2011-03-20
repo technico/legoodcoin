@@ -51,6 +51,9 @@ class listingActions extends sfActions
   	
     //Pour compter le nombre d'annonces (offre+demande) tout en conservant les criteres de recherche.
     $attributes['type_annonce']       = '';
+    
+    //$attributes['_csrf_token'] = $this->filter->getCSRFToken();
+        
     $this->filter->bind( $attributes );
     $this->nb_tout     = $this->filter->isValid()===true?count($this->filter->getQuery()->execute()):'';
     

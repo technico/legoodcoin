@@ -18,7 +18,7 @@ class detailActions extends sfActions
   public function executeIndex(sfWebRequest $request)
   {   
       $this->Annonce = 
-      Doctrine::getTable('Annonce')->find($request->getParameter( 'id' ));
+      Doctrine::getTable('Annonce')->findI18n($request->getParameter( 'id' ));
         
       $this->backref = Backref::getBackdef( $request );
   }

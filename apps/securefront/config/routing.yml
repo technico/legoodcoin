@@ -1,3 +1,27 @@
+en_ads:
+  url:   /ads
+  param: { module: listing, action: index }
+    
+fr_ads:
+  url:   /annonces
+  param: { module: listing, action: index }
+  
+en_ad_demand:
+  url:   /ads/demands
+  param: { module: listing, action: demandes }
+    
+fr_ad_demand:
+  url:   /annonces/demandes
+  param: { module: listing, action: demandes }
+  
+en_ad_offer:
+  url:   /ads/offers
+  param: { module: listing, action: offres }
+    
+fr_ad_offer:
+  url:   /annonces/offres
+  param: { module: listing, action: offres }
+    
 en_delete_picture:
   url:   /ad/delete-picture
   param: { module: postAd, action: deletePicture }
