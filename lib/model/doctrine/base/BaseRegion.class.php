@@ -36,5 +36,14 @@ abstract class BaseRegion extends sfDoctrineRecord
         $this->hasMany('Departement', array(
              'local' => 'id',
              'foreign' => 'region'));
+
+        $sluggable0 = new Doctrine_Template_Sluggable(array(
+             'fields' => 
+             array(
+              0 => 'nom',
+             ),
+             'unique' => true,
+             ));
+        $this->actAs($sluggable0);
     }
 }

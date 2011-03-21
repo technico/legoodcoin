@@ -126,5 +126,14 @@ abstract class BaseAnnonce extends sfDoctrineRecord
         $this->hasMany('AnnoncePhoto', array(
              'local' => 'id',
              'foreign' => 'annonce_id'));
+
+        $sluggable0 = new Doctrine_Template_Sluggable(array(
+             'fields' => 
+             array(
+              0 => 'titre',
+             ),
+             'unique' => true,
+             ));
+        $this->actAs($sluggable0);
     }
 }

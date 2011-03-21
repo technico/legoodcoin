@@ -12,11 +12,15 @@ class BaseCategorieForm extends BaseFormDoctrine
   public function setup()
   {
     $this->setWidgets(array(
-      'id' => new sfWidgetFormInputHidden(),
+      'id'   => new sfWidgetFormInputHidden(),
+      'nom'  => new sfWidgetFormInput(),
+      'pays' => new sfWidgetFormInput(),
     ));
 
     $this->setValidators(array(
-      'id' => new sfValidatorDoctrineChoice(array('model' => 'Categorie', 'column' => 'id', 'required' => false)),
+      'id'   => new sfValidatorDoctrineChoice(array('model' => 'Categorie', 'column' => 'id', 'required' => false)),
+      'nom'  => new sfValidatorString(array('max_length' => 200)),
+      'pays' => new sfValidatorString(array('max_length' => 2, 'required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('categorie[%s]');

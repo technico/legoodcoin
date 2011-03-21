@@ -41,7 +41,14 @@ all:
     default_culture:        en        # Default user culture
 
     # Activated modules from plugins or from the symfony core
-    enabled_modules:        [default]
+    enabled_modules:        [default, sfGuardAuth]
+  
+  .actions:
+    login_module:           sfGuardAuth
+    login_action:           signin
+        
+    secure_module:          sfGuardAuth
+    secure_action:          secure
 
 #all:
 #  .actions:

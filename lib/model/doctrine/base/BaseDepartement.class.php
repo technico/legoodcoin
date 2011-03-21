@@ -41,5 +41,14 @@ abstract class BaseDepartement extends sfDoctrineRecord
         $this->hasMany('Annonce', array(
              'local' => 'code_dep',
              'foreign' => 'departement'));
+
+        $sluggable0 = new Doctrine_Template_Sluggable(array(
+             'fields' => 
+             array(
+              0 => 'nom',
+             ),
+             'unique' => true,
+             ));
+        $this->actAs($sluggable0);
     }
 }

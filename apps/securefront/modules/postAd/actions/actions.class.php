@@ -21,7 +21,7 @@ class postAdActions extends sfActions
       {
         $this->forward404();
       }
-      
+echo 'A';      
       // clears credentials
       // $this->getUser()->clearCredentials();
       
@@ -30,7 +30,7 @@ class postAdActions extends sfActions
       $this->form->setDefault('name', $this->getUser()->getAttribute('name'));
     }
     else if ($this->getUser()->hasAttribute('restore_post_ad_request'))
-    {
+    {  
       $parameters = $this->getUser()->getAttribute('post_ad_request_backup');
       
       $this->getUser()->getAttributeHolder()->remove('restore_post_ad_request');
@@ -44,11 +44,13 @@ echo 'restoring form param after delete picture';
     }
     else
     {
+echo 'C';      
       $this->form = new AnnonceForm();
     }
-    
-    if ($request->isMethod('post'))
+var_dump($request->isMethod('post'));    
+    if ($request->isMethod('post')||$request->isMethod('put'))
     {
+echo 'D';      
       $files = $request->getFiles($this->form->getName());
       $parameters = $request->getParameter($this->form->getName());
       

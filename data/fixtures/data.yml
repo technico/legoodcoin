@@ -3003,29 +3003,15 @@ AnnoncePhoto:
 Annonceur:
   Annonceur_1:
     sfGuardUser: sfGuardUser_2
-    mail: kratos@godofwar.com
-    mdp: test
   Annonceur_2:
     sfGuardUser: sfGuardUser_3
-    mail: a@a.a
-    mdp: '123'
   Annonceur_3:
     sfGuardUser: sfGuardUser_4
-    mail: null
-    mdp: null
   Annonceur_4:
     sfGuardUser: sfGuardUser_5
-    mail: null
-    mdp: null
   Annonceur_5:
     sfGuardUser: sfGuardUser_6
-    mail: null
-    mdp: null
   Annonceur_6:
     sfGuardUser: sfGuardUser_7
-    mail: null
-    mdp: null
   Annonceur_7:
     sfGuardUser: sfGuardUser_8
-    mail: null
-    mdp: null

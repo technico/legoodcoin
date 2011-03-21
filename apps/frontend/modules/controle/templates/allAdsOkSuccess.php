@@ -1,0 +1,1 @@
+<?php echo __('All ads have been controled') ?>

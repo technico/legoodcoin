@@ -15,6 +15,7 @@ class BaseAnnonceFormFilter extends BaseFormFilterDoctrine
   {
     $this->setWidgets(array(
       'etat_de_validation' => new sfWidgetFormFilterInput(),
+      'nom_annonceur'      => new sfWidgetFormFilterInput(),
       'ville'              => new sfWidgetFormFilterInput(),
       'code_postal'        => new sfWidgetFormFilterInput(),
       'contenu'            => new sfWidgetFormFilterInput(),
@@ -30,10 +31,12 @@ class BaseAnnonceFormFilter extends BaseFormFilterDoctrine
       'validee_par'        => new sfWidgetFormDoctrineChoice(array('model' => 'Administrateur', 'add_empty' => true)),
       'date_control'       => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate(), 'with_empty' => true)),
       'pays'               => new sfWidgetFormFilterInput(),
+      'slug'               => new sfWidgetFormFilterInput(),
     ));
 
     $this->setValidators(array(
       'etat_de_validation' => new sfValidatorPass(array('required' => false)),
+      'nom_annonceur'      => new sfValidatorPass(array('required' => false)),
       'ville'              => new sfValidatorPass(array('required' => false)),
       'code_postal'        => new sfValidatorPass(array('required' => false)),
       'contenu'            => new sfValidatorPass(array('required' => false)),
@@ -49,6 +52,7 @@ class BaseAnnonceFormFilter extends BaseFormFilterDoctrine
       'validee_par'        => new sfValidatorDoctrineChoice(array('required' => false, 'model' => 'Administrateur', 'column' => 'id')),
       'date_control'       => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDate(array('required' => false)), 'to_date' => new sfValidatorDate(array('required' => false)))),
       'pays'               => new sfValidatorPass(array('required' => false)),
+      'slug'               => new sfValidatorPass(array('required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('annonce_filters[%s]');
@@ -68,6 +72,7 @@ class BaseAnnonceFormFilter extends BaseFormFilterDoctrine
     return array(
       'id'                 => 'Number',
       'etat_de_validation' => 'Text',
+      'nom_annonceur'      => 'Text',
       'ville'              => 'Text',
       'code_postal'        => 'Text',
       'contenu'            => 'Text',
@@ -83,6 +88,7 @@ class BaseAnnonceFormFilter extends BaseFormFilterDoctrine
       'validee_par'        => 'ForeignKey',
       'date_control'       => 'Date',
       'pays'               => 'Text',
+      'slug'               => 'Text',
     );
   }
 }

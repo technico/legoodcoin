@@ -24,7 +24,8 @@ class AnnonceForm extends BaseAnnonceForm
   
   protected function unsetUnusedFields()
   {
-  	unset( 
+  	unset(
+  	$this['slug'],
   		$this['date_control'],
   		$this['validee_par'],
   		$this['annonceur'],

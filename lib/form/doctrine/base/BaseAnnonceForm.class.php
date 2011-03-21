@@ -21,7 +21,7 @@ class BaseAnnonceForm extends BaseFormDoctrine
       'titre'              => new sfWidgetFormInput(),
       'prix'               => new sfWidgetFormInput(),
       'est_abusif'         => new sfWidgetFormInput(),
-      'type_annonce'       => new sfWidgetFormChoice(array('choices' => array('offre' => 'offer', 'demande' => 'demand'))),
+      'type_annonce'       => new sfWidgetFormChoice(array('choices' => array('offre' => 'offre', 'demande' => 'demande'))),
       'categorie'          => new sfWidgetFormDoctrineChoice(array('model' => 'Categorie', 'add_empty' => false)),
       'region'             => new sfWidgetFormDoctrineChoice(array('model' => 'Region', 'add_empty' => false)),
       'departement'        => new sfWidgetFormDoctrineChoice(array('model' => 'Departement', 'add_empty' => false)),
@@ -30,6 +30,7 @@ class BaseAnnonceForm extends BaseFormDoctrine
       'validee_par'        => new sfWidgetFormDoctrineChoice(array('model' => 'Administrateur', 'add_empty' => true)),
       'date_control'       => new sfWidgetFormDateTime(),
       'pays'               => new sfWidgetFormInput(),
+      'slug'               => new sfWidgetFormInput(),
     ));
 
     $this->setValidators(array(
@@ -51,7 +52,12 @@ class BaseAnnonceForm extends BaseFormDoctrine
       'validee_par'        => new sfValidatorDoctrineChoice(array('model' => 'Administrateur', 'required' => false)),
       'date_control'       => new sfValidatorDateTime(array('required' => false)),
       'pays'               => new sfValidatorString(array('max_length' => 2, 'required' => false)),
+      'slug'               => new sfValidatorString(array('max_length' => 255, 'required' => false)),
     ));
+
+    $this->validatorSchema->setPostValidator(
+      new sfValidatorDoctrineUnique(array('model' => 'Annonce', 'column' => array('slug')))
+    );
 
     $this->widgetSchema->setNameFormat('annonce[%s]');
 
