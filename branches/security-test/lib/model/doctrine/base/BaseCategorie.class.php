@@ -19,6 +19,11 @@ abstract class BaseCategorie extends sfDoctrineRecord
              'notnull' => true,
              'length' => '200',
              ));
+        $this->hasColumn('pays', 'string', 2, array(
+             'type' => 'string',
+             'fixed' => 1,
+             'length' => '2',
+             ));
     }
 
     public function setUp()
@@ -27,13 +32,5 @@ abstract class BaseCategorie extends sfDoctrineRecord
     $this->hasMany('Annonce', array(
              'local' => 'id',
              'foreign' => 'categorie'));
-
-        $i18n0 = new Doctrine_Template_I18n(array(
-             'fields' => 
-             array(
-              0 => 'nom',
-             ),
-             ));
-        $this->actAs($i18n0);
     }
 }

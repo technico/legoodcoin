@@ -16,6 +16,7 @@ class BaseDepartementForm extends BaseFormDoctrine
       'nom'      => new sfWidgetFormInput(),
       'region'   => new sfWidgetFormDoctrineChoice(array('model' => 'Region', 'add_empty' => false)),
       'pays'     => new sfWidgetFormInput(),
+      'slug'     => new sfWidgetFormInput(),
     ));
 
     $this->setValidators(array(
@@ -23,7 +24,12 @@ class BaseDepartementForm extends BaseFormDoctrine
       'nom'      => new sfValidatorString(array('max_length' => 255)),
       'region'   => new sfValidatorDoctrineChoice(array('model' => 'Region')),
       'pays'     => new sfValidatorString(array('max_length' => 2, 'required' => false)),
+      'slug'     => new sfValidatorString(array('max_length' => 255, 'required' => false)),
     ));
+
+    $this->validatorSchema->setPostValidator(
+      new sfValidatorDoctrineUnique(array('model' => 'Departement', 'column' => array('slug')))
+    );
 
     $this->widgetSchema->setNameFormat('departement[%s]');
 

@@ -1,3 +1,47 @@
+sf_guard_signin:
+  url:   /login
+  param: { module: sfGuardAuth, action: signin }
+
+sf_guard_signout:
+  url:   /logout
+  param: { module: sfGuardAuth, action: signout }
+
+sf_guard_password:
+  url:   /request_password
+  param: { module: sfGuardAuth, action: password }
+      
+en_display_ad:
+  url:     /display-ad/:id/:region_slug/:departement_slug/:slug
+  class:   sfDoctrineRoute
+  options: { model: Annonce, type: object }
+  param:   { module: detail, action: index }
+  requirements:
+    id: \d+
+
+fr_display_ad:
+  url:     /voir-annonce/:region_slug/:departement_slug/:id/:annonce_slug
+  class:   sfDoctrineRoute
+  options: { model: Annonce, type: object }
+  param:   { module: detail, action: index }
+  requirements:
+    id: \d+
+
+en_ads_validation:
+  url:   /ads-validation
+  param: { module: controle, action: index }
+    
+fr_ads_validation:
+  url:   /validation-annonce
+  param: { module: controle, action: index }
+
+en_my_ads:
+  url:   /my-ads
+  param: { module: mes_annonces_light, action: index }
+    
+fr_my_ads:
+  url:   /mes-annonces
+  param: { module: mes_annonces_light, action: index }
+      
 en_ads:
   url:   /ads
   param: { module: listing, action: index }
@@ -82,11 +126,18 @@ fr_post_ad_create:
   url:   /deposer-une-annonce
   param: { module: postAd, action: new }
 
+en_post_ad_update:
+  url:   /ad/post
+  param: { module: postAd, action: new }
+  
+fr_post_ad_update:
+  url:   /deposer-une-annonce
+  param: { module: postAd, action: new }
 
 # default rules
 homepage:
   url:   /
-  param: { module: default, action: index }
+  param: { module: accueil, action: index }
 
 default_index:
   url:   /:module

@@ -22,4 +22,14 @@ class Annonce extends BaseAnnonce
 	public function getPhoto1() {//Aparement sfValidatorFile à besoin de se zaffaire !!!???
 		return 'jdtyjdrs';
 	}
+	
+	public function getRegionSlug()
+	{
+	  return $this->getRegion()->getSlug();
+	}
+
+	public function getDepartementSlug()
+	{
+	  return $this->getDepartement()->getSlug();
+	}
 }

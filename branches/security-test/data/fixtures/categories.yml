@@ -1,20 +1,30 @@
 Categorie:
-  Categorie_1: {  }
-  Categorie_2: {  }
-CategorieTranslation:
-  CategorieTranslation_1_en:
-    Categorie: Categorie_1
+  Categorie_1:
     nom: computers
-    lang: en
-  CategorieTranslation_1_fr:
-    Categorie: Categorie_1
-    nom: informatique
-    lang: fr
-  CategorieTranslation_2_en:
-    Categorie: Categorie_2
+    pays: AU
+  Categorie_2:
     nom: cars
-    lang: en
-  CategorieTranslation_2_fr:
-    Categorie: Categorie_2
-    nom: voitures
-    lang: fr
+    pays: AU
+  Categorie_3:
+    nom: informatique
+    pays: FR
+  Categorie_4:
+    nom: voiture
+    pays: FR    
+#CategorieTranslation:
+#  CategorieTranslation_1_en:
+#    Categorie: Categorie_1
+#    nom: computers
+#    lang: en
+#  CategorieTranslation_1_fr:
+#    Categorie: Categorie_1
+#    nom: informatique
+#    lang: fr
+#  CategorieTranslation_2_en:
+#    Categorie: Categorie_2
+#    nom: cars
+#    lang: en
+#  CategorieTranslation_2_fr:
+#    Categorie: Categorie_2
+#    nom: voitures
+#    lang: fr

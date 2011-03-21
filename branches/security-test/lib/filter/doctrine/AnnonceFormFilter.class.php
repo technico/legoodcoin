@@ -26,7 +26,8 @@ class AnnonceFormFilter extends BaseAnnonceFormFilter
   public function configure()
   {
   	unset( 
-  	 // $this['_csrf_token'],
+  	  $this['nom_annonceur'],
+  	    $this['slug'],
   		$this['date_control'],
   		$this['validee_par'],
   		$this['annonceur'],

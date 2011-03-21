@@ -25,7 +25,7 @@ Administrateur:
 Annonce:
   actAs:
     Sluggable:
-      fields: [titre, id]
+      fields: [titre]
       unique: true
   tableName: annonce
   columns:
@@ -136,9 +136,9 @@ Annonceur:
       foreign: annonceur
       type: many
 Categorie:
-  actAs:
-    I18n:
-      fields: [nom]
+#  actAs:
+#    I18n:
+#      fields: [nom]
   tableName: categorie
   columns:
     id:
@@ -148,6 +148,9 @@ Categorie:
     nom:
       type: string(200)
       notnull: true
+    pays:
+      type: string(2)
+      fixed: true      
   relations:
     Annonce:
       local: id
@@ -174,6 +177,10 @@ CodePostaux:
       type: string(10)
       notnull: true
 Departement:
+  actAs:
+    Sluggable:
+      fields: [nom]
+      unique: true
   tableName: departement
   columns:
     code_dep:
@@ -199,6 +206,10 @@ Departement:
       foreign: departement
       type: many
 Region:
+  actAs:
+    Sluggable:
+      fields: [nom]
+      unique: true
   tableName: region
   columns:
     id:

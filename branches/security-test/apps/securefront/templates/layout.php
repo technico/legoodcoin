@@ -1,4 +1,4 @@
-<?php use_helper('I18N') ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <?php include_http_metas() ?>
@@ -23,16 +23,16 @@
 		<div id="region"><?php include_slot( 'zone_geo' ) ?></div>
 	</div>
 <div id="nav"><a href="<?php echo url_for( 'accueil/index' ) ?>"><?php echo __('Home') ?></a>
-&nbsp;|&nbsp; <a href="<?php echo url_for( '@'.$sf_user->getOptions()->get('default_culture').'_post_ad' ) ?>"
+&nbsp;|&nbsp; <a href="<?php echo url_for('@'.$sf_user->getOptions()->get('default_culture').'_post_ad') ?>"
 	rel="nofollow"><?php echo __('Post ad') ?></a> &nbsp;|&nbsp; <a
 	href="<?php if( has_slot( 'url_annonce' ) ): ?><?php include_slot( 'url_annonce' ) ?><?php else: ?><?php echo url_for( 'listing/index' ) ?><?php endif ?>"><?php echo __('Show ads') ?></a>
 &nbsp;|&nbsp; <!-- --> <a
-	href="<?php echo url_for( 'mes_annonces_light/index' ) ?>"><?php echo __('My ads') ?></a>
+	href="<?php echo url_for('@'.$sf_user->getOptions()->get('default_culture').'_my_ads') ?>"><?php echo __('My ads') ?></a>
 &nbsp;|&nbsp;   <!-- --><?php if( !$sf_user->isAuthenticated() ):?><?php else: ?><a
-	href="<?php echo /*url_for( '@sf_guard_signout' )*/'' ?>"><?php echo __('Ads validation') ?></a>
-&nbsp;|&nbsp; <a href="<?php echo url_for( 'accueil/index' ) ?>"><?php echo __('Sign in') ?></a>
+	href="<?php echo url_for('@'.$sf_user->getOptions()->get('default_culture').'_ads_validation') ?>"><?php echo __('Ads validation') ?></a>
+&nbsp;|&nbsp; <a href="<?php echo url_for('@sf_guard_signin') ?>"><?php echo __('Sign in') ?></a>
 &nbsp;|&nbsp; <?php /*if( $sf_user->hasCredential( 'controle' ) ):*/?><a
-	href=""><?php echo __('Sign off') ?></a><?php /*endif*/?>
+	href="<?php echo url_for('@sf_guard_signout') ?>"><?php echo __('Sign off') ?></a><?php /*endif*/?>
 <?php endif ?><a
 	href="<?php echo url_for( 'controle/index' ) ?>">&nbsp;</a>
 </div>

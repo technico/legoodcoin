@@ -88,10 +88,4 @@ class myUser extends sfGuardSecurityUser
   	
   	return $this->lang;
   }
-  
-  public function setCulture($culture)
-  {
-  	parent::setCulture($culture);
-  	//$this->culture = $this->getLang();//On ne veut que la lanque pas l'eventuel pays.
-  }
 }
