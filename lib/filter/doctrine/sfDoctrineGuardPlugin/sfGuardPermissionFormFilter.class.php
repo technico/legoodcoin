@@ -11,5 +11,11 @@ class sfGuardPermissionFormFilter extends PluginsfGuardPermissionFormFilter
 {
   public function configure()
   {
+    unset(
+      $this['name'],
+      $this['description'],
+      $this['created_at'] ,
+      $this['updated_at']
+    );
   }
 }

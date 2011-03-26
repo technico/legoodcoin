@@ -11,5 +11,17 @@ class sfGuardUserFormFilter extends PluginsfGuardUserFormFilter
 {
   public function configure()
   {
+    unset(
+      $this['algorithm'],
+      $this['salt'],
+      $this['password'] ,
+      $this['groups_list'],
+      $this['permissions_list'],
+      $this['last_login'],
+      $this['created_at'],
+      $this['updated_at']
+    );
+    
+    $this->widgetSchema['username']->setOption('with_empty', false);
   }
 }

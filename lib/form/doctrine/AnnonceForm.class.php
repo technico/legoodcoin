@@ -86,23 +86,17 @@ class AnnonceForm extends BaseAnnonceForm
   protected function configureWidgetsOptions()
   {
     $this->widgetSchema['type_annonce'] = new sfWidgetFormChoice(array('label'=>'Ad type', 'choices' => array('offre' => 'offer', 'demande' => 'demand')));    
-  	$this->widgetSchema['categorie']->setOption( 'add_empty', true );
-  	$this->widgetSchema['departement']->setOption( 'add_empty', true );
-  	$this->widgetSchema['region']->setOption( 'add_empty', true );
 
-  	//on doit pouvoir mettre cette requête dans le coeur de doctrine ...
-  	$region_query = Doctrine::getTable('Region')
-  	                  ->createQuery('r')
-  	                  ->where('r.pays = ?', sfContext::getInstance()->getUser()->getCountry());
-  	                  
-  	$this->widgetSchema['region']->setOption( 'query', $region_query );      
-
-  	//on doit pouvoir mettre cette requête dans le coeur de doctrine ...
-  	$departement_query = Doctrine::getTable('Departement')
-  	                  ->createQuery('r')
-  	                  ->where('r.pays = ?', sfContext::getInstance()->getUser()->getCountry());
-  	                  
-  	$this->widgetSchema['departement']->setOption( 'query', $departement_query ); 
+    // localizes those three form fields
+    $fields = array('region', 'departement', 'categorie');
+    foreach($fields as &$field)
+    {
+      $this->widgetSchema[$field] = new WidgetFormDoctrineChoiceLocalized(array(
+    	    'model'              => ucfirst($field),
+    		'localization_field' => 'pays', 
+    		'localization_value' => sfContext::getInstance()->getUser()->getCountry()));      
+      $this->widgetSchema[$field]->setOption('add_empty', true);
+    }
   }
   
   protected function configureValidator()

@@ -5,12 +5,23 @@
  */
 class Annonceur extends BaseAnnonceur
 {
-	public function getPseudo() {
-		$aAnnonceur=explode('@',$this->getSfGuardUser()->getUsername());
-		return $aAnnonceur[0];
+	public function getPseudo() 
+	{
+	  $aAnnonceur=explode('@',$this->getSfGuardUser()->getUsername());
+	  return $aAnnonceur[0];
 	}
 		
-	public function __toString(){
-		return $this->getSfGuardUser()->getUsername();
+	public function __toString()
+	{
+	  return $this->getSfGuardUser()->getUsername();
+	}
+	
+	public function getAcceptedAd()
+	{
+	  return Doctrine::getTable('Annonce')
+	    ->createQuery('a')
+	    ->andWhere('a.annonceur = ?', $this->getId())
+	    ->andWhere('a.etat_de_validation = ?', 'accepted')
+	    ->execute();
 	}
 }

@@ -1,6 +1,6 @@
 <div class="form"><?php if( $form->hasErrors() ): ?>
   <div class="global error"><?php echo __('Warning : the form have some errors.') ?></div>
-  <?php endif; ?> <?php echo form_tag_for($form, '@'.$sf_user->getOptions()->get('default_culture').'_post_ad') ?>
+  <?php endif; ?> <?php echo form_tag_for($form, '@'.$sf_user->getLang().'_post_ad') ?>
   <?php echo $form->renderHiddenFields() ?> <?php foreach($form as $field_name=>$field): ?>
   <?php if($field->isHidden()): continue; endif ?>
   <?php if($field_name == 'photo_1'): continue; endif ?>

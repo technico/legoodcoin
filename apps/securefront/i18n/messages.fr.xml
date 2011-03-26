@@ -362,6 +362,54 @@
         <source>Password is invalid.</source>
         <target>Mot de passe invalide.</target>
       </trans-unit>
+      <trans-unit id="90">
+        <source>submit</source>
+        <target>valider</target>
+      </trans-unit>
+      <trans-unit id="91">
+        <source>Your active ads have been sent to your email address.</source>
+        <target>Vos annonces actives ont été envoyées à votre adresse email.</target>
+      </trans-unit>      
+      <trans-unit id="92">
+        <source>Your active ads</source>
+        <target>Vos annonces actives</target>
+      </trans-unit>
+      <trans-unit id="93">
+        <source>Sorry but an error occurred while attempting to send your active ads to your email address.</source>
+        <target>Désolé mais une erreur est survenue lors de la tentative d'envoi de vos annonces actives à votre adresse email.</target>
+      </trans-unit>
+      <trans-unit id="94">
+        <source>An error occurred</source>
+        <target>Une erreur s'est produite</target>
+      </trans-unit>
+      <trans-unit id="95">
+        <source>Please enter your name.</source>
+        <target>Merci d'indiquer votre nom.</target>
+      </trans-unit>
+      <trans-unit id="96">
+        <source>Please enter your email address.</source>
+        <target>Merci d'indiquer votre adresse email.</target>
+      </trans-unit> 
+      <trans-unit id="97">
+        <source>The message field is required</source>
+        <target>Le champs message est obligatoire.</target>
+      </trans-unit>
+      <trans-unit id="98">
+        <source>"%value%" is too short (%min_length% characters min).</source>
+        <target>"%value%" est trop court (%min_length% caractères min).</target>
+      </trans-unit>
+      <trans-unit id="99">
+        <source>Required.</source>
+        <target>Ce champs est obligatoire.</target>
+      </trans-unit>
+      <trans-unit id="100">
+        <source>Your email address is invalid.</source>
+        <target>Adresse email invalide.</target>
+      </trans-unit>
+      <trans-unit id="101">
+        <source>Email to advertiser have been sent.</source>
+        <target>Un email a bien été envoyé à l'annonceur.'</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

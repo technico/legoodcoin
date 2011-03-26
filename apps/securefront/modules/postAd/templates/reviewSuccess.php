@@ -18,7 +18,7 @@
   	</tbody>
  </table>
 <?php echo link_to(__('edit'), '@en_edit_ad') ?><br />
-<?php echo form_tag('@'.$sf_user->getOptions()->get('default_culture').'_review_ad') ?>
+<?php echo form_tag('@'.$sf_user->getLang().'_review_ad') ?>
 <table><?php echo $authForm ?></table>
 <?php echo submit_tag(__('Confirm')) ?>
 <?php echo '</form>' ?>

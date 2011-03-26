@@ -52,3 +52,5 @@ strong {
 #depot .maintext {
 	margin-bottom: 14px;
 }
+
+#depot label { display:inline }

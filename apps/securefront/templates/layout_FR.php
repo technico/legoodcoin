@@ -84,7 +84,7 @@
   -->
 	<area alt="Ile-de-France" onmouseout="hide_image('', 12)"
 		onmouseover="change_image('', 12)"
-		href="<?php echo url_for('@'.$sf_user->getOptions()->get('default_culture').'_ads') ?>"
+		href="<?php echo url_for('@'.$sf_user->getLang().'_ads').'?gz=1' ?>"
 		coords="202,86,191,101,197,114,205,120,209,127,223,127,226,134,238,133,242,124,252,123,255,114,253,105,243,92,231,94,216,86"
 		title="Ile-de-France" shape="poly" />
 

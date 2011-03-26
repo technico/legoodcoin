@@ -6,7 +6,7 @@
 <img
 	src="<?php echo '/uploads/80x80'.$sf_user->getAttribute('path_to_picture_1') ?>" />
 <br />
-<a href="<?php echo url_for('@'.$sf_user->getOptions()->get('default_culture').'_delete_picture') ?>">supprimer</a>
+<a href="<?php echo url_for('@'.$sf_user->getLang().'_delete_picture') ?>">supprimer</a>
 <?php endif;?></div>
 <div class="error"><?php echo $form['photo_1']->renderError() ?></div>
 </div>

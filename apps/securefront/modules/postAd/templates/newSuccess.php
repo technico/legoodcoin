@@ -1,4 +1,6 @@
 <!-- w3c valide 21/03/2011 à 12:04 -->
+<?php use_javascript('jquery-1.5.min.js') ?>
+<?php use_dynamic_javascript('dynjs/index') ?>
 <?php slot( 'title', __('Post an ad') ) ?>
 <?php slot( 'url_annonce', url_for( 'listing/index?r=0' ) ) ?>
 <?php use_stylesheet( 'depot' )?>
