@@ -59,6 +59,14 @@ class AnnonceFormFilter extends BaseAnnonceFormFilter
   	$this->widgetSchema['contenu']->setOption('with_empty', false);
   	$this->widgetSchema['contenu']->setOption('is_hidden', true);
   	$this->widgetSchema['contenu']->setOption('template', '%input% %empty_checkbox% %empty_label%');
+  	
+      // localizes
+      $this->widgetSchema['categorie'] = new WidgetFormDoctrineChoiceLocalized(array(
+    	    'model'              => 'Categorie',
+    		'localization_field' => 'pays', 
+    		'localization_value' => sfContext::getInstance()->getUser()->getCountry()));      
+      $this->widgetSchema['categorie']->setOption('add_empty', true);
+    
     $this->widgetSchema['categorie']->setOption('is_hidden', true);
   	$this->validatorSchema['categorie'] = new CategorieValidator(array('required' => false, 'model' => 'Categorie', 'column' => 'id'));
   	

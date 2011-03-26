@@ -7,32 +7,43 @@ class ContactForm extends sfForm
  
   public function configure()
   {
+      $this->configureWidgets();
+
+      $this->configureValidators();
+
+      $this->configureValidatorsErrorMessages();
+      
+      $this->widgetSchema->setNameFormat('contact[%s]');
+  }
+	
+  public function configureWidgets()
+  {
     $this->setWidgets(array(
-      'name'    => new sfWidgetFormInput( array( 'label' => 'Your name' ) ),
-      'email'   => new sfWidgetFormInput( array( 'label' => 'Your email address' ) ),
-      'message' => new sfWidgetFormTextarea( array( 'label' => 'Message' ) ),
+      'name'    => new sfWidgetFormInput(array('label'    => 'Your name')),
+      'email'   => new sfWidgetFormInput(array('label'    => 'Your email address')),
+      'message' => new sfWidgetFormTextarea(array('label' => 'Message')),
     ));
-    $this->widgetSchema->setNameFormat('contact[%s]');
- 
-    $this->setValidators(array(
-    
-      'name'    => new sfValidatorString(array('required' => true), array('required' => 'Please enter your name.')),
-      'email'   => new sfValidatorEmail(array(), array('required' => 'Please enter your email address.', 'invalid' => 'Your email address is invalid.')),
-    
-      'message' => new sfValidatorString
-      (
-    	array
-    	(
-    		'min_length' => 4
-    	), 
-   		array(
-        	'required'   => 'The message field is required',
-        	'min_length' => 'The message "%value%" is too short. It must be of %min_length% characters at least.',
-     	)    
-       )
-     ));    
+  }
+
+  public function configureValidators()
+  {
+      $this->setValidators(array(
+      	'name'    => new sfValidatorString(array('required' => true)),
+        'email'   => new sfValidatorEmail(),
+        'message' => new sfValidatorString(array('min_length' => 4)))); 
   }
   
+  public function configureValidatorsErrorMessages()
+  {
+    $this->validatorSchema['name']->setMessage('required', 'Please enter your name.');
+    
+    $this->validatorSchema['email']->setMessage('required', 'Please enter your email address.');
+    $this->validatorSchema['email']->setMessage('invalid' , 'Your email address is invalid.');
+
+    // $this->validatorSchema['message']->setMessage('required'  , 'The message field is required');
+    // $this->validatorSchema['message']->setMessage('min_length', 'The message "%value%" is too short. It must be of %min_length% characters at least.');  
+  }
+	  
   public function send($sAnnnonceId)
   {
   	$oAnnonce = Doctrine::getTable( 'Annonce' )->find( $sAnnnonceId );

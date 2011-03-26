@@ -19,7 +19,7 @@ en_display_ad:
     id: \d+
 
 fr_display_ad:
-  url:     /voir-annonce/:region_slug/:departement_slug/:id/:annonce_slug
+  url:     /voir-annonce/:id/:region_slug/:departement_slug/:slug
   class:   sfDoctrineRoute
   options: { model: Annonce, type: object }
   param:   { module: detail, action: index }

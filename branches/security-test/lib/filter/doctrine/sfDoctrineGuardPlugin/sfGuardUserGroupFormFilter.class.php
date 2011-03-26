@@ -11,5 +11,6 @@ class sfGuardUserGroupFormFilter extends PluginsfGuardUserGroupFormFilter
 {
   public function configure()
   {
+    
   }
 }

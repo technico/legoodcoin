@@ -27,7 +27,7 @@
 		</div>
 
 <div class="index_left">
-			<a href="<?php echo url_for('depotPart1/index')?>"><img src="/images/australia/index_post_ad.png" /></a>
+			<a href="<?php echo url_for('@'.$sf_user->getLang().'_post_ad') ?>"><img src="/images/australia/index_post_ad.png" /></a>
 		</div>
 
 		<div class="index_regions">
